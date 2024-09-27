@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Union Dev</title>
+    <style>
+        /* CSS básico para ajustar a responsividade da imagem */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* CSS específico para dispositivos móveis */
+        @media (max-width: 768px) {
+            img.horizontal {
+                display: none;
+            }
+        }
+
+        /* CSS específico para dispositivos maiores */
+        @media (min-width: 769px) {
+            img.vertical {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagem horizontal (para dispositivos maiores) -->
+    <img src="assets/imagem-horizontal.png" alt="Union Dev Horizontal" class="horizontal">
+
+    <!-- Imagem vertical (para dispositivos móveis) -->
+    <img src="assets/imagem-vertical.png" alt="Union Dev Vertical" class="vertical">
+</body>
+</html>
