@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Union Dev</title>
     <style>
-        /* CSS básico para ajustar a responsividade da imagem */
+        /* Estilos gerais */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: #000; /* Deixei o fundo preto para dar destaque à imagem */
         }
 
         img {
@@ -20,14 +20,14 @@
             height: auto;
         }
 
-        /* CSS específico para dispositivos móveis */
+        /* Oculta a imagem horizontal em telas pequenas */
         @media (max-width: 768px) {
             img.horizontal {
                 display: none;
             }
         }
 
-        /* CSS específico para dispositivos maiores */
+        /* Oculta a imagem vertical em telas grandes */
         @media (min-width: 769px) {
             img.vertical {
                 display: none;
@@ -36,10 +36,10 @@
     </style>
 </head>
 <body>
-    <!-- Imagem horizontal (para dispositivos maiores) -->
-    <img src="assets/imagem_horizontal.png" alt="Union Dev Horizontal" class="horizontal">
+    <!-- Imagem horizontal para dispositivos maiores -->
+    <img src="./assets/imagem_horizontal.png" alt="Union Dev Horizontal" class="horizontal">
 
-    <!-- Imagem vertical (para dispositivos móveis) -->
-    <img src="assets/imagem_vertical.png" alt="Union Dev Vertical" class="vertical">
+    <!-- Imagem vertical para dispositivos móveis -->
+    <img src="./assets/imagem_vertical.png" alt="Union Dev Vertical" class="vertical">
 </body>
 </html>
