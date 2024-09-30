@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Union Dev</title>
+    <title>Union Dev em Breve!</title>
     <style>
         /* Estilos gerais */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body, html {
             margin: 0;
-            background-color: #000; /* Deixei o fundo preto para dar destaque à imagem */
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Impede a rolagem da página */
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        /* Definir o fundo da página como a imagem horizontal ou vertical */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        /* Oculta a imagem horizontal em telas pequenas */
-        @media (max-width: 768px) {
-            img.horizontal {
-                display: none;
+        /* Imagem horizontal para dispositivos grandes */
+        @media (min-width: 769px) {
+            .background {
+                background-image: url('./assets/imagem_horizontal.png');
             }
         }
 
-        /* Oculta a imagem vertical em telas grandes */
-        @media (min-width: 769px) {
-            img.vertical {
-                display: none;
+        /* Imagem vertical para dispositivos móveis */
+        @media (max-width: 768px) {
+            .background {
+                background-image: url('./assets/imagem_vertical.png');
             }
         }
     </style>
 </head>
 <body>
-    <!-- Imagem horizontal para dispositivos maiores -->
-    <img src="./assets/imagem_horizontal.png" alt="Union Dev Horizontal" class="horizontal">
-
-    <!-- Imagem vertical para dispositivos móveis -->
-    <img src="./assets/imagem_vertical.png" alt="Union Dev Vertical" class="vertical">
+    <div class="background"></div>
 </body>
 </html>
