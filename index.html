@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +13,13 @@
         }
 
         body {
+            background-image: url('assets/fundo.png');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             color: #333;
-            line-height: 1.8;
         }
 
-        @media (min-width: 768px) {
-            body {
-                background-image: url('assets/fundo.png');
-            }
-        }
-
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
             body {
                 background-image: url('assets/fundoVertical.png');
             }
@@ -36,112 +29,109 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
         }
 
         header img {
-            max-width: 200px;
-            height: auto;
+            max-width: 150px;
         }
 
         nav {
-            position: relative;
-            top: 0;
-            width: 100%;
             display: flex;
             justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 0;
+            gap: 2rem;
         }
 
         nav a {
-            color: #333;
+            color: white;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 8px 16px;
-            font-size: 18px;
-            border-radius: 4px;
-            transition: background-color 0.3s;
+            font-size: 1.2rem;
         }
 
         nav a:hover {
-            background-color: #d3d3d3;
+            text-decoration: underline;
         }
 
-        .content {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            margin: 100px 20px;
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 2rem;
         }
 
-        .text {
-            max-width: 60%;
-            text-align: left;
-            margin-left: 20px;
-        }
-
-        .text h1 {
+        h1, h2 {
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
         }
 
-        .text p {
-            text-align: justify;
-            margin-bottom: 15px;
+        section {
+            margin-bottom: 2rem;
         }
 
-        .contact {
-            text-align: left;
-            margin-top: 30px;
-            font-size: 18px;
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .link-container a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .link-container a:hover {
+            color: #0056b3;
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-        }
-
-        @media (max-width: 767px) {
-            .content {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .text {
-                margin-left: 0;
-                text-align: center;
-            }
-
-            .contact {
-                text-align: center;
-            }
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#quem-somos">Quem Somos</a>
-        <a href="#visao-missao-valores">Visão, Missão e Valores</a>
-        <a href="#contato">Contato</a>
-    </nav>
-
     <header>
         <img src="assets/logo.png" alt="Union.dev.br Logo">
-        <div class="text">
+        <nav>
+            <a href="#quem-somos">Quem Somos</a>
+            <a href="#visao-missao-valores">Visão, Missão e Valores</a>
+            <a href="#termos">Termos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quem-somos">
             <h1>Quem Somos</h1>
             <p>Union.dev.br é um projeto pessoal desenvolvido por um estudante de Análise e Desenvolvimento de Sistemas (ADS), com o objetivo de criar um espaço para trabalhos acadêmicos, práticas de programação e compartilhamento de conhecimento técnico.</p>
+        </section>
+
+        <section id="visao-missao-valores">
+            <h1>Visão, Missão e Valores</h1>
             <p><strong>Visão:</strong> Ser um ponto de encontro para estudantes e programadores em busca de aprendizado prático.</p>
             <p><strong>Missão:</strong> Prover um ambiente inclusivo e colaborativo para troca de experiências e práticas de programação.</p>
             <p><strong>Valores:</strong> Educação, transparência, colaboração e inovação.</p>
-            <div class="contact">
-                <p>Contato: <a href="mailto:contato@union.dev.br" style="color: #007BFF;">contato@union.dev.br</a></p>
+        </section>
+
+        <section id="termos">
+            <h1>Termos e Seções Centrais</h1>
+            <div class="link-container">
+                <a href="#trabalhos-academicos">Trabalhos Acadêmicos</a>
+                <a href="#praticas-programacao">Práticas de Programação</a>
+                <a href="termos.html">Termos (EULA e Termos de Serviço da AgendaPRO)</a>
             </div>
-        </div>
-    </header>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Union.dev.br - Todos os direitos reservados.</p>
