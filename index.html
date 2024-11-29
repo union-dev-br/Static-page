@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Union.dev.br</title>
     <style>
-        /* Reset básico */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
         }
 
-        /* Estilo do corpo */
         body {
             background-size: cover;
             background-position: center;
@@ -22,52 +20,34 @@
             line-height: 1.8;
         }
 
-        /* Fundo para dispositivos maiores */
         @media (min-width: 768px) {
             body {
                 background-image: url('assets/fundo.png');
             }
         }
 
-        /* Fundo para dispositivos menores */
         @media (max-width: 767px) {
             body {
                 background-image: url('assets/fundoVertical.png');
             }
         }
 
-        /* Header */
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px;
+            padding: 10px 20px;
         }
 
         header img {
-            max-width: 30%;
+            max-width: 200px;
             height: auto;
         }
 
-        header .contato {
-            text-align: right;
-            margin-right: 20px;
-        }
-
-        header .contato p {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        header .contato a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        /* Menu de navegação */
         nav {
+            position: absolute;
+            top: 10px;
+            width: 100%;
             display: flex;
             justify-content: center;
             background-color: rgba(44, 62, 80, 0.7);
@@ -75,7 +55,7 @@
         }
 
         nav a {
-            color: #fff;
+            color: #131111;
             text-decoration: none;
             margin: 0 15px;
             padding: 8px 16px;
@@ -88,38 +68,33 @@
             background-color: #34495e;
         }
 
-        /* Conteúdo principal */
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 100px 20px;
         }
 
-        h1, h2 {
-            color: #fff;
-            text-align: center;
+        .text {
+            max-width: 60%;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .text h1 {
+            color: #1a1919;
             margin-bottom: 20px;
         }
 
-        p {
+        .text p {
             text-align: justify;
+            margin-bottom: 15px;
         }
 
-        .link-container {
+        .contact {
             text-align: center;
-        }
-
-        .link-container a {
-            text-decoration: none;
-            color: #00aced;
-            font-weight: bold;
+            margin-top: 30px;
             font-size: 18px;
-            margin: 10px 0;
-            display: inline-block;
-        }
-
-        .link-container a:hover {
-            color: #3498db;
         }
 
         footer {
@@ -131,42 +106,25 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Union.dev.br Logo">
-        <div class="contato">
-            <p>Contato:</p>
-            <p><a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
-        </div>
-    </header>
-
     <nav>
-        <a href="#contato">Contato</a>
         <a href="#quem-somos">Quem Somos</a>
         <a href="#visao-missao-valores">Visão, Missão e Valores</a>
+        <a href="#contato">Contato</a>
     </nav>
 
-    <main>
-        <section id="quem-somos">
+    <header>
+        <img src="assets/logo.webp" alt="Union.dev.br Logo">
+        <div class="text">
             <h1>Quem Somos</h1>
             <p>Union.dev.br é um projeto pessoal desenvolvido por um estudante de Análise e Desenvolvimento de Sistemas (ADS), com o objetivo de criar um espaço para trabalhos acadêmicos, práticas de programação e compartilhamento de conhecimento técnico.</p>
-        </section>
-
-        <section id="visao-missao-valores">
-            <h1>Visão, Missão e Valores</h1>
             <p><strong>Visão:</strong> Ser um ponto de encontro para estudantes e programadores em busca de aprendizado prático.</p>
             <p><strong>Missão:</strong> Prover um ambiente inclusivo e colaborativo para troca de experiências e práticas de programação.</p>
             <p><strong>Valores:</strong> Educação, transparência, colaboração e inovação.</p>
-        </section>
-
-        <section id="trabalhos-academicos-projetos-de-prática-em-programação-e-termos">
-            <h1>Seções Centrais</h1>
-            <div class="link-container">
-                <a href="#trabalhos-academicos">Trabalhos Acadêmicos</a>
-                <a href="#praticas-programacao">Práticas de Programação</a>
-                <a href="termos.html">Termos (EULA e Termos de Serviço da AgendaPRO)</a>
+            <div class="contact">
+                <p>Contato: <a href="mailto:contato@union.dev.br" style="color: #00aced;">contato@union.dev.br</a></p>
             </div>
-        </section>
-    </main>
+        </div>
+    </header>
 
     <footer>
         <p>© 2024 Union.dev.br - Todos os direitos reservados.</p>
