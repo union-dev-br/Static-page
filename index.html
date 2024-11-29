@@ -16,7 +16,7 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: #fff;
+            color: #333;
             line-height: 1.8;
         }
 
@@ -45,17 +45,17 @@
         }
 
         nav {
-            position: absolute;
-            top: 10px;
+            position: relative;
+            top: 0;
             width: 100%;
             display: flex;
             justify-content: center;
-            background-color: rgba(44, 62, 80, 0.7);
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 10px 0;
         }
 
         nav a {
-            color: #131111;
+            color: #333;
             text-decoration: none;
             margin: 0 15px;
             padding: 8px 16px;
@@ -65,7 +65,7 @@
         }
 
         nav a:hover {
-            background-color: #34495e;
+            background-color: #d3d3d3;
         }
 
         .content {
@@ -77,12 +77,12 @@
 
         .text {
             max-width: 60%;
-            text-align: right;
-            margin-right: 20px;
+            text-align: left;
+            margin-left: 20px;
         }
 
         .text h1 {
-            color: #1a1919;
+            color: #333;
             margin-bottom: 20px;
         }
 
@@ -92,7 +92,7 @@
         }
 
         .contact {
-            text-align: center;
+            text-align: left;
             margin-top: 30px;
             font-size: 18px;
         }
@@ -100,8 +100,25 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: rgba(26, 26, 26, 0.8);
+            background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
+        }
+
+        @media (max-width: 767px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .text {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .contact {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -113,7 +130,7 @@
     </nav>
 
     <header>
-        <img src="assets/logo.webp" alt="Union.dev.br Logo">
+        <img src="assets/logo.png" alt="Union.dev.br Logo">
         <div class="text">
             <h1>Quem Somos</h1>
             <p>Union.dev.br é um projeto pessoal desenvolvido por um estudante de Análise e Desenvolvimento de Sistemas (ADS), com o objetivo de criar um espaço para trabalhos acadêmicos, práticas de programação e compartilhamento de conhecimento técnico.</p>
@@ -121,13 +138,13 @@
             <p><strong>Missão:</strong> Prover um ambiente inclusivo e colaborativo para troca de experiências e práticas de programação.</p>
             <p><strong>Valores:</strong> Educação, transparência, colaboração e inovação.</p>
             <div class="contact">
-                <p>Contato: <a href="mailto:contato@union.dev.br" style="color: #00aced;">contato@union.dev.br</a></p>
+                <p>Contato: <a href="mailto:contato@union.dev.br" style="color: #007BFF;">contato@union.dev.br</a></p>
             </div>
         </div>
     </header>
 
     <footer>
-        <p>© 2024 Union.dev.br - Todos os direitos reservados.</p>
+        <p>&copy; 2024 Union.dev.br - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
