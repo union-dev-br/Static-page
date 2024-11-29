@@ -15,19 +15,35 @@
 
         /* Estilos globais */
         body {
-            background-color: #f5f5f5;
             color: #333;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Fundo para telas maiores */
+        @media (min-width: 768px) {
+            body {
+                background-image: url('assets/fundo.png');
+            }
+        }
+
+        /* Fundo para telas menores (celulares) */
+        @media (max-width: 767px) {
+            body {
+                background-image: url('assets/fundoVertical.png');
+            }
         }
 
         header {
-            background-color: #1a1a1a;
+            background-color: rgba(26, 26, 26, 0.8);
             color: #fff;
             padding: 1rem;
             text-align: center;
         }
 
         nav {
-            background-color: #2c3e50;
+            background-color: rgba(44, 62, 80, 0.9);
             display: flex;
             justify-content: center;
             padding: 1rem 0;
@@ -50,7 +66,7 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 1rem;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -68,7 +84,7 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #1a1a1a;
+            background-color: rgba(26, 26, 26, 0.8);
             color: #fff;
         }
 
@@ -110,27 +126,24 @@
 
         <section id="visao-missao-valores">
             <h1>Visão, Missão e Valores</h1>
-            <p><strong>Visão:</strong> Ser um ponto de encontro para estudantes e programadores em busca de aprendizado prático.</p></br>
-            </br>
-            <p><strong>Missão:</strong> Prover um ambiente inclusivo e colaborativo para troca de experiências e práticas de programação.</p></br>
-            </br>
-            <p><strong>Valores:</strong> Educação, transparência, colaboração e inovação.</p></br>
-            </br>
+            <p><strong>Visão:</strong> Ser um ponto de encontro para estudantes e programadores em busca de aprendizado prático.</p>
+            <p><strong>Missão:</strong> Prover um ambiente inclusivo e colaborativo para troca de experiências e práticas de programação.</p>
+            <p><strong>Valores:</strong> Educação, transparência, colaboração e inovação.</p>
         </section>
 
         <section id="trabalhos-academicos-projetos-de-prática-em-programação-e-termos">
             <h1>Seções Centrais</h1>
             <div class="link-container">
-                <a href="#trabalhos-academicos">Trabalhos Acadêmicos</a></br>
-                <a href="#praticas-programacao">Práticas de Programação</a></br>
-                <a href="termos.html">Termos (EULA e Termos de Serviço da AgendaPRO)</a></br>
+                <a href="#trabalhos-academicos">Trabalhos Acadêmicos</a>
+                <a href="#praticas-programacao">Práticas de Programação</a>
+                <a href="termos.html">Termos (EULA e Termos de Serviço da AgendaPRO)</a>
             </div>
         </section>
+
         <section id="contato">
             <h1>Contato</h1>
-            <p>Email: <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p></br>
+            <p>Email: <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
         </section>
-        
     </main>
 
     <footer>
