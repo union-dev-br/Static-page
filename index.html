@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Union.dev.br</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-image: url('assets/fundo.png');
+            background-image: url('assets/fundo.png'); /* Fundo para dispositivos maiores */
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: #333;
+            min-height: 100vh; /* Garante que o fundo cubra a tela toda */
         }
 
         @media (max-width: 768px) {
             body {
-                background-image: url('assets/fundoVertical.png');
+                background-image: url('assets/fundoVertical.png'); /* Fundo para dispositivos menores */
             }
         }
 
@@ -29,77 +28,98 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: rgba(9, 9, 165, 0.8);
-            padding: 1rem;
+            background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+            padding: 10px 20px;
+            color: #007BFF;
         }
 
         header img {
-            max-width: 150px;
+            max-height: 80px; /* Ajuste para a logo */
+        }
+
+        header .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        header .contact-info a {
+            text-decoration: none;
+            color: #007BFF;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para contraste */
+            padding: 10px 0;
         }
 
         nav a {
-            color: white;
             text-decoration: none;
-            font-size: 1.2rem;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #ffcc00;
         }
 
         main {
             max-width: 800px;
-            margin: 2rem auto;
-            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+            padding: 20px;
             border-radius: 10px;
-            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         h1, h2 {
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        .link-container {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .link-container a {
-            text-decoration: none;
             color: #007BFF;
-            font-weight: bold;
-        }
-
-        .link-container a:hover {
-            color: #0056b3;
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="assets/logo.png" alt="Union.dev.br Logo">
-    
+        <div class="contact-info">
+            <p>Contato:</p>
+            <p><a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
+        </div>
     </header>
+
+    <nav>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#visao-missao-valores">Visão, Missão e Valores</a>
+        <a href="#termos-e-secoes">Termos e Seções</a>
+    </nav>
 
     <main>
         <section id="quem-somos">
@@ -114,18 +134,13 @@
             <p><strong>Valores:</strong> Educação, transparência, colaboração e inovação.</p>
         </section>
 
-        <section id="termos">
+        <section id="termos-e-secoes">
             <h1>Termos e Seções Centrais</h1>
             <div class="link-container">
                 <a href="#trabalhos-academicos">Trabalhos Acadêmicos</a>
                 <a href="#praticas-programacao">Práticas de Programação</a>
-                <a href="termos.html">Termos (EULA e Termos de Serviço da AgendaPRO)</a>
+                <a href="#termos">Termos (EULA e Termos de Serviço)</a>
             </div>
-        </section>
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Email: <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
         </section>
     </main>
 
