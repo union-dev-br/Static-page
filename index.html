@@ -10,50 +10,76 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
 
-        /* Estilos globais */
+        /* Estilo do corpo */
         body {
-            color: #333;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            color: #fff;
+            line-height: 1.8;
         }
 
-        /* Fundo para telas maiores */
+        /* Fundo para dispositivos maiores */
         @media (min-width: 768px) {
             body {
                 background-image: url('assets/fundo.png');
             }
         }
 
-        /* Fundo para telas menores (celulares) */
+        /* Fundo para dispositivos menores */
         @media (max-width: 767px) {
             body {
                 background-image: url('assets/fundoVertical.png');
             }
         }
 
+        /* Header */
         header {
-            background-color: rgba(26, 26, 26, 0.8);
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
         }
 
+        header img {
+            max-width: 30%;
+            height: auto;
+        }
+
+        header .contato {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        header .contato p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        header .contato a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Menu de navegação */
         nav {
-            background-color: rgba(44, 62, 80, 0.9);
             display: flex;
             justify-content: center;
-            padding: 1rem 0;
+            background-color: rgba(44, 62, 80, 0.7);
+            padding: 10px 0;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
+            margin: 0 15px;
+            padding: 8px 16px;
+            font-size: 18px;
             border-radius: 4px;
             transition: background-color 0.3s;
         }
@@ -62,54 +88,55 @@
             background-color: #34495e;
         }
 
+        /* Conteúdo principal */
         main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
         }
 
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: rgba(26, 26, 26, 0.8);
+        h1, h2 {
             color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
         }
 
         .link-container {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
             text-align: center;
         }
 
         .link-container a {
             text-decoration: none;
-            color: #2980b9;
+            color: #00aced;
             font-weight: bold;
-            transition: color 0.3s;
+            font-size: 18px;
+            margin: 10px 0;
+            display: inline-block;
         }
 
         .link-container a:hover {
             color: #3498db;
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(26, 26, 26, 0.8);
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/logo.png" alt="Union.dev.br Logo" style="max-width: 200px;">
+        <img src="assets/logo.png" alt="Union.dev.br Logo">
+        <div class="contato">
+            <p>Contato:</p>
+            <p><a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
+        </div>
     </header>
 
     <nav>
@@ -138,11 +165,6 @@
                 <a href="#praticas-programacao">Práticas de Programação</a>
                 <a href="termos.html">Termos (EULA e Termos de Serviço da AgendaPRO)</a>
             </div>
-        </section>
-
-        <section id="contato">
-            <h1>Contato</h1>
-            <p>Email: <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
         </section>
     </main>
 
