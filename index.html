@@ -11,14 +11,12 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ddd7d7f5;
-            color: white;
-            height: 100vh;
-            overflow: hidden;
+            background-color: #f2f2f2;
+            color: #333;
         }
 
         .navbar {
-            background-color: #333;
+            background-color: #4a4a4a;
             padding: 15px;
             display: flex;
             align-items: center;
@@ -47,47 +45,29 @@
         }
 
         .container {
-            position: relative;
-            width: 100%;
-            height: calc(100vh - 60px);
-            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
         }
 
         .logo {
-            position: absolute;
-            height: 60px;
-            width: auto;
-            opacity: 0.85;
+            height: 80px;
+            margin: 15px;
+            opacity: 0.9;
             transition: transform 0.3s, opacity 0.3s;
         }
 
         .logo:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
             opacity: 1;
         }
 
-        /* Distribuição aleatória para as logomarcas */
-        .logo:nth-child(1) { top: 7%; left: 13%; }
-        .logo:nth-child(2) { top: 14%; left: 26%; }
-        .logo:nth-child(3) { top: 21%; left: 39%; }
-        .logo:nth-child(4) { top: 28%; left: 52%; }
-        .logo:nth-child(5) { top: 35%; left: 65%; }
-        .logo:nth-child(6) { top: 42%; left: 78%; }
-        .logo:nth-child(7) { top: 49%; left: 91%; }
-        .logo:nth-child(8) { top: 56%; left: 4%; }
-        .logo:nth-child(9) { top: 63%; left: 17%; }
-        .logo:nth-child(10) { top: 70%; left: 30%; }
-        .logo:nth-child(11) { top: 77%; left: 43%; }
-        .logo:nth-child(12) { top: 84%; left: 56%; }
-        .logo:nth-child(13) { top: 91%; left: 69%; }
-        .logo:nth-child(14) { top: 98%; left: 82%; }
-        .logo:nth-child(15) { top: 5%; left: 95%; }
-        /* Continue preenchendo o CSS para os outros logos */
-        
         footer {
             text-align: center;
             padding: 15px 10px;
-            background-color: #333;
+            background-color: #4a4a4a;
             color: white;
             position: relative;
             bottom: 0;
@@ -112,6 +92,13 @@
         <img src="assets/images/android.svg" alt="android" class="logo">
         <img src="assets/images/angular.svg" alt="angular" class="logo">
         <img src="assets/images/python.svg" alt="python" class="logo">
+        <img src="assets/images/javascript.svg" alt="javascript" class="logo">
+        <img src="assets/images/docker.svg" alt="docker" class="logo">
+        <img src="assets/images/react.svg" alt="react" class="logo">
+        <img src="assets/images/github.svg" alt="github" class="logo">
+        <img src="assets/images/mongodb.svg" alt="mongodb" class="logo">
+        <img src="assets/images/mysql.svg" alt="mysql" class="logo">
+        <img src="assets/images/kubernetes.svg" alt="kubernetes" class="logo">
         <!-- Continue adicionando os outros logos -->
     </div>
 
