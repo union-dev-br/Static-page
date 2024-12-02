@@ -11,17 +11,20 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #ddd7d7f5;
+            color: white;
         }
 
         .navbar {
-            background-color: #4a4a4a;
+            background-color: #333;
             padding: 15px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         .navbar .contact {
@@ -42,61 +45,36 @@
         }
 
         .container {
-            position: relative;
-            width: 100%;
-            height: calc(100vh - 100px);
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: flex-start;
+            justify-content: space-around;
+            align-items: center;
             padding: 20px;
-            overflow: auto;
         }
 
         .logo {
-            position: absolute;
-            height: 80px;
+            height: 60px;
             width: auto;
-            opacity: 0.9;
+            margin: 10px;
             transition: transform 0.3s, opacity 0.3s;
+            opacity: 0.85;
         }
 
         .logo:hover {
-            transform: scale(1.1);
+            transform: scale(1.2);
             opacity: 1;
         }
 
         footer {
             text-align: center;
             padding: 15px 10px;
-            background-color: #4a4a4a;
+            background-color: #333;
             color: white;
-            position: sticky;
+            position: relative;
             bottom: 0;
             width: 100%;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        /* Posições desuniformes para as logos */
-        .logo:nth-child(1) { top: 10%; left: 5%; }
-        .logo:nth-child(2) { top: 20%; left: 25%; }
-        .logo:nth-child(3) { top: 30%; left: 50%; }
-        .logo:nth-child(4) { top: 5%; left: 70%; }
-        .logo:nth-child(5) { top: 40%; left: 10%; }
-        .logo:nth-child(6) { top: 15%; left: 40%; }
-        .logo:nth-child(7) { top: 25%; left: 80%; }
-        .logo:nth-child(8) { top: 50%; left: 30%; }
-        .logo:nth-child(9) { top: 60%; left: 55%; }
-        .logo:nth-child(10) { top: 70%; left: 75%; }
-        .logo:nth-child(11) { top: 20%; left: 90%; }
-        .logo:nth-child(12) { top: 80%; left: 15%; }
-        .logo:nth-child(13) { top: 90%; left: 35%; }
-        .logo:nth-child(14) { top: 10%; left: 65%; }
-        .logo:nth-child(15) { top: 15%; left: 85%; }
-        .logo:nth-child(16) { top: 40%; left: 45%; }
-        .logo:nth-child(17) { top: 50%; left: 20%; }
-        .logo:nth-child(18) { top: 35%; left: 60%; }
-        .logo:nth-child(19) { top: 70%; left: 10%; }
-        .logo:nth-child(20) { top: 85%; left: 50%; }
     </style>
 </head>
 <body>
@@ -111,45 +89,50 @@
     </nav>
 
     <div class="container">
-        <!-- Adicione todas as logos -->
-        <img src="assets/images/android.svg" alt="Android" class="logo">
-        <img src="assets/images/angular.svg" alt="Angular" class="logo">
-        <img src="assets/images/python.svg" alt="Python" class="logo">
-        <img src="assets/images/javascript.svg" alt="JavaScript" class="logo">
-        <img src="assets/images/docker.svg" alt="Docker" class="logo">
-        <img src="assets/images/react.svg" alt="React" class="logo">
-        <img src="assets/images/github.svg" alt="GitHub" class="logo">
-        <img src="assets/images/mongodb.svg" alt="MongoDB" class="logo">
-        <img src="assets/images/mysql.svg" alt="MySQL" class="logo">
-        <img src="assets/images/kubernetes.svg" alt="Kubernetes" class="logo">
-        <img src="assets/images/flutter.svg" alt="Flutter" class="logo">
-        <img src="assets/images/django.svg" alt="Django" class="logo">
-        <img src="assets/images/php.svg" alt="PHP" class="logo">
-        <img src="assets/images/java.svg" alt="Java" class="logo">
-        <img src="assets/images/laravel.svg" alt="Laravel" class="logo">
-        <img src="assets/images/csharp.svg" alt="C#" class="logo">
-        <img src="assets/images/html5.svg" alt="HTML5" class="logo">
-        <img src="assets/images/css3.svg" alt="CSS3" class="logo">
-        <img src="assets/images/gitlab.svg" alt="GitLab" class="logo">
-        <img src="assets/images/springboot.svg" alt="Spring Boot" class="logo">
-        <img src="assets/images/svelte.svg" alt="Svelte" class="logo">
-        <img src="assets/images/ansible.svg" alt="Ansible" class="logo">
-        <img src="assets/images/heroku.svg" alt="Heroku" class="logo">
-        <img src="assets/images/googlecloud.svg" alt="Google Cloud" class="logo">
-        <img src="assets/images/postgresql.svg" alt="PostgreSQL" class="logo">
-        <img src="assets/images/ruby.svg" alt="Ruby" class="logo">
-        <img src="assets/images/typescript.svg" alt="TypeScript" class="logo">
-        <img src="assets/images/vuedotjs.svg" alt="Vue.js" class="logo">
-        <img src="assets/images/netlify.svg" alt="Netlify" class="logo">
-        <img src="assets/images/cplusplus.svg" alt="C++" class="logo">
-        <img src="assets/images/dotnet.svg" alt=".NET" class="logo">
-        <img src="assets/images/hibernate.svg" alt="Hibernate" class="logo">
-        <img src="assets/images/jenkins.svg" alt="Jenkins" class="logo">
-        <img src="assets/images/swift.svg" alt="Swift" class="logo">
-        <img src="assets/images/terraform.svg" alt="Terraform" class="logo">
-        <img src="assets/images/intellijidea.svg" alt="IntelliJ IDEA" class="logo">
-        <img src="assets/images/bitbucket.svg" alt="Bitbucket" class="logo">
-        <img src="assets/images/cloudflare.svg" alt="Cloudflare" class="logo">
+        <!-- Todas as logos -->
+        <img src="assets/images/abbrobotstudio.svg" alt="abbrobotstudio" class="logo">
+        <img src="assets/images/adobe.svg" alt="adobe" class="logo">
+        <img src="assets/images/adobeacrobatreader.svg" alt="adobeacrobatreader" class="logo">
+        <img src="assets/images/adobecreativecloud.svg" alt="adobecreativecloud" class="logo">
+        <img src="assets/images/aframe.svg" alt="aframe" class="logo">
+        <img src="assets/images/aiohttp.svg" alt="aiohttp" class="logo">
+        <img src="assets/images/almalinux.svg" alt="almalinux" class="logo">
+        <img src="assets/images/amazonapigateway.svg" alt="amazonapigateway" class="logo">
+        <img src="assets/images/amazonroute53.svg" alt="amazonroute53" class="logo">
+        <img src="assets/images/amazonwebservices.svg" alt="amazonwebservices" class="logo">
+        <img src="assets/images/android.svg" alt="android" class="logo">
+        <img src="assets/images/androidstudio.svg" alt="androidstudio" class="logo">
+        <img src="assets/images/angular.svg" alt="angular" class="logo">
+        <img src="assets/images/ansible.svg" alt="ansible" class="logo">
+        <img src="assets/images/apache.svg" alt="apache" class="logo">
+        <img src="assets/images/apacheant.svg" alt="apacheant" class="logo">
+        <img src="assets/images/bootstrap.svg" alt="bootstrap" class="logo">
+        <img src="assets/images/circleci.svg" alt="circleci" class="logo">
+        <img src="assets/images/claude.svg" alt="claude" class="logo">
+        <img src="assets/images/cplusplus.svg" alt="cplusplus" class="logo">
+        <img src="assets/images/css3.svg" alt="css3" class="logo">
+        <img src="assets/images/dart.svg" alt="dart" class="logo">
+        <img src="assets/images/django.svg" alt="django" class="logo">
+        <img src="assets/images/docker.svg" alt="docker" class="logo">
+        <img src="assets/images/dotenv.svg" alt="dotenv" class="logo">
+        <img src="assets/images/dotnet.svg" alt="dotnet" class="logo">
+        <img src="assets/images/flutter.svg" alt="flutter" class="logo">
+        <img src="assets/images/github.svg" alt="github" class="logo">
+        <img src="assets/images/gitlab.svg" alt="gitlab" class="logo">
+        <img src="assets/images/go.svg" alt="go" class="logo">
+        <img src="assets/images/hibernate.svg" alt="hibernate" class="logo">
+        <img src="assets/images/jenkins.svg" alt="jenkins" class="logo">
+        <img src="assets/images/kubernetes.svg" alt="kubernetes" class="logo">
+        <img src="assets/images/laravel.svg" alt="laravel" class="logo">
+        <img src="assets/images/mysql.svg" alt="mysql" class="logo">
+        <img src="assets/images/php.svg" alt="php" class="logo">
+        <img src="assets/images/postgresql.svg" alt="postgresql" class="logo">
+        <img src="assets/images/python.svg" alt="python" class="logo">
+        <img src="assets/images/react.svg" alt="react" class="logo">
+        <img src="assets/images/springboot.svg" alt="springboot" class="logo">
+        <img src="assets/images/terraform.svg" alt="terraform" class="logo">
+        <img src="assets/images/typescript.svg" alt="typescript" class="logo">
+        <img src="assets/images/vuejs.svg" alt="vuejs" class="logo">
     </div>
 
     <footer>
