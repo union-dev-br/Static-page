@@ -3,139 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Union.dev.br - Logos</title>
+    <title>Union.dev.br em desenvolvimento!</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #ddd7d7f5;
-            color: white;
+            background-image: url('assets/fundo.png'); /* Fundo para dispositivos maiores */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            min-height: 100vh; /* Garante que o fundo cubra a tela toda */
+            display: flex;
+            flex-direction: column; /* Faz com que o rodapé fique no final */
         }
 
-        .navbar {
-            background-color: #333;
-            padding: 15px;
+        @media (max-width: 768px) {
+            body {
+                background-image: url('assets/fundoVertical.png'); /* Fundo para dispositivos menores */
+            }
+        }
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 10;
+            background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+            padding: 10px 20px;
+            color: #007BFF;
         }
 
-        .navbar .contact {
-            color: white;
+        header img {
+            max-height: 80px; /* Ajuste para a logo */
+        }
+
+        header .contact-info {
+            text-align: right;
             font-size: 0.9rem;
         }
 
-        .navbar a {
-            color: white;
+        header .contact-info a {
             text-decoration: none;
+            color: #007BFF;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para contraste */
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
             margin: 0 15px;
-            font-weight: 500;
+            font-weight: bold;
             transition: color 0.3s;
         }
 
-        .navbar a:hover {
+        nav a:hover {
             color: #ffcc00;
         }
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
             padding: 20px;
-            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
         }
 
-        .logo {
-            width: 80px;
-            height: auto;
-            margin: 15px;
-            opacity: 0.9;
-            transition: transform 0.3s, opacity 0.3s;
-        }
-
-        .logo:hover {
-            transform: scale(1.2);
-            opacity: 1;
+        h1, h2 {
+            color: #007BFF;
         }
 
         footer {
             text-align: center;
-            padding: 15px 10px;
-            background-color: #333;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
             color: white;
             position: relative;
             bottom: 0;
             width: 100%;
         }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <span class="contact">contato@union.dev.br</span>
-        <div>
-            <a href="visao.html">Visão</a>
-            <a href="missao.html">Missão</a>
-            <a href="valores.html">Valores</a>
-            <a href="termos.html">Termos</a>
+    <header>
+        <img src="assets/logo.png" alt="Union.dev.br Logo">
+        <div class="contact-info">
+            <p>Contato:</p>
+            <p><a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
         </div>
+    </header>
+
+    <nav>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#visao-missao-valores">Visão, Missão e Valores</a>
+        <a href="#termos-e-secoes">Termos e Seções</a>
     </nav>
 
-    <div class="container">
-        <!-- Inserindo as imagens corretamente -->
-        <img src="assets/images/abbrobotstudio.svg" alt="ABB RobotStudio" class="logo">
-        <img src="assets/images/adobe.svg" alt="Adobe" class="logo">
-        <img src="assets/images/adobeacrobatreader.svg" alt="Adobe Acrobat Reader" class="logo">
-        <img src="assets/images/adobecreativecloud.svg" alt="Adobe Creative Cloud" class="logo">
-        <img src="assets/images/aframe.svg" alt="AFrame" class="logo">
-        <img src="assets/images/aiohttp.svg" alt="AIOHTTP" class="logo">
-        <img src="assets/images/almalinux.svg" alt="AlmaLinux" class="logo">
-        <img src="assets/images/amazonapigateway.svg" alt="Amazon API Gateway" class="logo">
-        <img src="assets/images/amazonroute53.svg" alt="Amazon Route 53" class="logo">
-        <img src="assets/images/amazonwebservices.svg" alt="Amazon Web Services" class="logo">
-        <img src="assets/images/android.svg" alt="Android" class="logo">
-        <img src="assets/images/androidstudio.svg" alt="Android Studio" class="logo">
-        <img src="assets/images/angular.svg" alt="Angular" class="logo">
-        <img src="assets/images/ansible.svg" alt="Ansible" class="logo">
-        <img src="assets/images/apache.svg" alt="Apache" class="logo">
-        <img src="assets/images/apacheant.svg" alt="Apache Ant" class="logo">
-        <img src="assets/images/bootstrap.svg" alt="Bootstrap" class="logo">
-        <img src="assets/images/circleci.svg" alt="CircleCI" class="logo">
-        <img src="assets/images/claude.svg" alt="Claude" class="logo">
-        <img src="assets/images/cplusplus.svg" alt="C++" class="logo">
-        <img src="assets/images/css3.svg" alt="CSS3" class="logo">
-        <img src="assets/images/dart.svg" alt="Dart" class="logo">
-        <img src="assets/images/django.svg" alt="Django" class="logo">
-        <img src="assets/images/docker.svg" alt="Docker" class="logo">
-        <img src="assets/images/dotenv.svg" alt="Dotenv" class="logo">
-        <img src="assets/images/dotnet.svg" alt="Dotnet" class="logo">
-        <img src="assets/images/flutter.svg" alt="Flutter" class="logo">
-        <img src="assets/images/github.svg" alt="GitHub" class="logo">
-        <img src="assets/images/gitlab.svg" alt="GitLab" class="logo">
-        <img src="assets/images/go.svg" alt="Go" class="logo">
-        <img src="assets/images/hibernate.svg" alt="Hibernate" class="logo">
-        <img src="assets/images/jenkins.svg" alt="Jenkins" class="logo">
-        <img src="assets/images/kubernetes.svg" alt="Kubernetes" class="logo">
-        <img src="assets/images/laravel.svg" alt="Laravel" class="logo">
-        <img src="assets/images/mysql.svg" alt="MySQL" class="logo">
-        <img src="assets/images/php.svg" alt="PHP" class="logo">
-        <img src="assets/images/postgresql.svg" alt="PostgreSQL" class="logo">
-        <img src="assets/images/python.svg" alt="Python" class="logo">
-        <img src="assets/images/react.svg" alt="React" class="logo">
-        <img src="assets/images/springboot.svg" alt="Spring Boot" class="logo">
-        <img src="assets/images/terraform.svg" alt="Terraform" class="logo">
-        <img src="assets/images/typescript.svg" alt="TypeScript" class="logo">
-        <img src="assets/images/vuejs.svg" alt="Vue.js" class="logo">
-    </div>
+    <main>
+        <section id="quem-somos">
+            <h1>Quem Somos</h1>
+            <p>Union.dev.br é um projeto pessoal desenvolvido por um estudante de Análise e Desenvolvimento de Sistemas (ADS), com o objetivo de criar um espaço para trabalhos acadêmicos, práticas de programação e compartilhamento de conhecimento técnico.</p>
+        </section>
+
+        <section id="visao-missao-valores">
+            <h1>Visão, Missão e Valores</h1>
+            <p><strong>Visão:</strong> Ser um ponto de encontro para estudantes e programadores em busca de aprendizado prático.</p>
+            <p><strong>Missão:</strong> Prover um ambiente inclusivo e colaborativo para troca de experiências e práticas de programação.</p>
+            <p><strong>Valores:</strong> Educação, transparência, colaboração e inovação.</p>
+        </section>
+
+        <section id="termos-e-secoes">
+            <h1>Termos e Seções Centrais</h1>
+            <div class="link-container">
+                <a href="#trabalhos-academicos">Trabalhos Acadêmicos(em breve)</a></br>
+                <a href="#praticas-programacao">Práticas de Programação(em brave)</a></br>
+                <a href="termos.html" target="_blank">Termos da AgendaPRO(EULA e Termos de Serviço)</a></br>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Union.dev.br | Todos os direitos reservados.</p>
+        <p>&copy; 2024 Union.dev.br - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
