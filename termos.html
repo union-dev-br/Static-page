@@ -24,19 +24,55 @@
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0);
-            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.0);
             padding: 10px 20px;
-            text-align: center;
+            color: #000408;
         }
+
+        header img {
+            max-height: 80px;
+        }
+
+        header .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        header .contact-info a {
+            text-decoration: none;
+            color: #01080f;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
 
         main {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         h1, h2 {
@@ -64,6 +100,25 @@
             color: white;
         }
     </style>
+
+</style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Union.dev.br Logo">
+        <div class="contact-info">
+            <p>Contato:</p>
+            <p><a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="missaoPlataforma.html">Missão</a>
+        <a href="valoresPlataforma.html">Valores</a>
+        <a href="termosAgendaPro.html">Projetos e Docs</a>
+        <a href="termos.html">Termos</a>
+    </nav>
+
 </head>
 <body>
 
@@ -141,11 +196,11 @@
         <p>Em caso de dúvidas sobre os Termos de Uso, Política de Privacidade ou EULA, entre em contato conosco:</p>
         <p><strong>Email:</strong> <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
     </section>
+</section>
 </main>
 
 <footer>
-    <p>&copy; 2024 Union.dev.br | Todos os direitos reservados.</p>
+    <p>&copy; 2024 Union.dev.br - Todos os direitos reservados.</p>
 </footer>
-
 </body>
 </html>
