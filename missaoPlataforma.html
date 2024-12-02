@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Missão - Plataforma Union.dev.br</title>
+    <title>Union.dev.br - Valores</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,6 +15,9 @@
             background-position: center;
             background-attachment: fixed;
             color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         @media (max-width: 768px) {
@@ -25,55 +27,99 @@
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0);
-            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.8);
             padding: 10px 20px;
-            text-align: center;
+            color: #007BFF;
+        }
+
+        header img {
+            max-height: 80px;
+        }
+
+        header .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        header .contact-info a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
         }
 
         main {
             max-width: 800px;
             margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            flex: 1;
         }
 
-        h1, h2 {
-            color: #191a1b;
-        }
-
-        p {
-            margin-bottom: 15px;
+        h1 {
+            color: #007BFF;
+            text-align: center;
         }
 
         footer {
             text-align: center;
-            margin-top: 20px;
             padding: 10px;
-            background-color: rgba(21, 21, 22, 0.8);
+            background: rgba(0, 0, 0, 0.7);
             color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <img src="assets/logo.png" alt="Union.dev.br Logo">
+        <div class="contact-info">
+            <p>Contato:</p>
+            <p><a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
+        </div>
+    </header>
 
-<header>
-    <h1>Union.dev.br</h1>
-    <p><h2>Missão</h2></p>
-</header>
+    <nav>
+        <a href="missaoPlataforma.html">Missão</a>
+        <a href="valoresPlataforma.html">Valores</a>
+        <a href="termosAgendaPro.html">Projetos e Docs</a>
+        <a href="termos.html">Termos</a>
+    </nav>
 
-<main>
-    <section>
-        <h2>Missão</h2>
-        <p>Criar um ambiente digital acessível e motivador que conecte programadores e empresas, oferecendo recursos educacionais, desafios práticos e gamificação. Nosso objetivo é simplificar o acesso à prática da programação, incentivando o aprendizado contínuo, a troca de conhecimentos e o desenvolvimento de habilidades que gerem impacto no mercado de tecnologia e na sociedade.</p>
-    </section>
-</main>
+    <main>
+        <section id="Missão">
+            <h1>Missão</h1>
+            <h2></h2>
+            <p>Criar um ambiente digital acessível e motivador que conecte programadores e empresas, oferecendo recursos educacionais, desafios práticos e gamificação. Nosso objetivo é simplificar o acesso à prática da programação, incentivando o aprendizado contínuo, a troca de conhecimentos e o desenvolvimento de habilidades que gerem impacto no mercado de tecnologia e na sociedade.</p>
+        </section>
+    </main>
 
-<footer>
-    <p>&copy; 2024 Union.dev.br | Todos os direitos reservados.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Union.dev.br - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
