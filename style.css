@@ -56,6 +56,9 @@ nav {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
+    position: absolute; /* Para posicionar na área do header */
+    right: 20px; /* Alinhar à direita */
+    top: 10px; /* Ajustar o espaçamento superior */
 }
 
 .menu-items {
@@ -89,9 +92,10 @@ nav {
         position: absolute;
         top: 50px;
         left: 0;
-        right: 0;
-        text-align: center;
+        right: 20px;
+        text-align: right;
         padding: 10px 0;
+        border-radius: 5px;
     }
 
     .menu-items.show {
