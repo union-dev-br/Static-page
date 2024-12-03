@@ -50,7 +50,7 @@ nav {
 
 .menu-toggle {
     display: none;
-    background-color:#ecebeb;
+    background-color:#c9c4c4;
     color: rgba(255, 253, 253, 0.986);
     border: none;
     padding: 10px 20px;
@@ -69,7 +69,7 @@ nav {
 
 .menu-items a {
     text-decoration: none;
-    color: rgb(82, 79, 79);
+    color: rgb(235, 230, 230);
     margin: center;
     font-weight: bold;
     transition: color 0.3s;
