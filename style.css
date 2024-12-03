@@ -50,8 +50,8 @@ nav {
 
 .menu-toggle {
     display: none;
-    background-color: #000;
-    color: rgb(26, 24, 24);
+    background-color: #e7e1e1;
+    color: rgb(185, 183, 183);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -76,7 +76,7 @@ nav {
 }
 
 .menu-items a:hover {
-    color: rgb(15, 15, 1);
+    color: rgb(255, 255, 0);
 }
 
 @media (max-width: 768px) {
