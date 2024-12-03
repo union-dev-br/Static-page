@@ -50,14 +50,14 @@ nav {
 
 .menu-toggle {
     display: none;
-    background-color: #e7e1e1;
-    color: rgb(185, 183, 183);
+    background-color:#c9c7c7;
+    color: black;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
     position: absolute; /* Para posicionar na área do header */
-    right: 20px; /* Alinhar à direita */
+    left: 20px; /* Alinhar à esquerda */
     top: 10px; /* Ajustar o espaçamento superior */
 }
 
