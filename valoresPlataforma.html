@@ -4,95 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Union.dev.br - Valores</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-image: url('assets/fundo.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #333;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                background-image: url('assets/fundoVertical.png');
-            }
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: rgba(255, 255, 255, 0.0);
-            padding: 10px 20px;
-            color: #000408;
-        }
-
-        header img {
-            max-height: 80px;
-        }
-
-        header .contact-info {
-            text-align: right;
-            font-size: 0.9rem;
-        }
-
-        header .contact-info a {
-            text-decoration: none;
-            color: #01080f;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffcc00;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            flex: 1;
-        }
-
-        h1 {
-            color: #01080f;
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -104,11 +16,14 @@
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="missaoPlataforma.html">Missão</a>
-        <a href="valoresPlataforma.html">Valores</a>
-        <a href="termosAgendaPro.html">Projetos e Docs</a>
-        <a href="termos.html">Termos</a>
+        <button class="menu-toggle">Menu</button>
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="missaoPlataforma.html">Missão</a>
+            <a href="valoresPlataforma.html">Valores</a>
+            <a href="termosAgendaPro.html">Projetos e Docs</a>
+            <a href="termos.html">Termos</a>
+        </div>
     </nav>
 
     <main>
@@ -126,5 +41,7 @@
     <footer>
         <p>&copy; 2024 Union.dev.br - Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
