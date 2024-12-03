@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url('assets/fundoHorizontal2.webp');
+    background-image: url('assets/fundoHorizontal.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,7 +15,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background-image: url('assets/fundoVertical2.webp');
+        background-image: url('assets/fundoVertical.jpg');
     }
 }
 
