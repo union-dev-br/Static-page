@@ -7,7 +7,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #333;
+    color: #0c0101;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -69,14 +69,14 @@ nav {
 
 .menu-items a {
     text-decoration: none;
-    color: rgb(14, 13, 13);
+    color: black;
     margin: 0 15px;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .menu-items a:hover {
-    color: #ffcc00;
+    color: rgb(15, 15, 1);
 }
 
 @media (max-width: 768px) {
