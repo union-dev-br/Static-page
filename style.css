@@ -50,8 +50,8 @@ nav {
 
 .menu-toggle {
     display: none;
-    background-color:#c9c7c7;
-    color: rgba(255, 255, 255, 0.2);
+    background-color:#a5a1a1;
+    color: rgba(190, 187, 187, 0.2);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -88,12 +88,12 @@ nav {
     .menu-items {
         display: none;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.3);
         position: absolute;
         top: 50px;
         left: 0;
         right: 20px;
-        text-align: right;
+        text-align: center;
         padding: 10px 0;
         border-radius: 5px;
     }
