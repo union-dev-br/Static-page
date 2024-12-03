@@ -51,7 +51,7 @@ nav {
 .menu-toggle {
     display: none;
     background-color: #000;
-    color: white;
+    color: rgb(26, 24, 24);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -69,7 +69,7 @@ nav {
 
 .menu-items a {
     text-decoration: none;
-    color: white;
+    color: rgb(14, 13, 13);
     margin: 0 15px;
     font-weight: bold;
     transition: color 0.3s;
