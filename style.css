@@ -26,7 +26,7 @@ header {
     display: flex; /* Define um layout flexível para o cabeçalho */
     align-items: center; /* Alinha verticalmente os itens ao centro */
     justify-content: space-between; /* Distribui os itens com espaço entre eles */
-    background: rgba(255, 255, 255, 0.0); /* Fundo transparente */
+    background: rgba(163, 160, 160, 0); /* Fundo transparente */
     padding: 10px 20px; /* Adiciona espaçamento interno */
     color: #00070e; /* Define a cor do texto */
 }
@@ -39,7 +39,7 @@ header img {
 /* Informações de contato no cabeçalho */
 header .contact-info {
     text-align: right; /* Alinha o texto à direita */
-    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    font-size: 1,0rem; /* Reduz o tamanho da fonte */
 }
 
 /* Links de contato no cabeçalho */
@@ -50,36 +50,37 @@ header .contact-info a {
 
 /* Estilização da barra de navegação */
 nav {
-    background: rgba(0, 0, 0, 0.0); /* Fundo transparente */
-    padding: 10px 0; /* Adiciona espaçamento interno vertical */
+    background: rgba(0, 0, 0, 0.6); /* Fundo transparente */
+    padding: 20px 0; /* Adiciona espaçamento interno vertical */
     position: relative; /* Necessário para posicionar o botão menu-toggle */
 }
 
 /* Botão para alternar o menu (visível apenas em telas menores) */
 .menu-toggle {
     display: none; /* Esconde o botão por padrão */
-    background-color:#161515; /* Define a cor de fundo do botão */
-    color: rgba(255, 253, 253, 0.986); /* Define a cor do texto do botão */
+    background-color:#969393; /* Define a cor de fundo do botão */
+    color: rgba(63, 61, 61, 0.986); /* Define a cor do texto do botão */
     border: none; /* Remove a borda */
     padding: 10px 20px; /* Adiciona espaçamento interno */
     cursor: pointer; /* Muda o cursor para indicar interatividade */
     font-size: 1rem; /* Define o tamanho da fonte */
     position: absolute; /* Permite posicionar o botão no header */
     left: 20px; /* Alinha à esquerda */
-    top: 10px; /* Define o espaçamento superior */
+    top: 1px; /* Define o espaçamento superior */
 }
 
 /* Itens do menu de navegação */
 .menu-items {
     display: flex; /* Exibe os itens do menu em linha */
     justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 15px; /* Adiciona espaçamento entre os itens */
+    gap: 30px; /* Adiciona espaçamento entre os itens */
+    font-size: 20px
 }
 
 /* Links do menu de navegação */
 .menu-items a {
     text-decoration: none; /* Remove o sublinhado dos links */
-    color: rgb(8, 8, 8); /* Define a cor padrão dos links */
+    color: rgb(255, 255, 255); /* Define a cor padrão dos links */
     margin: center; /* Centraliza os itens */
     font-weight: bold; /* Define o texto em negrito */
     transition: color 0.3s; /* Adiciona uma transição suave na mudança de cor */
@@ -119,7 +120,7 @@ nav {
 main {
     max-width: 800px; /* Define a largura máxima do conteúdo */
     margin: 20px auto; /* Centraliza o conteúdo horizontalmente e adiciona margem superior */
-    background: none; /* Fundo transparente */
+    background: rgba(241, 239, 239, 0.8); /* Fundo transparente */
     padding: 20px; /* Adiciona espaçamento interno */
     border-radius: 10px; /* Arredonda os cantos */
     box-shadow: none; /* Remove sombras */
