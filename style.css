@@ -44,7 +44,7 @@ nav {
 /* Botão para alternar o menu (visível apenas em telas menores) */
 .menu-toggle {
     display: none; /* Esconde o botão por padrão */
-    background-color:#e242da; /* Define a cor de fundo do botão */
+    background-color:#b835c4; /* Define a cor de fundo do botão */
     color: rgba(248, 242, 242, 0.986); /* Define a cor do texto do botão */
     border: none; /* Remove a borda */
     padding: 0; /* Adiciona espaçamento interno */
