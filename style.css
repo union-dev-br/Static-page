@@ -81,17 +81,17 @@ nav {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Torna o botão menu-toggle visível */
-        margin: 0; /* Remove margens */
+        margin: 20px; /* Remove margens */
     }
 
     .menu-items {
         display: none; /* Esconde o menu por padrão */
         flex-direction: column; /* Alinha os itens em coluna */
-        background: rgba(97, 96, 96, 0.8); /* Define um fundo com transparência */
-        position: absolute; /* Permite posicionar o menu */
-        top: 50px; /* Define a distância do topo */
+        background: rgba(32, 32, 32, 0.3); /* Define um fundo com transparência */
+        position: center; /* Permite posicionar o menu */
+        top: 100px; /* Define a distância do topo */
         left: 0; /* Alinha à esquerda */
-        right: 20px; /* Define a largura do menu */
+        right: 30px; /* Define a largura do menu */
         text-align: center; /* Centraliza o texto */
         padding: 10px 0; /* Adiciona espaçamento interno */
         border-radius: 5px; /* Arredonda os cantos */
