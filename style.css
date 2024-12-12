@@ -112,6 +112,7 @@ main {
     box-shadow: none; /* Remove sombras */
     flex: none; /* Ajustado para evitar centralização ao remover rodapé */
     color: #0e0d0d; /* Define a cor do texto */
+    margin-bottom: 50px; /* Espaçamento suficiente para evitar que o texto fique atrás do rodapé */
 }
 
 /* Estilização para títulos principais */
