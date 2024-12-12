@@ -44,15 +44,15 @@ nav {
 /* Botão para alternar o menu (visível apenas em telas menores) */
 .menu-toggle {
     display: none; /* Esconde o botão por padrão */
-    background-color:#969393; /* Define a cor de fundo do botão */
-    color: rgba(63, 61, 61, 0.986); /* Define a cor do texto do botão */
+    background-color:#000000; /* Define a cor de fundo do botão */
+    color: rgba(248, 242, 242, 0.986); /* Define a cor do texto do botão */
     border: none; /* Remove a borda */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
+    padding: 0; /* Adiciona espaçamento interno */
     cursor: pointer; /* Muda o cursor para indicar interatividade */
-    font-size: 1rem; /* Define o tamanho da fonte */
+    font-size: 0,5rem; /* Define o tamanho da fonte */
     position: absolute; /* Permite posicionar o botão no header */
-    left: 20px; /* Alinha à esquerda */
-    top: 1px; /* Define o espaçamento superior */
+    left: 0; /* Alinha à esquerda */
+    top: 30px; /* Define o espaçamento superior */
 }
 
 /* Itens do menu de navegação */
