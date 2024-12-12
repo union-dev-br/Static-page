@@ -1,6 +1,6 @@
 /* Configurações gerais para o corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Define a fonte padrão */
     line-height: 1.6; /* Define o espaçamento entre as linhas */
     margin: 0; /* Remove as margens padrão do corpo */
     padding: 0; /* Remove o padding padrão do corpo */
@@ -9,11 +9,10 @@ body {
     background-position: center; /* Centraliza a imagem de fundo */
     background-attachment: fixed; /* Fixa a imagem no fundo, sem rolagem */
     color: #0c0101; /* Define a cor padrão do texto */
-    min-height: 100vh;
-    box-sizing: border-box; /* Garante que o corpo tenha altura mínima de 100% da altura da viewport */
-    display: flex;
-    flex-direction: column; /* Define o corpo como um container flexível */
+    min-height: 100vh; /* Garante que o corpo tenha altura mínima de 100% da altura da viewport */
+    display: flex; /* Define o corpo como um container flexível */
     flex-direction: column; /* Define que os elementos filhos sejam dispostos em coluna */
+    font-size: 110%;
 }
 
 /* Responsividade: altera a imagem de fundo em telas menores */
@@ -24,26 +23,7 @@ body {
 }
 
 /* Estilização do cabeçalho */
-header {
-    display: flex;
-    flex-direction: column; /* Define um layout flexível para o cabeçalho */
-    align-items: center; /* Alinha verticalmente os itens ao centro */
-    justify-content: space-between; /* Distribui os itens com espaço entre eles */
-    background: rgba(163, 160, 160, 0); /* Fundo transparente */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
-    color: #00070e; /* Define a cor do texto */
-}
 
-/* Estilização para imagens no cabeçalho */
-header img {
-    max-height: 80px; /* Define a altura máxima das imagens */
-}
-
-/* Informações de contato no cabeçalho */
-header .contact-info {
-    text-align: right; /* Alinha o texto à direita */
-    font-size: 1,0rem; /* Reduz o tamanho da fonte */
-}
 
 /* Links de contato no cabeçalho */
 header .contact-info a {
@@ -53,9 +33,12 @@ header .contact-info a {
 
 /* Estilização da barra de navegação */
 nav {
-    background: rgba(0, 0, 0, 0.6); /* Fundo transparente */
-    padding: 10px 0; /* Ajustado para uma barra mais estreita */ /* Adiciona espaçamento interno vertical */
-    position: absolute; /* Rodapé sempre no final da tela */ /* Necessário para posicionar o botão menu-toggle */
+    background: rgba(0, 0, 0, 0.7); /* Define um fundo escuro com transparência */
+    padding: 10px 0; /* Adiciona espaçamento interno */
+    position: fixed; /* Fixa a barra de navegação no topo da tela */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Faz a barra ocupar toda a largura */
+    z-index: 10; /* Garante que a barra fique acima de outros elementos */
 }
 
 /* Botão para alternar o menu (visível apenas em telas menores) */
@@ -74,8 +57,7 @@ nav {
 
 /* Itens do menu de navegação */
 .menu-items {
-    display: flex;
-    flex-direction: column; /* Exibe os itens do menu em linha */
+    display: flex; /* Exibe os itens do menu em linha */
     justify-content: center; /* Centraliza os itens horizontalmente */
     gap: 30px; /* Adiciona espaçamento entre os itens */
     font-size: 20px
@@ -84,7 +66,7 @@ nav {
 /* Links do menu de navegação */
 .menu-items a {
     text-decoration: none; /* Remove o sublinhado dos links */
-    color: rgb(255, 255, 255); /* Define a cor padrão dos links */
+    color: white; /* Define a cor padrão dos links para branco */
     margin: center; /* Centraliza os itens */
     font-weight: bold; /* Define o texto em negrito */
     transition: color 0.3s; /* Adiciona uma transição suave na mudança de cor */
@@ -116,8 +98,7 @@ nav {
     }
 
     .menu-items.show {
-        display: flex;
-    flex-direction: column; /* Exibe o menu quando a classe 'show' é adicionada */
+        display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
     }
 }
 
@@ -125,7 +106,7 @@ nav {
 main {
     max-width: 800px; /* Define a largura máxima do conteúdo */
     margin: 20px auto 0; /* Ajustado para fixar no topo sem rodapé */ /* Centraliza o conteúdo horizontalmente e adiciona margem superior */
-    background: rgba(241, 239, 239, 0.8); /* Fundo transparente */
+    background: rgba(241, 239, 239, 0.91); /* Fundo transparente */
     padding: 20px; /* Adiciona espaçamento interno */
     border-radius: 10px; /* Arredonda os cantos */
     box-shadow: none; /* Remove sombras */
@@ -142,12 +123,11 @@ h1 {
 /* Estilização do rodapé */
 footer {
     text-align: center; /* Centraliza o texto */
-    padding: 10px; /* Adiciona espaçamento interno */
+    padding: 1px; /* Adiciona espaçamento interno */
     background: rgba(0, 0, 0, 0.8); /* Define um fundo escuro com transparência */
     color: white; /* Define a cor do texto */
-    position: absolute; /* Rodapé sempre no final da tela */ /* Permite posicionamento relativo */
-    bottom: 0;
-    left: 0;
-    right: 0; /* Fixa o rodapé na parte inferior */
+    position: fixed; /* Fixa o rodapé no final da tela */
+    bottom: 0; /* Posiciona na parte inferior */
     width: 100%; /* Faz o rodapé ocupar toda a largura */
+    z-index: 10; /* Garante que o rodapé fique acima de outros elementos */
 }
