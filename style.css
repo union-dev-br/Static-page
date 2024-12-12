@@ -9,8 +9,10 @@ body {
     background-position: center; /* Centraliza a imagem de fundo */
     background-attachment: fixed; /* Fixa a imagem no fundo, sem rolagem */
     color: #0c0101; /* Define a cor padrão do texto */
-    min-height: 100vh; /* Garante que o corpo tenha altura mínima de 100% da altura da viewport */
-    display: flex; /* Define o corpo como um container flexível */
+    min-height: 100vh;
+    box-sizing: border-box; /* Garante que o corpo tenha altura mínima de 100% da altura da viewport */
+    display: flex;
+    flex-direction: column; /* Define o corpo como um container flexível */
     flex-direction: column; /* Define que os elementos filhos sejam dispostos em coluna */
 }
 
@@ -23,7 +25,8 @@ body {
 
 /* Estilização do cabeçalho */
 header {
-    display: flex; /* Define um layout flexível para o cabeçalho */
+    display: flex;
+    flex-direction: column; /* Define um layout flexível para o cabeçalho */
     align-items: center; /* Alinha verticalmente os itens ao centro */
     justify-content: space-between; /* Distribui os itens com espaço entre eles */
     background: rgba(163, 160, 160, 0); /* Fundo transparente */
@@ -52,7 +55,7 @@ header .contact-info a {
 nav {
     background: rgba(0, 0, 0, 0.6); /* Fundo transparente */
     padding: 10px 0; /* Ajustado para uma barra mais estreita */ /* Adiciona espaçamento interno vertical */
-    position: relative; /* Necessário para posicionar o botão menu-toggle */
+    position: absolute; /* Rodapé sempre no final da tela */ /* Necessário para posicionar o botão menu-toggle */
 }
 
 /* Botão para alternar o menu (visível apenas em telas menores) */
@@ -71,7 +74,8 @@ nav {
 
 /* Itens do menu de navegação */
 .menu-items {
-    display: flex; /* Exibe os itens do menu em linha */
+    display: flex;
+    flex-direction: column; /* Exibe os itens do menu em linha */
     justify-content: center; /* Centraliza os itens horizontalmente */
     gap: 30px; /* Adiciona espaçamento entre os itens */
     font-size: 20px
@@ -112,7 +116,8 @@ nav {
     }
 
     .menu-items.show {
-        display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
+        display: flex;
+    flex-direction: column; /* Exibe o menu quando a classe 'show' é adicionada */
     }
 }
 
@@ -140,7 +145,9 @@ footer {
     padding: 10px; /* Adiciona espaçamento interno */
     background: rgba(0, 0, 0, 0.8); /* Define um fundo escuro com transparência */
     color: white; /* Define a cor do texto */
-    position: relative; /* Permite posicionamento relativo */
-    bottom: 0; /* Fixa o rodapé na parte inferior */
+    position: absolute; /* Rodapé sempre no final da tela */ /* Permite posicionamento relativo */
+    bottom: 0;
+    left: 0;
+    right: 0; /* Fixa o rodapé na parte inferior */
     width: 100%; /* Faz o rodapé ocupar toda a largura */
 }
