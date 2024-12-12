@@ -51,7 +51,7 @@ header .contact-info a {
 /* Estilização da barra de navegação */
 nav {
     background: rgba(0, 0, 0, 0.6); /* Fundo transparente */
-    padding: 20px 0; /* Adiciona espaçamento interno vertical */
+    padding: 10px 0; /* Ajustado para uma barra mais estreita */ /* Adiciona espaçamento interno vertical */
     position: relative; /* Necessário para posicionar o botão menu-toggle */
 }
 
@@ -119,12 +119,12 @@ nav {
 /* Estilização do conteúdo principal */
 main {
     max-width: 800px; /* Define a largura máxima do conteúdo */
-    margin: 20px auto; /* Centraliza o conteúdo horizontalmente e adiciona margem superior */
+    margin: 20px auto 0; /* Ajustado para fixar no topo sem rodapé */ /* Centraliza o conteúdo horizontalmente e adiciona margem superior */
     background: rgba(241, 239, 239, 0.8); /* Fundo transparente */
     padding: 20px; /* Adiciona espaçamento interno */
     border-radius: 10px; /* Arredonda os cantos */
     box-shadow: none; /* Remove sombras */
-    flex: 1; /* Faz o main ocupar o espaço restante no layout flex */
+    flex: none; /* Ajustado para evitar centralização ao remover rodapé */
     color: #0e0d0d; /* Define a cor do texto */
 }
 
