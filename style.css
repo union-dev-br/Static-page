@@ -4,7 +4,7 @@ body {
     line-height: 1.6; /* Define o espaçamento entre as linhas */
     margin: 0; /* Remove as margens padrão do corpo */
     padding: 0; /* Remove o padding padrão do corpo */
-    background-image: url('assets/fundoHorizontal4.jpg'); /* Define a imagem de fundo horizontal */
+    background-image: url('assets/fundoHorizontal5.jpeg'); /* Define a imagem de fundo horizontal */
     background-size: cover; /* Faz a imagem de fundo cobrir todo o corpo */
     background-position: center; /* Centraliza a imagem de fundo */
     background-attachment: fixed; /* Fixa a imagem no fundo, sem rolagem */
@@ -18,7 +18,7 @@ body {
 /* Responsividade: altera a imagem de fundo em telas menores */
 @media (max-width: 768px) {
     body {
-        background-image: url('assets/fundovertical4.jpg'); /* Usa uma imagem de fundo vertical para telas menores */
+        background-image: url('assets/fundovertical5.jpeg'); /* Usa uma imagem de fundo vertical para telas menores */
     }
 }
 
