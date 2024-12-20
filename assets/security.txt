@@ -1,0 +1,7 @@
+# Este é um arquivo security.txt para union.dev.br
+# Informações para reportes de vulnerabilidades
+
+Contact: mailto:seguranca@union.dev.br
+Acknowledgements: https://union.dev.br/agradecimentos-seguranca
+Policy: https://union.dev.br/politica-seguranca
+Preferred-Languages: pt-BR, en
