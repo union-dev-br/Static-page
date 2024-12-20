@@ -2,6 +2,6 @@
 # Informações para reportes de vulnerabilidades
 
 Contact: mailto:seguranca@union.dev.br
-Acknowledgements: https://union.dev.br/agradecimentos-seguranca
-Policy: https://union.dev.br/politica-seguranca
+Acknowledgements: https://union.dev.br/agradecimentos-seguranca.hmtl
+Policy: https://union.dev.br/politica-seguranca.html
 Preferred-Languages: pt-BR, en
