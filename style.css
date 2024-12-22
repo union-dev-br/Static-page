@@ -18,7 +18,7 @@ body {
 /* Responsividade: altera a imagem de fundo em telas menores */
 @media (max-width: 768px) {
     body {
-        background-image: url('assets/fundoVertical5.jpeg'); /* Usa uma imagem de fundo vertical para telas menores */
+        background-image: url('assets/fundoVertical.jpeg'); /* Usa uma imagem de fundo vertical para telas menores */
     }
 }
 
