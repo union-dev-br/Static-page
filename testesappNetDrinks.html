@@ -124,27 +124,5 @@
             Agradecemos sua colaboração!
         </p>
     </div>
-
-    <script src="translations.js"></script>
-    <script>
-        function changeLanguage(lang) {
-            document.documentElement.lang = lang;
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
-            localStorage.setItem('preferredLanguage', lang);
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('preferredLanguage');
-            if (savedLang) {
-                document.getElementById('languageSelect').value = savedLang;
-                changeLanguage(savedLang);
-            }
-        });
-    </script>
 </body>
 </html>
