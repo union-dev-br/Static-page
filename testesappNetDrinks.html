@@ -8,103 +8,136 @@
     <title>Instruções para Testadores - NetDrinks</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
+            border-left: 5px solid #28a745; /* Destaque verde na lateral */
         }
+
         .container {
             background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease-in-out;
         }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
         h1, h2 {
-            color: #333;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
+            color: #28a745; /* Cor principal verde */
+            border-bottom: 3px solid #28a745;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+
         .section {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-        .contact-info {
-            background-color: #e9ecef;
+            background-color: #ecf8f0; /* Verde suave para as seções */
             padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border: 1px solid #c3e6cb; /* Borda sutil */
         }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            background-color: #d1e7dd; /* Verde mais claro para o contato */
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 1px solid #b1dfbb; /* Borda sutil */
+        }
+
         .email {
             color: #007bff;
             font-weight: bold;
+            text-decoration: none;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Estilos mais sutis para o rodapé */
+        p[style*="margin-top"] {
+            margin-top: 40px;
+        }
+
+        p[style*="font-size"] {
+            font-size: 0.95em;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="language-selector">
-        <label for="languageSelect">Select Language</label>
-        <select id="languageSelect" onchange="changeLanguage(this.value)">
-            <option value="pt-BR">Português</option>
-            <option value="en">English</option>
-            <option value="es">Español</option>
-        </label>
-    </div>
-
     <div class="container">
-        <h1 data-translate="betaInstructions">Instruções para Testadores Beta</h1>
+        <h1>Instruções para Testadores Beta</h1>
 
         <div class="section">
-            <h2 data-translate="prioritaryAreas">Áreas de Teste Prioritárias</h2>
+            <h2>Áreas de Teste Prioritárias</h2>
             <ul>
-                <li data-translate="searchIngredientsMultiLanguage">Busca por ingredientes em múltiplos idiomas</li>
-                <li data-translate="likesAndFavoritesSystem">Sistema de likes e favoritos</li>
-                <li data-translate="drinksSharing">Compartilhamento de drinks</li>
-                <li data-translate="screensNavigation">Navegação entre telas</li>
-                <li data-translate="languagesChange">Mudança de idiomas</li>
-                <li data-translate="generalPerformance">Performance geral</li>
+                <li>Busca por ingredientes em múltiplos idiomas</li>
+                <li>Sistema de likes e favoritos</li>
+                <li>Compartilhamento de drinks</li>
+                <li>Navegação entre telas</li>
+                <li>Performance geral</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2 data-translate="howToReport">Como Reportar</h2>
-            <p data-translate="forEachBugSuggestionInclude">Para cada bug ou sugestão, inclua:</p>
+            <h2>Como Reportar</h2>
+            <p>Para cada bug ou sugestão, inclua:</p>
             <ul>
-                <li data-translate="deviceModel">Modelo do dispositivo</li>
-                <li data-translate="androidVersion">Versão do Android</li>
-                <li data-translate="appVersion">Versão do app</li>
-                <li data-translate="detailedProblemDescription">Descrição detalhada do problema</li>
-                <li data-translate="screenshotsIfPossible">Screenshots (se possível)</li>
-                <li data-translate="stepsToReproduce">Passos para reproduzir</li>
+                <li>Modelo do dispositivo</li>
+                <li>Versão do Android</li>
+                <li>Versão do app</li>
+                <li>Descrição detalhada do problema</li>
+                <li>Screenshots (se possível)</li>
+                <li>Passos para reproduzir</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2 data-translate="testScenarios">Cenários de Teste</h2>
+            <h2>Cenários de Teste</h2>
             <ol>
-                <li data-translate="searchIngredientsPortugueseEnglishSpanish">Busque por ingredientes em português, inglês e espanhol</li>
-                <li data-translate="tryDifferentIngredientsCombinations">Tente diferentes combinações de ingredientes</li>
-                <li data-translate="testLikesSystemDifferentDrinks">Teste o sistema de likes em diferentes drinks</li>
-                <li data-translate="verifySharingFunctionality">Verifique a funcionalidade de compartilhamento</li>
-                <li data-translate="alternateBetweenAvailableLanguages">Alterne entre os idiomas disponíveis</li>
+                <li>Busque por ingredientes em português, inglês e espanhol</li>
+                <li>Tente diferentes combinações de ingredientes</li>
+                <li>Teste o sistema de likes em diferentes drinks</li>
+                <li>Verifique a funcionalidade de compartilhamento</li>
             </ol>
         </div>
 
         <div class="contact-info">
-            <h2 data-translate="reportsSending">Envio de Relatórios</h2>
-            <p data-translate="sendTestReportsTo">Envie seus relatórios de teste para:</p>
-            <p class="email">contato@union.dev.br</p>
-            <p data-translate="responseTime">Prazo de resposta: até 48 horas úteis</p>
+            <h2>Envio de Relatórios</h2>
+            <p>Envie seus relatórios de teste para:</p>
+            <p><a href="mailto:contato@union.dev.br" class="email">contato@union.dev.br</a></p>
+            <p>Prazo de resposta: até 48 horas úteis</p>
         </div>
 
-        <p style="margin-top: 30px; font-size: 0.9em; color: #999;" data-translate="participationIsFundamental">
+        <p style="margin-top: 30px; font-size: 0.9em; color: #999;">
             Sua participação é fundamental para a melhoria contínua do NetDrinks.
         </p>
-        <p style="margin-top: 10px; font-size: 0.9em; color: #999;" data-translate="thankYouForCollaboration">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #999;">
             Agradecemos sua colaboração!
         </p>
     </div>
