@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha o Idioma dos Termos de Uso - NetDrinks</title>
+    <title>Escolha o Idioma - NetDrinks</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 0;
             padding: 20px;
-            background-color: #000; /* Fundo preto */
-            color: #fff; /* Texto branco */
-            text-align: center; /* Centralizar o conteúdo */
+            background-color: #f4f4f4;
         }
         .container {
-            background-color: #333; /* Cinza escuro */
-            padding: 30px;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            margin-top: 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #fff; /* Título branco */
-            border-bottom: 2px solid #fff; /* Linha branca abaixo do título */
-            padding-bottom: 10px;
+        .language-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
         }
-        .button-link {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            background-color: #555; /* Cinza mais claro */
-            color: #fff;
+        .language-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
             text-decoration: none;
-            border-radius: 30px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s;
         }
-        .button-link:hover {
-            background-color: #777; /* Cinza ainda mais claro */
+        .language-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Escolha o Idioma dos Termos de Uso</h1>
-        <a href="https://union.dev.br/terms_pt.html" class="button-link">NetDrinks - PT</a>
-        <a href="https://union.dev.br/terms_en.html" class="button-link">NetDrinks - EN</a>
-        <a href="https://union.dev.br/terms_es.html" class="button-link">NetDrinks - ES</a>
+        <h1>Escolha o idioma dos termos</h1>
+        <div class="language-links">
+            <a href="terms_pt.html" class="language-button">Português</a>
+            <a href="terms_en.html" class="language-button">English</a>
+            <a href="terms_es.html" class="language-button">Español</a>
+        </div>
     </div>
 </body>
 </html>
