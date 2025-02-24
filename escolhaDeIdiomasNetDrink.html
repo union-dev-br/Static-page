@@ -19,11 +19,11 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
-            
         }
         .language-links {
             display: flex;
-            gap: 20px;
+            flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha */
+            gap: 10px;  /* Reduz o gap para melhor adaptação em telas menores */
             justify-content: center;
             margin-top: 30px;
         }
@@ -35,9 +35,28 @@
             color: white;
             text-decoration: none;
             transition: background-color 0.3s;
+            flex-grow: 1; /* Faz os botões se expandirem para preencher o espaço disponível */
+            min-width: 100px; /* Define uma largura mínima para os botões */
+            box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
         }
         .language-button:hover {
             background-color: #b60b0b;
+        }
+
+        /* Media query para telas menores */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+                margin: 20px auto;
+            }
+            .language-links {
+                gap: 5px; /* Reduz ainda mais o gap em telas muito pequenas */
+            }
+            .language-button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+                min-width: 80px;
+            }
         }
     </style>
 </head>
