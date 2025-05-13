@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - Union.dev.br</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Conheça a equipe e a motivação por trás da Union.dev.br, uma iniciativa para transformar o aprendizado em T.I.">
+</head>
+<body class="quem-somos">
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Union Logo" class="logo"></a>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-items-id">☰</button>
+            <div class="menu-items" id="menu-items-id">
+                <a href="index.html">Home</a>
+                <a href="home.html">Quem Somos</a>
+                <a href="missaoPlataforma.html">Missão</a>
+                <a href="visaoPlataforma.html">Visão</a>
+                <a href="valoresPlataforma.html">Valores</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="quem-somos-section">
+            <h1 class="quem-somos-title">Quem Somos</h1>
+            <p class="quem-somos-text">Somos um grupo de estudantes apaixonados por Tecnologia da Informação, que vivenciam a frustração da falta de infraestrutura adequada para a prática e experimentação em nossos cursos, especialmente no Brasil. Percebemos que a realidade de muitos laboratórios de T.I. é precária, limitando o aprendizado e a capacidade de desenvolvermos nosso potencial.</p>
+
+            <p class="quem-somos-text">Diante desse cenário, idealizamos a Union.dev.br, uma plataforma inovadora que visa suprir essa lacuna e democratizar o acesso a um ambiente de aprendizado completo e de alta qualidade. Queremos oferecer um espaço virtual onde estudantes, entusiastas e profissionais da área possam aprimorar suas habilidades, colaborar em projetos e se conectar com o mercado de trabalho.</p>
+
+            <p class="quem-somos-text">Nosso objetivo é ir além do ensino tradicional, proporcionando uma experiência imersiva e prática que impulsione o desenvolvimento educacional, o direcionamento profissional e o crescimento pessoal de cada membro da comunidade. Acreditamos que, juntos, podemos transformar a realidade da educação em T.I. no Brasil e construir um futuro mais promissor para todos.</p>
+
+            <p class="quem-somos-text last">A Union.dev.br é mais que uma plataforma; é um movimento em prol de uma educação em T.I. mais acessível, inclusiva e transformadora. Junte-se a nós e faça parte dessa revolução!</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© <span id="currentYear">2024</span> Union.dev.br - Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="animations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+/* CSS Reset (http://meyerweb.com/eric/tools/css/reset/) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Added for better layout control */
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Estilos Globais */
+:root {
+    --primary-color: #8A2BE2; /* Roxo vibrante (BlueViolet) */
+    --secondary-color: #00CFE8; /* Ciano vibrante (Tipo um Neon Aqua) */
+    --accent-color: #FF00FF; /* Magenta (Fuchsia) */
+    --text-color: #E0E0E0; /* Cinza claro para texto principal */
+    --text-secondary-color: #B0B0B0; /* Cinza um pouco mais escuro para subtextos */
+    --bg-color-dark: #121212; /* Quase preto para fundo principal */
+    --bg-color-medium: #1E1E1E; /* Um tom mais claro de cinza escuro para cards/seções */
+    --bg-color-light: #2A2A2A; /* Ainda mais claro, para destaques ou bordas */
+    --border-color: var(--secondary-color);
+
+    --font-primary: 'Exo 2', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: var(--font-secondary);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-dark);
+    /* Use as novas imagens de fundo fornecidas */
+    background-image: url('assets/images/logo-bg-desktop.jpg'); /* Imagem para telas maiores */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px; /* Base font size */
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos para Header */
+.main-header {
+    background: rgba(18, 18, 18, 0.8); /* Fundo escuro semi-transparente */
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 207, 232, 0.1); /* Sombra sutil com cor secundária */
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo-container {
+    display: inline-block;
+}
+
+.logo {
+    max-width: 180px; /* Aumentar um pouco o logo */
+    height: auto;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+    filter: drop-shadow(0 0 5px var(--secondary-color));
+}
+
+.logo:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 15px var(--secondary-color));
+}
+
+/* Estilos para Nav */
+.main-nav {
+    background-color: rgba(30, 30, 30, 0.7); /* Fundo escuro semi-transparente */
+    backdrop-filter: blur(8px);
+    padding: 15px 0;
+    width: 100%;
+    z-index: 999; /* Abaixo do header se o header for sticky, mas acima do conteúdo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Se o header não for sticky, a nav pode ser. Se ambos, ajustar.
+       Para este exemplo, header é sticky, nav pode ser parte dele ou logo abaixo.
+       Se a nav for separada e sticky, adicione top: (altura do header). */
+}
+
+.menu-toggle {
+    display: none; /* Será exibido em telas menores via media query */
+    background: none;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: var(--font-primary);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-left: 20px; /* Para não colar na borda */
+}
+
+.menu-toggle:hover {
+    background-color: var(--secondary-color);
+    color: var(--bg-color-dark);
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px; /* Aumentar o espaçamento */
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500; /* Um pouco mais de peso */
+    font-family: var(--font-primary);
+    font-size: 1.1rem; /* Aumentar um pouco */
+    padding: 8px 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.menu-items a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu-items a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-2px); /* Leve elevação */
+}
+
+.menu-items a:hover::before {
+    width: 100%;
+}
+
+/* Estilos para Main Content */
+main {
+    max-width: 900px; /* Aumentar um pouco a largura máxima */
+    margin: 60px auto; /* Mais margem no topo/baixo */
+    background: rgba(30, 30, 30, 0.9); /* Fundo de conteúdo mais escuro */
+    backdrop-filter: blur(5px);
+    padding: 40px; /* Mais padding interno */
+    border-radius: 20px; /* Bordas mais arredondadas */
+    border: 1px solid rgba(0, 207, 232, 0.2); /* Borda sutil */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 207, 232, 0.1) inset;
+    flex: 1;
+    color: var(--text-color);
+}
+
+h1, .hero-title, .quem-somos-title, .missao-title, .visao-title, .valores-title, .projetos-title, .servicos-title {
+    font-family: var(--font-primary);
+    color: var(--secondary-color); /* Cor secundária para títulos */
+    font-size: 2.8em; /* Aumentar tamanho */
+    margin-bottom: 30px; /* Mais margem */
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 207, 232, 0.5); /* Efeito de brilho */
+}
+
+h2 {
+    font-family: var(--font-primary);
+    color: var(--primary-color); /* Cor primária para H2 */
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p, .hero-subtitle, .quem-somos-text, .missao-text, .visao-text, .valores-text, .projetos-text, .servicos-text {
+    font-size: 1.15em; /* Aumentar um pouco */
+    line-height: 1.8;
+    margin-bottom: 25px; /* Mais margem */
+    color: var(--text-secondary-color);
+}
+
+main p strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+ul {
+    margin-left: 0; /* Remover indentação padrão */
+    margin-bottom: 25px;
+}
+
+li, .projetos-item {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px; /* Espaçamento entre itens da lista */
+    padding-left: 25px; /* Espaço para o marcador customizado */
+    position: relative;
+    color: var(--text-secondary-color);
+}
+
+li::before, .projetos-item::before {
+    content: '»'; /* Marcador customizado */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px var(--accent-color);
+}
+
+main a { /* Links dentro do conteúdo principal */
+    font-weight: 500;
+}
+
+/* Estilos para Footer */
+footer, .main-footer, .footer-home {
+    text-align: center;
+    padding: 30px 20px; /* Mais padding */
+    background: rgba(18, 18, 18, 0.9); /* Consistente com header */
+    backdrop-filter: blur(10px);
+    color: var(--text-secondary-color);
+    width: 100%;
+    margin-top: auto; /* Garante que fique no final */
+    font-size: 0.95em;
+    box-shadow: 0 -4px 15px rgba(0, 207, 232, 0.1); /* Sombra no topo */
+}
+
+footer p, .main-footer p, .footer-home p {
+    margin-bottom: 0;
+    color: var(--text-secondary-color);
+}
+
+footer a, .main-footer a, .footer-home a {
+    color: var(--secondary-color);
+}
+footer a:hover, .main-footer a:hover, .footer-home a:hover {
+    color: var(--accent-color);
+}
+
+
+/* Hero Section Specific Styles (for index.html) */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 { /* .hero-title já está estilizado acima */
+    font-size: 3.5em; /* Ainda maior para o hero principal */
+    margin-bottom: 20px;
+}
+
+.hero p { /* .hero-subtitle já está estilizado acima */
+    font-size: 1.5em; /* Subtítulo maior */
+    color: var(--text-color);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Quem Somos Page Specifics */
+.quem-somos-text.last {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Valores Page Specifics */
+.valores-section .valores-text {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.valores-section .valores-text:hover {
+    transform: translateX(5px);
+    box-shadow: -5px 0px 15px -5px rgba(138, 43, 226, 0.3);
+}
+.valores-section .valores-text strong {
+    color: var(--secondary-color);
+}
+
+/* Projetos Page Specifics */
+.projetos-list {
+    padding-left: 0;
+}
+.projetos-item strong {
+    color: var(--secondary-color);
+}
+
+/* Botão 'Voltar ao Topo' (opcional, mas bom para páginas longas) */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--secondary-color);
+    color: var(--bg-color-dark);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 207, 232, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    z-index: 990;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 0, 255, 0.5);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px; /* Ajustar tamanho base da fonte para mobile */
+        background-image: url('assets/images/logo-bg-mobile.jpg'); /* Imagem para telas menores */
+    }
+
+    .main-header {
+        padding: 15px 20px;
+        display: flex; /* Para alinhar logo e menu toggle */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 130px;
+    }
+    
+    .main-nav { /* Nav se torna o container do menu mobile */
+        background-color: transparent; /* Já que o header tem o fundo */
+        box-shadow: none;
+        padding: 0;
+        position: static; /* Não mais sticky separadamente */
+    }
+
+    .menu-toggle {
+        display: block; /* Exibir o botão de menu */
+        position: static; /* Remover posicionamento absoluto */
+        transform: none;
+        margin-left: 0; /* Reset margin */
+    }
+
+    .menu-items {
+        display: none; /* Esconder por padrão */
+        flex-direction: column;
+        width: 100%;
+        position: absolute; /* Posicionar abaixo do header */
+        top: calc(100% - 1px); /* Logo abaixo do header */
+        left: 0;
+        background: rgba(18, 18, 18, 0.95); /* Fundo sólido para o menu dropdown */
+        backdrop-filter: blur(10px);
+        padding: 20px 0;
+        gap: 0; /* Remover gap, usar padding nos itens */
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        border-top: 1px solid rgba(0, 207, 232, 0.2);
+    }
+
+    .menu-items.show {
+        display: flex; /* Exibir quando a classe .show é adicionada */
+    }
+
+    .menu-items a {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+        text-align: center;
+        width: 100%;
+        border-radius: 0; /* Remover border-radius dos itens individuais */
+    }
+    .menu-items a:hover {
+        background-color: rgba(0, 207, 232, 0.1);
+    }
+    .menu-items a::before { /* Remover underline no mobile ou adaptar */
+        display: none;
+    }
+
+
+    main {
+        margin: 30px 15px; /* Menos margem lateral no mobile */
+        padding: 25px; /* Menos padding interno */
+        border-radius: 15px;
+    }
+
+    h1, .hero-title, .quem-somos-title, .missao-title, .visao-title, .valores-title, .projetos-title, .servicos-title {
+        font-size: 2.2em;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    p, .hero-subtitle, .quem-somos-text, .missao-text, .visao-text, .valores-text, .projetos-text, .servicos-text {
+        font-size: 1.05em;
+    }
+
+    li, .projetos-item {
+        font-size: 1em;
+        padding-left: 20px;
+    }
+    li::before, .projetos-item::before {
+        font-size: 1.1em;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+        bottom: 20px;
+        right: 20px;
+    }
+}
