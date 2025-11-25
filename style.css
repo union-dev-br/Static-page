@@ -71,7 +71,7 @@ body {
     padding: 0;
     background-color: var(--bg-color-dark);
     /* Use as novas imagens de fundo fornecidas */
-    background-image: url('assets/images/logo-bg-desktop.jpg'); /* Imagem para telas maiores */
+    background-image: url('assets/images/logo-union_512x512.png'); /* Imagem para telas maiores */
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -385,7 +385,7 @@ footer a:hover, .main-footer a:hover, .footer-home a:hover {
 @media (max-width: 768px) {
     body {
         font-size: 15px; /* Ajustar tamanho base da fonte para mobile */
-        background-image: url('assets/images/logo-bg-mobile.jpg'); /* Imagem para telas menores */
+        background-image: url('assets/images/logo-union_512x512.png'); /* Imagem para telas menores */
     }
 
     .main-header {
