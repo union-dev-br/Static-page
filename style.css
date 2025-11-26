@@ -695,8 +695,8 @@ section {
 }
 
 .footer-logo {
-    height: 52px;
-    width: 52px;
+    height: 50px;
+    width: auto;
     margin-bottom: 20px;
 }
 
