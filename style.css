@@ -193,16 +193,18 @@ body {
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
 }
 
-.element-1 { top: 5%; left: 15%; }
-.element-2 { top: 15%; right: 10%; }
-.element-3 { top: 35%; left: 5%; }
-.element-4 { top: 40%; right: 25%; }
-.element-5 { top: 60%; left: 20%; }
-.element-6 { top: 65%; right: 15%; }
-.element-7 { bottom: 15%; left: 10%; }
-.element-8 { bottom: 20%; right: 5%; }
-.element-9 { bottom: 5%; left: 30%; }
-.element-10 { bottom: 10%; right: 35%; }
+/* Distribuição equilibrada em 3 colunas e 4 linhas */
+.element-1 { top: 8%; left: 10%; }
+.element-2 { top: 12%; left: 45%; }
+.element-3 { top: 8%; right: 8%; }
+.element-4 { top: 32%; left: 15%; }
+.element-5 { top: 35%; left: 50%; }
+.element-6 { top: 30%; right: 12%; }
+.element-7 { top: 58%; left: 8%; }
+.element-8 { top: 60%; left: 48%; }
+.element-9 { top: 56%; right: 10%; }
+.element-10 { bottom: 8%; left: 25%; }
+.element-11 { bottom: 10%; right: 22%; }
 
 .hero-title {
     font-size: 3.5rem;
