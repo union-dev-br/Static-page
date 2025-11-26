@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // Smooth scroll para links âncora
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        // Ignorar se for botão de navegação do carrossel ou outros elementos não-link
+        if (this.tagName !== 'A') return;
+        
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
