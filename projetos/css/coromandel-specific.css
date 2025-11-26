@@ -1749,6 +1749,41 @@
 }
 
 @media (max-width: 768px) {
+  /* Menu hamburger */
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu-items {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 30px 25px;
+    z-index: 999;
+    min-width: 200px;
+  }
+  
+  .menu-items.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .menu-items a {
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #2c1810;
+  }
+  
+  .menu-items a:hover {
+    background: #f8f4f0;
+  }
+  
   .ecosystem-grid,
   .artisans-showcase,
   .writers-grid,

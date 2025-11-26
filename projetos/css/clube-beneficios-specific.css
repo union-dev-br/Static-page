@@ -813,6 +813,41 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    /* Menu hamburger */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .menu-items {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        padding: 30px 25px;
+        z-index: 999;
+        min-width: 200px;
+    }
+    
+    .menu-items.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu-items a {
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        color: #1f2937;
+    }
+    
+    .menu-items a:hover {
+        background: #f3f4f6;
+    }
+    
     .ecosystem-flow,
     .websocket-flow,
     .dashboard-preview {
@@ -830,5 +865,280 @@
     
     .layer-components {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Celulares grandes (≤ 480px) */
+@media (max-width: 480px) {
+    .clube-beneficios-detail .project-hero {
+        padding: 90px 0 50px;
+    }
+    
+    .clube-beneficios-detail .project-title {
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+    
+    .clube-beneficios-detail .project-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .project-badge {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+    }
+    
+    .project-meta {
+        gap: 20px;
+    }
+    
+    .meta-item {
+        font-size: 0.9rem;
+    }
+    
+    .project-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+    
+    .stat-card {
+        padding: 30px 20px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 1rem;
+    }
+    
+    .stakeholder-card {
+        padding: 24px 18px;
+    }
+    
+    .stakeholder-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .role-card {
+        padding: 24px 18px;
+    }
+    
+    .role-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .permission-item {
+        font-size: 0.9rem;
+    }
+    
+    .flow-item {
+        padding: 20px 16px;
+    }
+    
+    .flow-item h4 {
+        font-size: 1.2rem;
+    }
+    
+    .dashboard-mockup {
+        padding: 20px 16px;
+    }
+    
+    .metric-card {
+        padding: 16px;
+    }
+    
+    .metric-value {
+        font-size: 1.8rem;
+    }
+    
+    .step-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .step-content p {
+        font-size: 0.9rem;
+    }
+    
+    .arch-layer {
+        padding: 20px 16px;
+    }
+    
+    .layer-title {
+        font-size: 1.2rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Celulares médios (≤ 390px) */
+@media (max-width: 390px) {
+    .clube-beneficios-detail .project-title {
+        font-size: 1.75rem;
+    }
+    
+    .clube-beneficios-detail .project-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.65rem;
+    }
+    
+    .stat-number {
+        font-size: 2.3rem;
+    }
+    
+    .stakeholder-card,
+    .role-card {
+        padding: 20px 16px;
+    }
+}
+
+/* Celulares comuns (≤ 360px) */
+@media (max-width: 360px) {
+    .clube-beneficios-detail .project-hero {
+        padding: 85px 0 45px;
+    }
+    
+    .clube-beneficios-detail .project-title {
+        font-size: 1.6rem;
+    }
+    
+    .clube-beneficios-detail .project-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .project-badge {
+        font-size: 0.75rem;
+        padding: 5px 14px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header p {
+        font-size: 0.95rem;
+    }
+    
+    .stat-card {
+        padding: 26px 18px;
+    }
+    
+    .stat-number {
+        font-size: 2.1rem;
+    }
+    
+    .stat-label {
+        font-size: 0.95rem;
+    }
+    
+    .stakeholder-card {
+        padding: 18px 14px;
+    }
+    
+    .stakeholder-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .stakeholder-card p {
+        font-size: 0.85rem;
+    }
+    
+    .role-card {
+        padding: 18px 14px;
+    }
+    
+    .role-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .permission-item {
+        font-size: 0.85rem;
+    }
+    
+    .flow-item {
+        padding: 18px 14px;
+    }
+    
+    .flow-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .dashboard-mockup {
+        padding: 18px 14px;
+    }
+    
+    .metric-card {
+        padding: 14px;
+    }
+    
+    .metric-value {
+        font-size: 1.6rem;
+    }
+    
+    .metric-label {
+        font-size: 0.85rem;
+    }
+    
+    .step-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .step-content p {
+        font-size: 0.85rem;
+    }
+    
+    .arch-layer {
+        padding: 18px 14px;
+    }
+    
+    .layer-title {
+        font-size: 1.1rem;
+    }
+    
+    .layer-components span {
+        font-size: 0.8rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-content p {
+        font-size: 0.95rem;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        width: 100%;
     }
 }

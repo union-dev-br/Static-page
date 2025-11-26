@@ -1108,6 +1108,41 @@
 }
 
 @media (max-width: 768px) {
+    /* Menu hamburger */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .menu-items {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        padding: 30px 25px;
+        z-index: 999;
+        min-width: 200px;
+    }
+    
+    .menu-items.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu-items a {
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        color: var(--gray-900);
+    }
+    
+    .menu-items a:hover {
+        background: var(--gray-100);
+    }
+    
     .project-title {
         font-size: 2.5rem;
     }
@@ -1157,26 +1192,230 @@
     }
 }
 
+/* Celulares grandes (≤ 480px) */
 @media (max-width: 480px) {
+    .project-hero.flutterweb-detail {
+        padding: 90px 0 50px;
+    }
+    
     .project-title {
-        font-size: 2rem;
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+    
+    .project-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .project-badge {
+        font-size: 0.8rem;
+        padding: 6px 16px;
     }
     
     .project-actions {
         flex-direction: column;
+        width: 100%;
     }
     
     .btn {
         width: 100%;
         justify-content: center;
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.9rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
     }
     
     .stats-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .stat-card {
+        padding: 30px 20px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 1rem;
+    }
+    
+    .overview-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .overview-text p {
+        font-size: 0.95rem;
+    }
+    
+    .tech-stack {
+        padding: 24px;
+    }
+    
+    .tech-stack h4 {
+        font-size: 1.1rem;
+    }
+    
+    .challenge-card,
+    .feature-card {
+        padding: 24px 18px;
+    }
+    
+    .challenge-icon,
+    .feature-icon {
+        font-size: 2rem;
+    }
+    
+    .challenge-card h3,
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .challenge-card p,
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+    
+    .arch-layer {
+        padding: 20px 16px;
+    }
+    
+    .layer-title {
+        font-size: 1.1rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+    
+    .cta-actions {
+        width: 100%;
     }
     
     .roadmap {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Celulares médios (≤ 390px) */
+@media (max-width: 390px) {
+    .project-title {
+        font-size: 1.75rem;
+    }
+    
+    .project-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .stat-number {
+        font-size: 2.3rem;
+    }
+    
+    .challenge-card,
+    .feature-card {
+        padding: 20px 16px;
+    }
+}
+
+/* Celulares comuns (≤ 360px) */
+@media (max-width: 360px) {
+    .project-hero.flutterweb-detail {
+        padding: 85px 0 45px;
+    }
+    
+    .project-title {
+        font-size: 1.6rem;
+    }
+    
+    .project-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .project-badge {
+        font-size: 0.75rem;
+        padding: 5px 14px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-header p {
+        font-size: 0.95rem;
+    }
+    
+    .stat-card {
+        padding: 26px 18px;
+    }
+    
+    .stat-number {
+        font-size: 2.1rem;
+    }
+    
+    .stat-label {
+        font-size: 0.95rem;
+    }
+    
+    .overview-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .overview-text p {
+        font-size: 0.9rem;
+    }
+    
+    .tech-stack {
+        padding: 20px;
+    }
+    
+    .challenge-card,
+    .feature-card {
+        padding: 18px 14px;
+    }
+    
+    .challenge-card h3,
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .challenge-card p,
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+    
+    .arch-layer {
+        padding: 18px 14px;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-content p {
+        font-size: 0.95rem;
     }
 }
 

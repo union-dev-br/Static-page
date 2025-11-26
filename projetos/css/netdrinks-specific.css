@@ -948,6 +948,41 @@
 }
 
 @media (max-width: 640px) {
+  /* Menu hamburger */
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu-items {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 30px 25px;
+    z-index: 999;
+    min-width: 200px;
+  }
+  
+  .menu-items.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .menu-items a {
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #2c3e50;
+  }
+  
+  .menu-items a:hover {
+    background: #f8f9fa;
+  }
+  
   .languages-grid {
     grid-template-columns: 1fr;
   }
@@ -975,6 +1010,200 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+  }
+}
+
+/* Celulares grandes (≤ 480px) */
+@media (max-width: 480px) {
+  .netdrinks-detail .project-hero {
+    padding: 90px 0 50px;
+  }
+  
+  .netdrinks-detail .project-title {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+  
+  .netdrinks-detail .project-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-badge {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+  
+  .project-actions {
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .stat-card {
+    padding: 30px 20px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .language-card {
+    padding: 1.5rem;
+  }
+  
+  .search-demo,
+  .search-interface {
+    padding: 1.5rem;
+  }
+  
+  .drink-card {
+    padding: 1rem;
+  }
+  
+  .favorite-item {
+    padding: 1rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  .tech-category {
+    padding: 1.5rem;
+  }
+  
+  .flow-step {
+    padding: 1.5rem;
+  }
+  
+  .challenge-solution {
+    padding: 1.5rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares médios (≤ 390px) */
+@media (max-width: 390px) {
+  .netdrinks-detail .project-title {
+    font-size: 1.75rem;
+  }
+  
+  .netdrinks-detail .project-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.65rem;
+  }
+  
+  .stat-number {
+    font-size: 2.3rem;
+  }
+}
+
+/* Celulares comuns (≤ 360px) */
+@media (max-width: 360px) {
+  .netdrinks-detail .project-hero {
+    padding: 85px 0 45px;
+  }
+  
+  .netdrinks-detail .project-title {
+    font-size: 1.6rem;
+  }
+  
+  .netdrinks-detail .project-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .project-badge {
+    font-size: 0.75rem;
+    padding: 5px 14px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .stat-card {
+    padding: 26px 18px;
+  }
+  
+  .stat-number {
+    font-size: 2.1rem;
+  }
+  
+  .stat-label {
+    font-size: 0.95rem;
+  }
+  
+  .language-card {
+    padding: 1.2rem;
+  }
+  
+  .language-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .search-demo,
+  .search-interface {
+    padding: 1.2rem;
+  }
+  
+  .drink-info h4 {
+    font-size: 1.1rem;
+  }
+  
+  .feature-card h4 {
+    font-size: 1rem;
+  }
+  
+  .tech-item {
+    font-size: 0.85rem;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.95rem;
   }
 }
 
