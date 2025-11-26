@@ -1047,6 +1047,8 @@
 .footer-logo {
     width: 80px;
     height: 80px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     border-radius: 16px;
 }
 

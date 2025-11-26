@@ -838,6 +838,8 @@
 .footer-logo {
   height: 50px;
   width: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 .footer-links {
