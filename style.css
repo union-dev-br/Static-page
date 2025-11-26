@@ -176,18 +176,33 @@ body {
 
 .element {
     position: absolute;
-    font-size: 4rem;
-    opacity: 0.8;
+    opacity: 0.85;
+    transition: all 0.3s ease;
 }
 
-.element-1 { top: 10%; left: 20%; }
-.element-2 { top: 30%; right: 20%; }
-.element-3 { bottom: 30%; left: 30%; }
-.element-4 { bottom: 10%; right: 30%; }
-
-.element::before {
-    content: attr(data-icon);
+.element img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
 }
+
+.element:hover img {
+    transform: scale(1.15);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+}
+
+.element-1 { top: 5%; left: 15%; }
+.element-2 { top: 15%; right: 10%; }
+.element-3 { top: 35%; left: 5%; }
+.element-4 { top: 40%; right: 25%; }
+.element-5 { top: 60%; left: 20%; }
+.element-6 { top: 65%; right: 15%; }
+.element-7 { bottom: 15%; left: 10%; }
+.element-8 { bottom: 20%; right: 5%; }
+.element-9 { bottom: 5%; left: 30%; }
+.element-10 { bottom: 10%; right: 35%; }
 
 .hero-title {
     font-size: 3.5rem;
@@ -877,6 +892,11 @@ section {
     
     .hero-visual {
         display: none;
+    }
+    
+    .element img {
+        width: 40px;
+        height: 40px;
     }
     
     .hero-title {

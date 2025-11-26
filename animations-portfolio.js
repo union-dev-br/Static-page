@@ -49,16 +49,37 @@ function initHeroAnimations() {
         delay: 1.2
     });
 
-    // Floating elements
+    // Floating elements - Tech icons animation
     const elements = document.querySelectorAll('.element');
     elements.forEach((el, index) => {
+        // Movimento flutuante vertical
         gsap.to(el, {
             y: -30,
-            duration: 2,
+            duration: 2 + (index * 0.2),
             repeat: -1,
             yoyo: true,
             ease: "sine.inOut",
-            delay: index * 0.3
+            delay: index * 0.2
+        });
+        
+        // Movimento horizontal alternado
+        gsap.to(el, {
+            x: index % 2 === 0 ? 20 : -20,
+            duration: 3 + (index * 0.15),
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: index * 0.15
+        });
+        
+        // Rotação suave
+        gsap.to(el, {
+            rotation: index % 2 === 0 ? 10 : -10,
+            duration: 4 + (index * 0.1),
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: index * 0.25
         });
     });
 }
