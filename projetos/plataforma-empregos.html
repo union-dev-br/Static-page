@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Empregos - Union Desenvolvimento</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/jobs-platform-specific.css">
+    <link rel="icon" href="../assets/images/logo-unionh_512x512.jpeg" type="image/x-icon">
+    
+    <!-- GSAP Premium -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body class="project-detail jobs-platform-detail">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-unionh_512x512.jpeg" alt="Union Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="menu-items">
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#projetos">Projetos</a>
+                        <a href="../index.html#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge">🎯 Projeto Comunitário Gratuito</div>
+                <h1 class="project-title">Plataforma de Empregos</h1>
+                <p class="project-subtitle">Sistema completo de recrutamento desenvolvido para conectar talentos e oportunidades em nossa cidade - 100% gratuito!</p>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Plataforma</span>
+                        <span class="meta-value">Flutter Web • Firebase</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Acesso</span>
+                        <span class="meta-value">🎁 Totalmente Gratuito</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Público</span>
+                        <span class="meta-value">👥 Nossa Comunidade</span>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <a href="#demo" class="btn btn-primary">
+                        🌐 Acessar Plataforma
+                    </a>
+                    <a href="#impact" class="btn btn-secondary">
+                        💝 Ver Impacto Social
+                    </a>
+                </div>
+
+                <div class="community-highlight">
+                    <div class="highlight-icon">🏡</div>
+                    <p><strong>Desenvolvido com amor para nossa cidade!</strong> Plataforma gratuita para impulsionar o desenvolvimento local</p>
+                </div>
+            </div>
+            
+            <div class="project-hero-visual">
+                <div class="web-platform-mockup">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="browser-url">plataforma-empregos.union.dev.br</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="../assets/projects/jobs-platform/web-dashboard.jpg" alt="Dashboard Plataforma" class="platform-preview">
+                        </div>
+                    </div>
+                    <!-- Community elements -->
+                    <div class="floating-heart" data-gsap='{"y": -15, "rotation": -10, "duration": 2, "repeat": -1, "yoyo": true}'>
+                        ❤️
+                    </div>
+                    <div class="floating-community" data-gsap='{"y": 10, "x": -5, "duration": 2.5, "repeat": -1, "yoyo": true}'>
+                        👥
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto Social -->
+    <section class="social-impact">
+        <div class="container">
+            <div class="section-header">
+                <h2>💝 Impacto Social & Comunitário</h2>
+                <p>Uma plataforma desenvolvida para fazer a diferença real na nossa comunidade</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">🎯</div>
+                    <h3>Missão Social</h3>
+                    <p>Democratizar o acesso às oportunidades de emprego para todos os moradores da nossa cidade</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">💰</div>
+                    <h3>100% Gratuito</h3>
+                    <p>Zero custos para candidatos e empresas locais. Acesso livre para toda a comunidade</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">🚀</div>
+                    <h3>Desenvolvimento Local</h3>
+                    <p>Fortalecer a economia local conectando talentos da região com empresas da cidade</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">🌱</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Reduzir êxodo rural retendo talentos e criando oportunidades locais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas da Plataforma -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="0">0</div>
+                    <div class="stat-label">Custo para Usuários</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="2">0</div>
+                    <div class="stat-label">Tipos de Usuário</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Telas Desenvolvidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">% Foco Local</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Candidatos -->
+    <section class="for-candidates">
+        <div class="container">
+            <div class="section-header">
+                <h2>👤 Para Candidatos - Totalmente Gratuito</h2>
+                <p>Ferramentas completas para quem busca oportunidades na nossa região</p>
+            </div>
+
+            <div class="candidate-features">
+                <div class="feature-showcase">
+                    <div class="feature-visual">
+                        <div class="phone-mockup candidate-phone">
+                            <div class="phone-screen">
+                                <img src="../assets/projects/jobs-platform/candidate-dashboard.jpg" alt="Dashboard Candidato">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🔍</div>
+                            <div class="feature-content">
+                                <h4>Busca Inteligente</h4>
+                                <p>Encontre vagas por cargo, localização e requisitos</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">📝</div>
+                            <div class="feature-content">
+                                <h4>Currículo Integrado</h4>
+                                <p>Crie e gerencie seu currículo diretamente na plataforma</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">📊</div>
+                            <div class="feature-content">
+                                <h4>Acompanhamento</h4>
+                                <p>Controle todas as suas candidaturas em um só lugar</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h4>Candidatura Rápida</h4>
+                                <p>Aplique para vagas com apenas um clique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Empresas -->
+    <section class="for-companies">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏢 Para Empresas - Também Gratuito</h2>
+                <p>Recrutamento eficiente sem custos para empresas da nossa cidade</p>
+            </div>
+
+            <div class="company-features">
+                <div class="feature-showcase reverse">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">📢</div>
+                            <div class="feature-content">
+                                <h4>Publicação de Vagas</h4>
+                                <p>Anuncie oportunidades gratuitamente para a comunidade</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">👥</div>
+                            <div class="feature-content">
+                                <h4>Gestão de Candidatos</h4>
+                                <p>Organize e avalie candidatos de forma eficiente</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">📈</div>
+                            <div class="feature-content">
+                                <h4>Dashboard Empresarial</h4>
+                                <p>Acompanhe métricas e performance das vagas</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">💼</div>
+                            <div class="feature-content">
+                                <h4>Perfil Corporativo</h4>
+                                <p>Construa a marca empregadora da sua empresa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-visual">
+                        <div class="browser-window company-dashboard">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="browser-url">empresa.plataforma-empregos.union.dev.br</div>
+                            </div>
+                            <div class="browser-content">
+                                <img src="../assets/projects/jobs-platform/company-dashboard.jpg" alt="Dashboard Empresa">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo ao Vivo -->
+    <section id="demo" class="live-demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>🌐 Plataforma Web Responsiva</h2>
+                <p>Experiência perfeita em qualquer dispositivo - desktop, tablet ou mobile</p>
+            </div>
+
+            <div class="demo-showcase">
+                <div class="device-showcase">
+                    <div class="device desktop">
+                        <div class="device-frame">
+                            <img src="../assets/projects/jobs-platform/desktop-view.jpg" alt="Desktop View">
+                        </div>
+                        <div class="device-label">💻 Desktop</div>
+                    </div>
+
+                    <div class="device tablet">
+                        <div class="device-frame">
+                            <img src="../assets/projects/jobs-platform/tablet-view.jpg" alt="Tablet View">
+                        </div>
+                        <div class="device-label">📱 Tablet</div>
+                    </div>
+
+                    <div class="device mobile">
+                        <div class="device-frame">
+                            <img src="../assets/projects/jobs-platform/mobile-view.jpg" alt="Mobile View">
+                        </div>
+                        <div class="device-label">📲 Mobile</div>
+                    </div>
+                </div>
+
+                <div class="demo-features">
+                    <h3>🚀 Tecnologias Utilizadas</h3>
+                    <div class="tech-stack">
+                        <div class="tech-category">
+                            <h4>Frontend</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/flutter.png" alt="Flutter">
+                                    <span>Flutter Web</span>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/dart.png" alt="Dart">
+                                    <span>Dart</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span>🎨</span>
+                                    <span>Material Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4>Backend & Auth</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/firebase.png" alt="Firebase">
+                                    <span>Firebase Auth</span>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/firebase.png" alt="Firestore">
+                                    <span>Cloud Firestore</span>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/firebase.png" alt="Storage">
+                                    <span>Firebase Storage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fluxo de Trabalho -->
+    <section class="workflow-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔄 Fluxo de Trabalho Completo</h2>
+                <p>Do cadastro à contratação - tudo em uma plataforma integrada</p>
+            </div>
+
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Cadastro Gratuito</h4>
+                        <p>Candidatos e empresas se cadastram sem custos</p>
+                        <div class="step-visual">
+                            <div class="visual-item">👤</div>
+                            <div class="visual-arrow">→</div>
+                            <div class="visual-item">🏢</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Conexão de Oportunidades</h4>
+                        <p>Empresas publicam vagas, candidatos encontram oportunidades</p>
+                        <div class="step-visual">
+                            <div class="visual-item">📢</div>
+                            <div class="visual-arrow">⇄</div>
+                            <div class="visual-item">🔍</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Processo Seletivo</h4>
+                        <p>Candidaturas, avaliações e comunicação integrada</p>
+                        <div class="step-visual">
+                            <div class="visual-item">📝</div>
+                            <div class="visual-arrow">→</div>
+                            <div class="visual-item">⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Contratação Local</h4>
+                        <p>Fechamento de oportunidades dentro da nossa comunidade</p>
+                        <div class="step-visual">
+                            <div class="visual-item">🤝</div>
+                            <div class="visual-arrow">→</div>
+                            <div class="visual-item">🎉</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Currículos -->
+    <section class="resume-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>📄 Construtor de Currículos Integrado</h2>
+                <p>Ferramenta completa para criação e gestão de currículos profissionais</p>
+            </div>
+
+            <div class="resume-features">
+                <div class="resume-preview">
+                    <div class="resume-mockup">
+                        <div class="resume-header">
+                            <div class="resume-avatar">👤</div>
+                            <div class="resume-info">
+                                <h3>João Silva</h3>
+                                <p>Desenvolvedor Flutter</p>
+                                <div class="resume-contacts">
+                                    <span>📧 joao@email.com</span>
+                                    <span>📱 (11) 99999-9999</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-sections">
+                            <div class="section">
+                                <h4>Experiência Profissional</h4>
+                                <p>Desenvolvedor Sênior - 3 anos</p>
+                            </div>
+                            <div class="section">
+                                <h4>Formação Acadêmica</h4>
+                                <p>Análise e Desenvolvimento de Sistemas</p>
+                            </div>
+                            <div class="section">
+                                <h4>Habilidades</h4>
+                                <p>Flutter, Dart, Firebase, UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-benefits">
+                    <h3>🎯 Vantagens do Sistema</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⚡</div>
+                            <div class="benefit-content">
+                                <h4>Preenchimento Rápido</h4>
+                                <p>Formulários intuitivos e pré-formatados</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎨</div>
+                            <div class="benefit-content">
+                                <h4>Design Profissional</h4>
+                                <p>Layouts modernos e adequados ao mercado</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔒</div>
+                            <div class="benefit-content">
+                                <h4>Armazenamento Seguro</h4>
+                                <p>Dados protegidos com criptografia Firebase</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📤</div>
+                            <div class="benefit-content">
+                                <h4>Envio Automático</h4>
+                                <p>Candidatura com currículo em um clique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios para a Comunidade -->
+    <section id="impact" class="community-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏡 Benefícios para Nossa Cidade</h2>
+                <p>Como esta plataforma gratuita impacta positivamente nossa comunidade</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="community-benefit">
+                    <div class="benefit-visual">💼</div>
+                    <h3>Mais Oportunidades</h3>
+                    <p>Amplia o acesso a vagas de emprego para todos os moradores</p>
+                </div>
+
+                <div class="community-benefit">
+                    <div class="benefit-visual">🏪</div>
+                    <h3>Comércio Fortalecido</h3>
+                    <p>Empresas locais encontram talentos sem custos adicionais</p>
+                </div>
+
+                <div class="community-benefit">
+                    <div class="benefit-visual">📈</div>
+                    <h3>Economia Local</h3>
+                    <p>Circulação de renda e desenvolvimento econômico regional</p>
+                </div>
+
+                <div class="community-benefit">
+                    <div class="benefit-visual">🎓</div>
+                    <h3>Retenção de Talentos</h3>
+                    <p>Jovens profissionais encontram oportunidades na própria cidade</p>
+                </div>
+
+                <div class="community-benefit">
+                    <div class="benefit-visual">🤝</div>
+                    <h3>Rede de Apoio</h3>
+                    <p>Fortalecimento das relações comunitárias e profissionais</p>
+                </div>
+
+                <div class="community-benefit">
+                    <div class="benefit-visual">🌱</div>
+                    <h3>Futuro Sustentável</h3>
+                    <p>Investimento no desenvolvimento a longo prazo da cidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitetura Técnica -->
+    <section class="technical-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>⚙️ Arquitetura Técnica Solidária</h2>
+                <p>Tecnologia de ponta aplicada para o bem da comunidade</p>
+            </div>
+
+            <div class="architecture-overview">
+                <div class="arch-component">
+                    <div class="component-icon">🎨</div>
+                    <h4>Flutter Web</h4>
+                    <p>Interface responsiva e acessível para todos os dispositivos</p>
+                    <div class="component-features">
+                        <span>Material Design</span>
+                        <span>Responsive Layout</span>
+                        <span>PWA Ready</span>
+                    </div>
+                </div>
+
+                <div class="arch-component">
+                    <div class="component-icon">🔐</div>
+                    <h4>Firebase Auth</h4>
+                    <p>Autenticação segura e gratuita para todos os usuários</p>
+                    <div class="component-features">
+                        <span>Email/Senha</span>
+                        <span>Google Sign-in</span>
+                        <span>Role Management</span>
+                    </div>
+                </div>
+
+                <div class="arch-component">
+                    <div class="component-icon">🗄️</div>
+                    <h4>Cloud Firestore</h4>
+                    <p>Banco de dados em tempo real sem custos de infraestrutura</p>
+                    <div class="component-features">
+                        <span>NoSQL</span>
+                        <span>Real-time Updates</span>
+                        <span>Offline Support</span>
+                    </div>
+                </div>
+
+                <div class="arch-component">
+                    <div class="component-icon">📱</div>
+                    <h4>Multiplataforma</h4>
+                    <p>Funciona perfeitamente em desktop, tablet e mobile</p>
+                    <div class="component-features">
+                        <span>Web</span>
+                        <span>Mobile</span>
+                        <span>Progressive Web App</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chamada para Ação Comunitária -->
+    <section class="community-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon">🤝</div>
+                <h2>Juntos por Nossa Cidade!</h2>
+                <p>Esta plataforma foi desenvolvida para servir nossa comunidade. Quer implementar algo similar para sua cidade ou causa social?</p>
+                <div class="cta-actions">
+                    <a href="../index.html#contato" class="btn btn-primary">💬 Falar Sobre Meu Projeto Social</a>
+                    <a href="clube-beneficios.html" class="btn btn-secondary">🏆 Ver Clube de Benefícios</a>
+                </div>
+                <div class="social-mission">
+                    <p><strong>💝 Missão Cumprida:</strong> Desenvolver tecnologia que realmente faça a diferença na vida das pessoas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo-unionf_512x512.jpeg" alt="Union Logo" class="footer-logo">
+                    <p>Transformando ideias em soluções digitais extraordinárias.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Union Desenvolvimento de Softwares. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../animations-portfolio.js"></script>
+    <script src="../script.js"></script>
+    <script src="project-details.js"></script>
+</body>
+</html>

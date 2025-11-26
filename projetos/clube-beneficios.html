@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube de Benefícios - Union Desenvolvimento</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/clube-beneficios-specific.css">
+    <link rel="icon" href="../assets/images/logo-unionh_512x512.jpeg" type="image/x-icon">
+    
+    <!-- GSAP Premium -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+</head>
+<body class="project-detail clube-beneficios-detail">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-unionh_512x512.jpeg" alt="Union Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="menu-items">
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#projetos">Projetos</a>
+                        <a href="../index.html#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge">🏆 Marketplace Premium</div>
+                <h1 class="project-title">Clube de Benefícios</h1>
+                <p class="project-subtitle">Plataforma Flutter completa conectando empresas e usuários através de benefícios exclusivos com analytics em tempo real</p>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Plataforma</span>
+                        <span class="meta-value">Flutter • Firebase • WebSocket</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Arquitetura</span>
+                        <span class="meta-value">Multi-role • Real-time</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Destaque</span>
+                        <span class="meta-value">WebSockets • Analytics</span>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <a href="#realtime" class="btn btn-primary">
+                        🔥 Ver Sistema Real-time
+                    </a>
+                    <a href="#architecture" class="btn btn-secondary">
+                        🏗️ Arquitetura Avançada
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-hero-visual">
+                <div class="platform-mockup">
+                    <div class="app-device">
+                        <div class="device-screen">
+                            <img src="../assets/projects/clube-beneficios/app-dashboard.jpg" alt="Dashboard Clube" class="app-preview">
+                        </div>
+                    </div>
+                    <!-- Real-time indicators -->
+                    <div class="realtime-indicator" data-gsap='{"scale": 1.2, "duration": 1, "repeat": -1, "yoyo": true}'>
+                        <div class="pulse-dot"></div>
+                        <span>LIVE</span>
+                    </div>
+                    <div class="floating-chart" data-gsap='{"y": -20, "rotation": -5, "duration": 2, "repeat": -1, "yoyo": true}'>
+                        📊
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas da Plataforma -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Telas Desenvolvidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">Tipos de Usuário</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="30">0</div>
+                    <div class="stat-label">Serviços Integrados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="1000">0</div>
+                    <div class="stat-label">+ Linhas de Código</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visão do Ecossistema -->
+    <section class="ecosystem-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔄 Ecossistema Completo</h2>
+                <p>Plataforma multi-sided conectando todos os stakeholders através de benefícios exclusivos</p>
+            </div>
+
+            <div class="ecosystem-flow">
+                <div class="stakeholder-column">
+                    <div class="stakeholder-card enterprise">
+                        <div class="stakeholder-icon">🏢</div>
+                        <h3>Empresas Parceiras</h3>
+                        <div class="stakeholder-features">
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Dashboard Empresarial</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Gestão de Benefícios</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Analytics em Tempo Real</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Sistema de Pagamentos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-connector">
+                    <div class="connector-core">
+                        <div class="core-icon">⚡</div>
+                        <div class="core-label">Plataforma Union</div>
+                        <div class="core-subtitle">WebSockets • Firebase • Analytics</div>
+                    </div>
+                    <div class="connector-lines">
+                        <div class="connector-line"></div>
+                        <div class="connector-line"></div>
+                    </div>
+                </div>
+
+                <div class="stakeholder-column">
+                    <div class="stakeholder-card user">
+                        <div class="stakeholder-icon">👤</div>
+                        <h3>Usuários Individuais</h3>
+                        <div class="stakeholder-features">
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Catálogo de Benefícios</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Sistema de Favoritos</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Validação via QR Code</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-dot"></span>
+                                <span>Ranking Interativo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema Multi-Role -->
+    <section class="multi-role-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>👥 Arquitetura Multi-Role Avançada</h2>
+                <p>Sistema complexo de permissões com experiências totalmente personalizadas por tipo de usuário</p>
+            </div>
+
+            <div class="roles-grid">
+                <div class="role-card admin-role">
+                    <div class="role-header">
+                        <div class="role-icon">👑</div>
+                        <h3>Administrador Geral</h3>
+                        <div class="role-badge">Full Access</div>
+                    </div>
+                    <div class="role-permissions">
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Gestão Completa da Plataforma</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Controle de Usuários e Empresas</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Analytics e Relatórios</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Configurações do Sistema</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="role-card partner-role">
+                    <div class="role-header">
+                        <div class="role-icon">🏢</div>
+                        <h3>Admin Parceiro</h3>
+                        <div class="role-badge">Business Access</div>
+                    </div>
+                    <div class="role-permissions">
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Dashboard Empresarial</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Gestão de Benefícios</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Analytics da Empresa</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">⏳</span>
+                            <span>Acesso após Pagamento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="role-card user-role">
+                    <div class="role-header">
+                        <div class="role-icon">👤</div>
+                        <h3>Usuário Individual</h3>
+                        <div class="role-badge">Basic Access</div>
+                    </div>
+                    <div class="role-permissions">
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Explorar Benefícios</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Sistema de Favoritos</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Validação via QR Code</span>
+                        </div>
+                        <div class="permission">
+                            <span class="permission-check">✅</span>
+                            <span>Participar de Rankings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema Real-time -->
+    <section id="realtime" class="realtime-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>⚡ Sistema Real-time com WebSockets</h2>
+                <p>Comunicação bidirecional em tempo real para atualizações instantâneas e analytics live</p>
+            </div>
+
+            <div class="websocket-demo">
+                <div class="websocket-flow">
+                    <div class="flow-item client">
+                        <div class="flow-icon">📱</div>
+                        <div class="flow-content">
+                            <h4>Cliente Flutter</h4>
+                            <p>Aplicação mobile conectada via WebSocket</p>
+                            <div class="message-stream">
+                                <div class="message sent">
+                                    <span class="message-text">subscribe: analytics</span>
+                                    <span class="message-time">→</span>
+                                </div>
+                                <div class="message received">
+                                    <span class="message-time">←</span>
+                                    <span class="message-text">update: user_engagement +15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flow-connector">
+                        <div class="connection-line">
+                            <div class="data-packet" data-gsap='{"x": 100, "duration": 2, "repeat": -1, "ease": "none"}'></div>
+                            <div class="data-packet" data-gsap='{"x": 100, "duration": 2, "repeat": -1, "ease": "none", "delay": 1}'></div>
+                        </div>
+                        <div class="connection-label">WebSocket Connection</div>
+                    </div>
+
+                    <div class="flow-item server">
+                        <div class="flow-icon">🖥️</div>
+                        <div class="flow-content">
+                            <h4>Servidor Spring Boot</h4>
+                            <p>WebSocket endpoint com STOMP protocol</p>
+                            <div class="server-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~5ms</span>
+                                    <span class="stat-label">Latência</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="realtime-features">
+                    <h3>🚀 Casos de Uso Real-time</h3>
+                    <div class="features-grid">
+                        <div class="realtime-feature">
+                            <div class="feature-icon">📈</div>
+                            <h4>Analytics Live</h4>
+                            <p>Métricas de engajamento atualizadas em tempo real</p>
+                        </div>
+                        <div class="realtime-feature">
+                            <div class="feature-icon">🔔</div>
+                            <h4>Notificações Push</h4>
+                            <p>Alertas instantâneos de novos benefícios</p>
+                        </div>
+                        <div class="realtime-feature">
+                            <div class="feature-icon">🏆</div>
+                            <h4>Rankings Dinâmicos</h4>
+                            <p>Posições atualizadas automaticamente</p>
+                        </div>
+                        <div class="realtime-feature">
+                            <div class="feature-icon">💬</div>
+                            <h4>Chat em Tempo Real</h4>
+                            <p>Comunicação direta entre usuários e empresas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Empresarial -->
+    <section class="enterprise-dashboard">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏢 Dashboard Empresarial Avançado</h2>
+                <p>Painel completo com métricas em tempo real para gestão estratégica de benefícios</p>
+            </div>
+
+            <div class="dashboard-preview">
+                <div class="dashboard-mockup">
+                    <div class="dashboard-header">
+                        <div class="company-info">
+                            <h3>Empresa Parceira</h3>
+                            <span class="plan-badge">Plano Enterprise</span>
+                        </div>
+                        <div class="dashboard-stats">
+                            <div class="mini-stat">
+                                <span class="stat-value">1.2K</span>
+                                <span class="stat-label">Visualizações</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="stat-value">347</span>
+                                <span class="stat-label">Favoritos</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="stat-value">89</span>
+                                <span class="stat-label">Resgates</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="metric-card large">
+                            <div class="metric-header">
+                                <h4>Engajamento por Benefício</h4>
+                                <span class="trend positive">+12%</span>
+                            </div>
+                            <div class="chart-placeholder">
+                                <div class="chart-bar" style="height: 80%"></div>
+                                <div class="chart-bar" style="height: 60%"></div>
+                                <div class="chart-bar" style="height: 45%"></div>
+                                <div class="chart-bar" style="height: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <h4>Taxa de Conversão</h4>
+                                <span class="value">24.3%</span>
+                            </div>
+                            <div class="progress-ring">
+                                <div class="ring-fill" style="--progress: 0.743"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <h4>NPS</h4>
+                                <span class="value">68</span>
+                            </div>
+                            <div class="score-indicator">
+                                <span class="score-label">Excelente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-features">
+                    <h3>📊 Métricas em Tempo Real</h3>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">👀</div>
+                            <div class="feature-content">
+                                <h4>Visualizações em Tempo Real</h4>
+                                <p>Acompanhe visualizações de benefícios com atualização live</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">❤️</div>
+                            <div class="feature-content">
+                                <h4>Engajamento por Período</h4>
+                                <p>Análise temporal de likes, favoritos e compartilhamentos</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📈</div>
+                            <div class="feature-content">
+                                <h4>Conversão e ROI</h4>
+                                <p>Métricas de retorno sobre investimento em benefícios</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h4>Audience Insights</h4>
+                                <p>Perfil demográfico e comportamental dos usuários</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Pagamentos -->
+    <section class="payment-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>💳 Integração ASAAS Avançada</h2>
+                <p>Sistema completo de pagamentos com PIX, recorrência e gestão financeira</p>
+            </div>
+
+            <div class="payment-flow">
+                <div class="payment-step">
+                    <div class="step-visual">
+                        <div class="step-icon">🏢</div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                    <div class="step-content">
+                        <h4>Seleção de Plano</h4>
+                        <p>Empresa escolhe plano e forma de pagamento</p>
+                        <div class="plan-options">
+                            <div class="plan-option">
+                                <span class="plan-name">Basic</span>
+                                <span class="plan-price">R$ 99/mês</span>
+                            </div>
+                            <div class="plan-option featured">
+                                <span class="plan-name">Enterprise</span>
+                                <span class="plan-price">R$ 299/mês</span>
+                            </div>
+                            <div class="plan-option">
+                                <span class="plan-name">Premium</span>
+                                <span class="plan-price">R$ 499/mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-step">
+                    <div class="step-visual">
+                        <div class="step-icon">🔗</div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                    <div class="step-content">
+                        <h4>Integração ASAAS</h4>
+                        <p>Criação de subscription e processamento de pagamento</p>
+                        <div class="integration-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Método</span>
+                                <span class="detail-value">PIX • Cartão • Boleto</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Recorrência</span>
+                                <span class="detail-value">Mensal Automática</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Webhook</span>
+                                <span class="detail-value">Confirmação Automática</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-step">
+                    <div class="step-visual">
+                        <div class="step-icon">✅</div>
+                    </div>
+                    <div class="step-content">
+                        <h4>Acesso Liberado</h4>
+                        <p>Dashboard empresarial ativado após confirmação</p>
+                        <div class="access-features">
+                            <div class="access-badge">
+                                <span class="badge-icon">📊</span>
+                                <span>Analytics Ativo</span>
+                            </div>
+                            <div class="access-badge">
+                                <span class="badge-icon">🎯</span>
+                                <span>Benefícios Ilimitados</span>
+                            </div>
+                            <div class="access-badge">
+                                <span class="badge-icon">👥</span>
+                                <span>Gestão de Usuários</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitetura Técnica -->
+    <section id="architecture" class="technical-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏗️ Arquitetura Flutter Avançada</h2>
+                <p>Estrutura modular com gerenciamento de estado robusto e padrões de clean architecture</p>
+            </div>
+
+            <div class="architecture-diagram">
+                <div class="arch-layer">
+                    <div class="layer-title">🎨 Presentation Layer</div>
+                    <div class="layer-components">
+                        <div class="component-group">
+                            <h5>UI Components</h5>
+                            <div class="components">
+                                <span class="component">Custom Widgets</span>
+                                <span class="component">Material Design 3</span>
+                                <span class="component">Responsive Layout</span>
+                            </div>
+                        </div>
+                        <div class="component-group">
+                            <h5>Navigation</h5>
+                            <div class="components">
+                                <span class="component">Go Router</span>
+                                <span class="component">Nested Navigation</span>
+                                <span class="component">Route Guards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-arrow">↓</div>
+
+                <div class="arch-layer">
+                    <div class="layer-title">⚙️ Business Logic Layer</div>
+                    <div class="layer-components">
+                        <div class="component-group">
+                            <h5>State Management</h5>
+                            <div class="components">
+                                <span class="component">Provider Pattern</span>
+                                <span class="component">ChangeNotifier</span>
+                                <span class="component">ValueNotifier</span>
+                            </div>
+                        </div>
+                        <div class="component-group">
+                            <h5>Services</h5>
+                            <div class="components">
+                                <span class="component">Auth Service</span>
+                                <span class="component">WebSocket Service</span>
+                                <span class="component">Analytics Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-arrow">↓</div>
+
+                <div class="arch-layer">
+                    <div class="layer-title">💾 Data Layer</div>
+                    <div class="layer-components">
+                        <div class="component-group">
+                            <h5>Local Storage</h5>
+                            <div class="components">
+                                <span class="component">Hive Database</span>
+                                <span class="component">SharedPreferences</span>
+                                <span class="component">Cache Manager</span>
+                            </div>
+                        </div>
+                        <div class="component-group">
+                            <h5>Cloud Services</h5>
+                            <div class="components">
+                                <span class="component">Firebase Auth</span>
+                                <span class="component">Cloud Firestore</span>
+                                <span class="component">WebSocket Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Precisa de uma Plataforma Complexa como Esta?</h2>
+                <p>Vamos desenvolver a solução mobile perfeita para conectar seu ecossistema!</p>
+                <div class="cta-actions">
+                    <a href="../index.html#contato" class="btn btn-primary">🚀 Discutir Meu Projeto</a>
+                    <a href="empreendedora.html" class="btn btn-secondary">🏢 Ver API Empreendedora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo-unionf_512x512.jpeg" alt="Union Logo" class="footer-logo">
+                    <p>Transformando ideias em soluções digitais extraordinárias.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Union Desenvolvimento de Softwares. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../animations-portfolio.js"></script>
+    <script src="../script.js"></script>
+    <script src="project-details.js"></script>
+</body>
+</html>

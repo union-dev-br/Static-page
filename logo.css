@@ -1,0 +1,13 @@
+.logo-container {
+    background: transparent;
+    padding: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+    /* Remove quadradinhos de fundo */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}

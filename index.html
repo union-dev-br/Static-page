@@ -3,55 +3,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Union.dev.br - Transformando a Educação em T.I.</title>
+    <title>Union Desenvolvimento de Softwares - Portfólio & Soluções</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/images/logo-union_512x512.png" type="image/x-icon"> <!-- Certifique-se que favicon.ico existe em assets/images/ -->
-    <meta name="description" content="Bem-vindo à Union.dev.br, uma plataforma em construção dedicada a revolucionar a educação em T.I. no Brasil.">
-    <meta name="keywords" content="union.dev.br, educação, TI, tecnologia, programação, plataforma, desenvolvimento">
-</head>
-<body class="body-home">
-    <header class="main-header">
-        <div class="logo-container">
-          <a href="index.html"><img src="assets/images/logo-union_512x512.png" alt="Union Logo" class="logo"></a>
-        </div>
-        <nav class="main-nav">
-            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-items-id">
-                <span>☰</span> <!-- Use um ícone SVG ou texto mais descritivo se preferir -->
-            </button>
-            <div class="menu-items" id="menu-items-id">
-                <a href="index.html">Home</a>
-                <a href="home.html">Quem Somos</a>
-                <a href="missaoPlataforma.html">Missão</a>
-                <a href="visaoPlataforma.html">Visão</a>
-                <a href="valoresPlataforma.html">Valores</a>
-                <a href="projetos.html">Projetos</a>
-                <a href="servicos.html">Serviços</a>
-                <a href="contato.html">Contato</a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main-home">
-        <section class="hero">
-          <h1>Union.dev.br</h1>
-          <p>Construindo o futuro da educação em Tecnologia da Informação. Junte-se a nós nesta jornada!</p>
-        </section>
-        <!-- Poderia adicionar mais seções aqui, como "Nossos Pilares", "Últimas Notícias", etc. -->
-    </main>
-
-    <footer class="footer-home">
-        <p>© <span id="currentYear">2024</span> Union.dev.br - Todos os direitos reservados.</p>
-        <p>Contato: <a href="mailto:contato@union.dev.br">contato@union.dev.br</a></p>
-    </footer>
+    <link rel="icon" href="assets/images/logo-unionh_512x512.jpeg" type="image/x-icon">
     
-    <a href="#" class="back-to-top" aria-label="Voltar ao topo">↑</a>
-
+    <!-- GSAP Premium -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-    <script src="animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+</head>
+<body class="body-home">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="#home">
+                        <img src="assets/images/logo-unionh_512x512.jpeg" alt="Union Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="menu-items">
+                        <a href="#home">Home</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#servicos">Serviços</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transformamos ideias em <span class="highlight">soluções digitais</span> extraordinárias</h1>
+                <p class="hero-subtitle">Union Desenvolvimento de Softwares - Especialistas em Flutter, Java Spring Boot e Inovação</p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Falar com Especialista</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Elementos animados com GSAP -->
+                <div class="floating-elements">
+                    <div class="element element-1" data-icon="📱"></div>
+                    <div class="element element-2" data-icon="🚀"></div>
+                    <div class="element element-3" data-icon="💡"></div>
+                    <div class="element element-4" data-icon="⚡"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Union -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre a Union</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Somos uma equipe apaixonada por tecnologia e inovação, especializada em desenvolvimento de software de alta performance.</p>
+                    <p>Com expertise em <strong>Flutter</strong>, <strong>Java Spring Boot</strong>, <strong>Firebase</strong> e arquiteturas modernas, entregamos soluções que realmente fazem a diferença.</p>
+                    
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <h3>🎯 Mobile First</h3>
+                            <p>Aplicativos nativos e cross-platform com Flutter</p>
+                        </div>
+                        <div class="expertise-item">
+                            <h3>⚡ Backend Robusto</h3>
+                            <p>APIs escaláveis com Java Spring Boot</p>
+                        </div>
+                        <div class="expertise-item">
+                            <h3>🌐 Full Stack</h3>
+                            <p>Soluções completas do frontend ao backend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Projetos Entregues</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Apps na Play Store</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Projetos em Destaque</h2>
+            
+            <div class="projects-grid">
+                <!-- Economize+ -->
+                <div class="project-card" data-project="economize">
+                    <div class="project-image">
+                        <img src="assets/projects/economize-preview.jpg" alt="Economize+ App">
+                        <div class="project-overlay">
+                            <h3>Economize+</h3>
+                            <p>App completo de gestão financeira com gamificação</p>
+                            <span class="project-tech">Flutter • Firebase • SQLite</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Economize+</h3>
+                        <p>Sistema avançado de controle financeiro pessoal com mais de 50 telas e sistema de gamificação</p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.lucianoribeiro.economize" class="btn-link">Play Store</a>
+                            <a href="projetos/economize.html" class="btn-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NetDrinks -->
+                <div class="project-card" data-project="netdrinks">
+                    <div class="project-image">
+                        <img src="assets/projects/netdrinks-preview.jpg" alt="NetDrinks App">
+                        <div class="project-overlay">
+                            <h3>NetDrinks</h3>
+                            <p>Seu app de drinks, receitas e inspiração</p>
+                            <span class="project-tech">Flutter • Firebase • Multi-idiomas</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NetDrinks</h3>
+                        <p>Plataforma completa de drinks com receitas, tradução automática e sistema de favoritos</p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.luciano.appdrinks" class="btn-link">Play Store</a>
+                            <a href="projetos/netdrinks.html" class="btn-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A Empreendedora -->
+                <div class="project-card" data-project="empreendedora">
+                    <div class="project-image">
+                        <img src="assets/projects/empreendedora-preview.jpg" alt="A Empreendedora API">
+                        <div class="project-overlay">
+                            <h3>A Empreendedora</h3>
+                            <p>API REST para plataforma de benefícios empresariais</p>
+                            <span class="project-tech">Java • Spring Boot • PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>A Empreendedora API</h3>
+                        <p>Sistema completo de benefícios corporativos com integração de pagamentos e rankings</p>
+                        <div class="project-links">
+                            <a href="projetos/empreendedora.html" class="btn-link">Detalhes Técnicos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clube de Benefícios -->
+                <div class="project-card" data-project="clube-beneficios">
+                    <div class="project-image">
+                        <img src="assets/projects/clube-preview.jpg" alt="Clube de Benefícios">
+                        <div class="project-overlay">
+                            <h3>Clube de Benefícios</h3>
+                            <p>Marketplace de benefícios empresariais</p>
+                            <span class="project-tech">Flutter • Firebase • WebSocket</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Clube de Benefícios</h3>
+                        <p>Plataforma Flutter completa conectando empresas e usuários através de benefícios exclusivos</p>
+                        <div class="project-links">
+                            <a href="projetos/clube-beneficios.html" class="btn-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plataforma de Empregos -->
+                <div class="project-card" data-project="jobs-platform">
+                    <div class="project-image">
+                        <img src="assets/projects/jobs-preview.jpg" alt="Plataforma de Empregos">
+                        <div class="project-overlay">
+                            <h3>Plataforma de Empregos</h3>
+                            <p>Sistema completo de recrutamento</p>
+                            <span class="project-tech">Flutter Web • Firebase • GoRouter</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Plataforma de Empregos</h3>
+                        <p>Sistema moderno de recrutamento com candidaturas, currículos e dashboard empresarial</p>
+                        <div class="project-links">
+                            <a href="projetos/plataforma-empregos.html" class="btn-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clube Coromandel -->
+                <div class="project-card" data-project="coromandel">
+                    <div class="project-image">
+                        <img src="assets/projects/coromandel-preview.jpg" alt="Clube Coromandel">
+                        <div class="project-overlay">
+                            <h3>Clube Coromandel</h3>
+                            <p>Portal comunitário e informativo</p>
+                            <span class="project-tech">HTML • CSS • GSAP • JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Clube Coromandel</h3>
+                        <p>Site institucional moderno com animações GSAP e design responsivo</p>
+                        <div class="project-links">
+                            <a href="projetos/clube-coromandel.html" class="btn-link">Visitar Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Desenvolvimento Mobile</h3>
+                    <p>Aplicativos nativos e cross-platform com Flutter para iOS e Android</p>
+                    <ul>
+                        <li>Apps performáticos e responsivos</li>
+                        <li>Integração com APIs e serviços</li>
+                        <li>Publicação nas lojas</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>APIs & Backend</h3>
+                    <p>Desenvolvimento de APIs robustas e escaláveis com Java Spring Boot</p>
+                    <ul>
+                        <li>Arquitetura RESTful</li>
+                        <li>Banco de dados otimizados</li>
+                        <li>Integração de pagamentos</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Soluções Web</h3>
+                    <p>Sites e aplicações web modernas com tecnologias de ponta</p>
+                    <ul>
+                        <li>Design responsivo</li>
+                        <li>Animações e interatividade</li>
+                        <li>Performance otimizada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Pronto para transformar sua ideia em realidade?</h3>
+                    <p>Entre em contato e vamos discutir como podemos ajudar seu projeto.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:contato@union.dev.br">contato@union.dev.br</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <a href="https://linkedin.com/in/seu-perfil" target="_blank">Union Desenvolvimento</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <a href="https://wa.me/5511999999999" target="_blank">+55 (11) 99999-9999</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Seu Nome</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Seu Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Sua Mensagem</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo-unionf_512x512.jpeg" alt="Union Logo" class="footer-logo">
+                    <p>Transformando ideias em soluções digitais extraordinárias.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <a href="#home">Home</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#servicos">Serviços</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Projetos</h4>
+                        <a href="#project-details-economize">Economize+</a>
+                        <a href="#project-details-netdrinks">NetDrinks</a>
+                        <a href="#project-details-empreendedora">A Empreendedora</a>
+                        <a href="#project-details-clube">Clube de Benefícios</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="politica-seguranca.html">Política de Segurança</a>
+                        <a href="termos.html">Termos de Uso</a>
+                        <a href="privacidade.html">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Union Desenvolvimento de Softwares. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo">↑</a>
+
+    <script src="animations-portfolio.js"></script>
     <script src="script.js"></script>
     <script>
+        // Ano atual no footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>

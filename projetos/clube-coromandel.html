@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Coromandel - Union Desenvolvimento</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/coromandel-specific.css">
+    <link rel="icon" href="../assets/images/logo-unionh_512x512.jpeg" type="image/x-icon">
+    
+    <!-- GSAP Premium -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+</head>
+<body class="project-detail coromandel-detail">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-unionh_512x512.jpeg" alt="Union Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="menu-items">
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#projetos">Projetos</a>
+                        <a href="../index.html#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge">🏞️ Portal Comunitário Gratuito</div>
+                <h1 class="project-title">Clube Coromandel</h1>
+                <p class="project-subtitle">Portal completo que conecta artesãos, eventos, colunistas e celebra a natureza da nossa querida cidade</p>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Plataforma</span>
+                        <span class="meta-value">HTML • CSS • GSAP</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Foco</span>
+                        <span class="meta-value">🎨 Comunidade Local</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Acesso</span>
+                        <span class="meta-value">🎁 100% Gratuito</span>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <a href="#ecosistema" class="btn btn-primary">
+                        🌟 Ver Ecossistema
+                    </a>
+                    <a href="#design" class="btn btn-secondary">
+                        🎨 Ver Design
+                    </a>
+                </div>
+
+                <div class="community-mission">
+                    <div class="mission-icon">💫</div>
+                    <p><strong>Conectando corações e talentos da nossa cidade!</strong> Um espaço digital feito com amor para nossa comunidade</p>
+                </div>
+            </div>
+            
+            <div class="project-hero-visual">
+                <div class="portal-mockup">
+                    <div class="floating-artisan" data-gsap='{"y": -20, "rotation": -8, "duration": 3, "repeat": -1, "yoyo": true}'>
+                        🎨
+                    </div>
+                    <div class="floating-nature" data-gsap='{"y": 15, "x": 10, "duration": 2.5, "repeat": -1, "yoyo": true}'>
+                        🌿
+                    </div>
+                    <div class="floating-event" data-gsap='{"y": -10, "rotation": 5, "duration": 2, "repeat": -1, "yoyo": true}'>
+                        🎪
+                    </div>
+                    
+                    <div class="portal-window">
+                        <div class="portal-header">
+                            <div class="portal-logo">Clube Coromandel</div>
+                            <div class="portal-nav">
+                                <span>Artesãos</span>
+                                <span>Eventos</span>
+                                <span>Colunistas</span>
+                                <span>Natureza</span>
+                            </div>
+                        </div>
+                        <div class="portal-content">
+                            <div class="featured-grid">
+                                <div class="featured-item artisan">
+                                    <div class="item-icon">🖌️</div>
+                                    <span>Artesanato Local</span>
+                                </div>
+                                <div class="featured-item event">
+                                    <div class="item-icon">📅</div>
+                                    <span>Eventos</span>
+                                </div>
+                                <div class="featured-item writer">
+                                    <div class="item-icon">✍️</div>
+                                    <span>Colunistas</span>
+                                </div>
+                                <div class="featured-item nature">
+                                    <div class="item-icon">🏞️</div>
+                                    <span>Natureza</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecossistema Comunitário -->
+    <section id="ecosistema" class="community-ecosystem">
+        <div class="container">
+            <div class="section-header">
+                <h2>🤝 Ecossistema Comunitário Completo</h2>
+                <p>Conectando todos os pilares que fazem da nossa cidade um lugar especial</p>
+            </div>
+
+            <div class="ecosystem-grid">
+                <div class="ecosystem-pillar artisan-pillar">
+                    <div class="pillar-visual">
+                        <div class="pillar-icon">🎨</div>
+                        <div class="pillar-glow"></div>
+                    </div>
+                    <h3>Artesãos & Artesãs</h3>
+                    <p>Espaço dedicado aos talentosos artistas e artesãos da nossa região</p>
+                    <div class="pillar-features">
+                        <div class="feature">• Perfis Personalizados</div>
+                        <div class="feature">• Galeria de Obras</div>
+                        <div class="feature">• Contato Direto</div>
+                        <div class="feature">• Histórias Inspiradoras</div>
+                    </div>
+                </div>
+
+                <div class="ecosystem-pillar event-pillar">
+                    <div class="pillar-visual">
+                        <div class="pillar-icon">🎪</div>
+                        <div class="pillar-glow"></div>
+                    </div>
+                    <h3>Eventos Locais</h3>
+                    <p>Calendário completo de eventos culturais, feiras e celebrações</p>
+                    <div class="pillar-features">
+                        <div class="feature">• Agenda Comunitária</div>
+                        <div class="feature">• Inscrições Online</div>
+                        <div class="feature">• Galeria de Fotos</div>
+                        <div class="feature">• Compartilhamento</div>
+                    </div>
+                </div>
+
+                <div class="ecosystem-pillar writer-pillar">
+                    <div class="pillar-visual">
+                        <div class="pillar-icon">✍️</div>
+                        <div class="pillar-glow"></div>
+                    </div>
+                    <h3>Colunistas</h3>
+                    <p>Vozes da nossa comunidade compartilhando conhecimento e histórias</p>
+                    <div class="pillar-features">
+                        <div class="feature">• Artigos Exclusivos</div>
+                        <div class="feature">• Colunas Temáticas</div>
+                        <div class="feature">• Interação com Leitores</div>
+                        <div class="feature">• Arquivo Completo</div>
+                    </div>
+                </div>
+
+                <div class="ecosystem-pillar nature-pillar">
+                    <div class="pillar-visual">
+                        <div class="pillar-icon">🏞️</div>
+                        <div class="pillar-glow"></div>
+                    </div>
+                    <h3>Natureza & Belezas</h3>
+                    <p>Celebrando as paisagens e belezas naturais da nossa região</p>
+                    <div class="pillar-features">
+                        <div class="feature">• Galeria de Fotos</div>
+                        <div class="feature">• Pontos Turísticos</div>
+                        <div class="feature">• Roteiros de Passeio</div>
+                        <div class="feature">• Preservação Ambiental</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Artesãos -->
+    <section class="artisans-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>🎨 Galeria de Artesãos & Artesãs</h2>
+                <p>Dando visibilidade aos talentos artísticos da nossa comunidade</p>
+            </div>
+
+            <div class="artisans-showcase">
+                <div class="artisan-card">
+                    <div class="artisan-avatar">👩‍🎨</div>
+                    <div class="artisan-info">
+                        <h4>Maria das Artes</h4>
+                        <p class="artisan-craft">Ceramista • Pintora</p>
+                        <p class="artisan-bio">Cria peças únicas inspiradas na natureza da nossa região</p>
+                    </div>
+                    <div class="artisan-works">
+                        <div class="work-sample">🏺</div>
+                        <div class="work-sample">🎨</div>
+                        <div class="work-sample">🖼️</div>
+                    </div>
+                </div>
+
+                <div class="artisan-card">
+                    <div class="artisan-avatar">👨‍🔧</div>
+                    <div class="artisan-info">
+                        <h4>João Madeireiro</h4>
+                        <p class="artisan-craft">Marceneiro • Escultor</p>
+                        <p class="artisan-bio">Transforma madeiras locais em obras de arte funcionais</p>
+                    </div>
+                    <div class="artisan-works">
+                        <div class="work-sample">🪑</div>
+                        <div class="work-sample">🗿</div>
+                        <div class="work-sample">📦</div>
+                    </div>
+                </div>
+
+                <div class="artisan-card">
+                    <div class="artisan-avatar">👵</div>
+                    <div class="artisan-info">
+                        <h4>Dona Antônia</h4>
+                        <p class="artisan-craft">Rendeira • Bordadeira</p>
+                        <p class="artisan-bio">Tradição familiar em rendas e bordados há 50 anos</p>
+                    </div>
+                    <div class="artisan-works">
+                        <div class="work-sample">🧵</div>
+                        <div class="work-sample">👗</div>
+                        <div class="work-sample">🪡</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisans-features">
+                <h3>✨ Benefícios para Artesãos</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🌐</div>
+                        <h4>Visibilidade Digital</h4>
+                        <p>Presença online gratuita para alcançar mais pessoas</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💼</div>
+                        <h4>Oportunidades</h4>
+                        <p>Conexão com eventos e possíveis compradores</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <h4>Fácil Gestão</h4>
+                        <p>Interface simples para atualizar portfólio e informações</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🤝</div>
+                        <h4>Rede de Apoio</h4>
+                        <p>Conexão com outros artesãos da comunidade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Eventos -->
+    <section class="events-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>📅 Sistema Completo de Eventos</h2>
+                <p>Organizando e divulgando a rica agenda cultural da nossa cidade</p>
+            </div>
+
+            <div class="events-calendar">
+                <div class="calendar-header">
+                    <h3>Agenda Comunitária</h3>
+                    <div class="calendar-nav">
+                        <button class="nav-btn">‹</button>
+                        <span>Dezembro 2024</span>
+                        <button class="nav-btn">›</button>
+                    </div>
+                </div>
+
+                <div class="calendar-grid">
+                    <div class="calendar-day">
+                        <div class="day-header">Dom 01</div>
+                        <div class="day-events">
+                            <div class="event-item feira">
+                                <span class="event-time">08:00</span>
+                                <span class="event-title">Feira de Artesanato</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar-day">
+                        <div class="day-header">Seg 02</div>
+                        <div class="day-events">
+                            <!-- No events -->
+                        </div>
+                    </div>
+
+                    <div class="calendar-day">
+                        <div class="day-header">Ter 03</div>
+                        <div class="day-events">
+                            <div class="event-item workshop">
+                                <span class="event-time">14:00</span>
+                                <span class="event-title">Oficina de Cerâmica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar-day featured">
+                        <div class="day-header">Qua 04</div>
+                        <div class="day-events">
+                            <div class="event-item festival">
+                                <span class="event-time">09:00</span>
+                                <span class="event-title">Festival Cultural</span>
+                            </div>
+                            <div class="event-item palestra">
+                                <span class="event-time">19:00</span>
+                                <span class="event-title">Palestra: Arte Local</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar-day">
+                        <div class="day-header">Qui 05</div>
+                        <div class="day-events">
+                            <div class="event-item exposicao">
+                                <span class="event-time">10:00</span>
+                                <span class="event-title">Exposição de Telas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar-day">
+                        <div class="day-header">Sex 06</div>
+                        <div class="day-events">
+                            <!-- No events -->
+                        </div>
+                    </div>
+
+                    <div class="calendar-day">
+                        <div class="day-header">Sáb 07</div>
+                        <div class="day-events">
+                            <div class="event-item musica">
+                                <span class="event-time">20:00</span>
+                                <span class="event-title">Show Música Regional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events-features">
+                <div class="feature-column">
+                    <h4>🎯 Para Organizadores</h4>
+                    <ul>
+                        <li>Cadastro gratuito de eventos</li>
+                        <li>Divulgação automática</li>
+                        <li>Gestão de inscrições</li>
+                        <li>Relatórios de participação</li>
+                    </ul>
+                </div>
+
+                <div class="feature-column">
+                    <h4>👥 Para Participantes</h4>
+                    <ul>
+                        <li>Agenda centralizada</li>
+                        <li>Lembretes automáticos</li>
+                        <li>Inscrições online</li>
+                        <li>Compartilhamento fácil</li>
+                    </ul>
+                </div>
+
+                <div class="feature-column">
+                    <h4>🏢 Para a Comunidade</h4>
+                    <ul>
+                        <li>Fortalecimento cultural</li>
+                        <li>Movimentação econômica</li>
+                        <li>Integração social</li>
+                        <li>Memória dos eventos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Colunistas -->
+    <section class="writers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>✍️ Vozes da Nossa Comunidade</h2>
+                <p>Colunistas que compartilham conhecimento, histórias e paixão pela nossa cidade</p>
+            </div>
+
+            <div class="writers-grid">
+                <div class="writer-card">
+                    <div class="writer-avatar">👨‍🌾</div>
+                    <div class="writer-info">
+                        <h4>Seu Roberto</h4>
+                        <p class="writer-category">Agricultura & Sustentabilidade</p>
+                        <p class="writer-bio">50 anos de experiência no campo, compartilhando saberes tradicionais</p>
+                    </div>
+                    <div class="writer-articles">
+                        <div class="article-badge">📚 12 artigos</div>
+                    </div>
+                </div>
+
+                <div class="writer-card">
+                    <div class="writer-avatar">👩‍🎓</div>
+                    <div class="writer-info">
+                        <h4>Professora Ana</h4>
+                        <p class="writer-category">Educação & Cultura</p>
+                        <p class="writer-bio">Historiadora apaixonada pelas raízes da nossa cidade</p>
+                    </div>
+                    <div class="writer-articles">
+                        <div class="article-badge">📚 8 artigos</div>
+                    </div>
+                </div>
+
+                <div class="writer-card">
+                    <div class="writer-avatar">👨‍🍳</div>
+                    <div class="writer-info">
+                        <h4>Chefe Carlos</h4>
+                        <p class="writer-category">Gastronomia & Receitas</p>
+                        <p class="writer-bio">Receitas tradicionais com ingredientes locais</p>
+                    </div>
+                    <div class="writer-articles">
+                        <div class="article-badge">📚 15 artigos</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="writing-platform">
+                <h3>📖 Plataforma de Publicação</h3>
+                <div class="platform-features">
+                    <div class="platform-feature">
+                        <div class="feature-icon">📝</div>
+                        <div class="feature-content">
+                            <h4>Editor Simples</h4>
+                            <p>Interface intuitiva para escrever e formatar artigos</p>
+                        </div>
+                    </div>
+                    <div class="platform-feature">
+                        <div class="feature-icon">🖼️</div>
+                        <div class="feature-content">
+                            <h4>Multimídia</h4>
+                            <p>Adicione fotos e vídeos aos seus artigos</p>
+                        </div>
+                    </div>
+                    <div class="platform-feature">
+                        <div class="feature-icon">💬</div>
+                        <div class="feature-content">
+                            <h4>Interação</h4>
+                            <p>Comentários e feedback dos leitores</p>
+                        </div>
+                    </div>
+                    <div class="platform-feature">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-content">
+                            <h4>Estatísticas</h4>
+                            <p>Acompanhe o engajamento dos seus artigos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Natureza & Belezas -->
+    <section class="nature-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏞️ Natureza & Belezas Locais</h2>
+                <p>Celebrando as paisagens espetaculares que tornam nossa cidade única</p>
+            </div>
+
+            <div class="nature-gallery">
+                <div class="nature-card landscape">
+                    <div class="nature-image">
+                        <div class="image-placeholder">🌄</div>
+                    </div>
+                    <div class="nature-info">
+                        <h4>Serra da Mantiqueira</h4>
+                        <p>Vistas deslumbrantes e trilhas incríveis</p>
+                        <div class="nature-tags">
+                            <span class="tag">🏔️ Montanhas</span>
+                            <span class="tag">🥾 Trilhas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nature-card waterfall">
+                    <div class="nature-image">
+                        <div class="image-placeholder">💦</div>
+                    </div>
+                    <div class="nature-info">
+                        <h4>Cachoeira do Funil</h4>
+                        <p>Queda d'água cristalina no coração da mata</p>
+                        <div class="nature-tags">
+                            <span class="tag">💧 Cachoeiras</span>
+                            <span class="tag">🌳 Mata Atlântica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nature-card park">
+                    <div class="nature-image">
+                        <div class="image-placeholder">🌳</div>
+                    </div>
+                    <div class="nature-info">
+                        <h4>Parque Municipal</h4>
+                        <p>Área verde perfeita para passeios em família</p>
+                        <div class="nature-tags">
+                            <span class="tag">🏞️ Parque</span>
+                            <span class="tag">👨‍👩‍👧‍👦 Familiar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nature-features">
+                <h3>🌿 Preservação & Conscientização</h3>
+                <div class="features-list">
+                    <div class="nature-feature">
+                        <div class="feature-icon">📸</div>
+                        <h4>Galeria Fotográfica</h4>
+                        <p>Registro das belezas naturais em diferentes estações</p>
+                    </div>
+                    <div class="nature-feature">
+                        <div class="feature-icon">🗺️</div>
+                        <h4>Roteiros Guiados</h4>
+                        <p>Sugestões de passeios e trilhas seguras</p>
+                    </div>
+                    <div class="nature-feature">
+                        <div class="feature-icon">♻️</div>
+                        <h4>Dicas Sustentáveis</h4>
+                        <p>Como preservar nossas belezas naturais</p>
+                    </div>
+                    <div class="nature-feature">
+                        <div class="feature-icon">📚</div>
+                        <h4>Educação Ambiental</h4>
+                        <p>Informações sobre fauna e flora local</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design & Animações -->
+    <section id="design" class="design-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>🎨 Design & Experiência do Usuário</h2>
+                <p>Interface moderna com animações fluidas que celebram a essência da nossa cidade</p>
+            </div>
+
+            <div class="design-showcase">
+                <div class="design-principles">
+                    <h3>✨ Princípios de Design</h3>
+                    <div class="principles-grid">
+                        <div class="principle">
+                            <div class="principle-icon">🌿</div>
+                            <h4>Natural & Orgânico</h4>
+                            <p>Cores e formas que remetem à natureza local</p>
+                        </div>
+                        <div class="principle">
+                            <div class="principle-icon">🎭</div>
+                            <h4>Cultural & Autêntico</h4>
+                            <p>Elementos que celebram nossa identidade cultural</p>
+                        </div>
+                        <div class="principle">
+                            <div class="principle-icon">🤝</div>
+                            <h4>Comunitário & Acolhedor</h4>
+                            <p>Design que promove conexão e pertencimento</p>
+                        </div>
+                        <div class="principle">
+                            <div class="principle-icon">⚡</div>
+                            <h4>Moderno & Funcional</h4>
+                            <p>Tecnologia atual com usabilidade intuitiva</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animations-demo">
+                    <h3>🌀 Animações GSAP Premium</h3>
+                    <div class="animation-showcase">
+                        <div class="animated-element" data-animation="float">
+                            <div class="element-icon">🎨</div>
+                            <span>Flutuante</span>
+                        </div>
+                        <div class="animated-element" data-animation="spin">
+                            <div class="element-icon">🌿</div>
+                            <span>Giratório</span>
+                        </div>
+                        <div class="animated-element" data-animation="pulse">
+                            <div class="element-icon">💫</div>
+                            <span>Pulsante</span>
+                        </div>
+                        <div class="animated-element" data-animation="bounce">
+                            <div class="element-icon">🎪</div>
+                            <span>Saltitante</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="color-palette">
+                <h3>🎨 Paleta de Cores Inspirada na Cidade</h3>
+                <div class="colors-grid">
+                    <div class="color-item primary">
+                        <div class="color-swatch"></div>
+                        <span>Verde Serra</span>
+                        <small>#2E8B57</small>
+                    </div>
+                    <div class="color-item secondary">
+                        <div class="color-swatch"></div>
+                        <span>Azul Céu</span>
+                        <small>#87CEEB</small>
+                    </div>
+                    <div class="color-item accent">
+                        <div class="color-swatch"></div>
+                        <span>Laranja Artesão</span>
+                        <small>#FF7F50</small>
+                    </div>
+                    <div class="color-item neutral">
+                        <div class="color-swatch"></div>
+                        <span>Bege Terroso</span>
+                        <small>#F5F5DC</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integração com Clube de Benefícios -->
+    <section class="integration-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔄 Integração Completa</h2>
+                <p>Conectando o portal comunitário ao ecossistema de benefícios</p>
+            </div>
+
+            <div class="integration-flow">
+                <div class="flow-step">
+                    <div class="step-icon">🏞️</div>
+                    <div class="step-content">
+                        <h4>Portal Comunitário</h4>
+                        <p>Base de artesãos, eventos e colunistas</p>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-step">
+                    <div class="step-icon">🔗</div>
+                    <div class="step-content">
+                        <h4>Integração Automática</h4>
+                        <p>Dados sincronizados em tempo real</p>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-step">
+                    <div class="step-icon">🏢</div>
+                    <div class="step-content">
+                        <h4>Clube de Benefícios</h4>
+                        <p>Oportunidades para empresas parceiras</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="integration-benefits">
+                <h3>🎯 Benefícios da Integração</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>Para Artesãos</h4>
+                        <ul>
+                            <li>Visibilidade em duas plataformas</li>
+                            <li>Oportunidades comerciais</li>
+                            <li>Parcerias com empresas</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Para Empresas</h4>
+                        <ul>
+                            <li>Acesso a talentos locais</li>
+                            <li>Marketing comunitário</li>
+                            <li>Benefícios exclusivos</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Para a Comunidade</h4>
+                        <ul>
+                            <li>Economia circular fortalecida</li>
+                            <li>Mais oportunidades locais</li>
+                            <li>Desenvolvimento integrado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="community-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon">💝</div>
+                <h2>Juntos Construímos Nossa Cidade Digital!</h2>
+                <p>Esta plataforma é um presente para nossa comunidade - tecnologia com propósito e coração</p>
+                <div class="cta-actions">
+                    <a href="../index.html#contato" class="btn btn-primary">
+                        🏡 Falar Sobre Minha Comunidade
+                    </a>
+                    <a href="plataforma-empregos.html" class="btn btn-secondary">
+                        💼 Ver Plataforma de Empregos
+                    </a>
+                </div>
+                <div class="final-message">
+                    <p><strong>🎉 Missão Cumprida:</strong> 6 projetos incríveis desenvolvidos com paixão e expertise técnica!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo-unionf_512x512.jpeg" alt="Union Logo" class="footer-logo">
+                    <p>Transformando ideias em soluções digitais extraordinárias.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Union Desenvolvimento de Softwares. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../animations-portfolio.js"></script>
+    <script src="../script.js"></script>
+    <script src="project-details.js"></script>
+</body>
+</html>

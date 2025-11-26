@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetDrinks - Union Desenvolvimento</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/netdrinks-specific.css">
+    <link rel="icon" href="../assets/images/logo-unionh_512x512.jpeg" type="image/x-icon">
+    
+    <!-- GSAP Premium -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body class="project-detail netdrinks-detail">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-unionh_512x512.jpeg" alt="Union Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="menu-items">
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#projetos">Projetos</a>
+                        <a href="../index.html#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge">🍹 Primeiro App Publicado</div>
+                <h1 class="project-title">NetDrinks</h1>
+                <p class="project-subtitle">Seu app de drinks, receitas e inspiração para bartenders e curiosos em 6 idiomas!</p>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Plataforma</span>
+                        <span class="meta-value">Android & iOS</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Stack</span>
+                        <span class="meta-value">Flutter • Firebase • Hive</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Idiomas</span>
+                        <span class="meta-value">🌍 6 Idiomas</span>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://play.google.com/store/apps/details?id=com.luciano.appdrinks" class="btn btn-primary" target="_blank">
+                        🍸 Baixar na Play Store
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        🎭 Ver Funcionalidades
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <img src="../assets/projects/netdrinks/app-preview-1.jpg" alt="NetDrinks Cocktail" class="app-screen">
+                    </div>
+                    <!-- Floating cocktail elements -->
+                    <div class="floating-glass" data-gsap='{"y": -25, "rotation": 5, "duration": 3, "repeat": -1, "yoyo": true}'>
+                        🍸
+                    </div>
+                    <div class="floating-lemon" data-gsap='{"y": 20, "x": 10, "duration": 2, "repeat": -1, "yoyo": true}'>
+                        🍋
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="600">0</div>
+                    <div class="stat-label">Receitas de Drinks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="6">0</div>
+                    <div class="stat-label">Idiomas Suportados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Telas Desenvolvidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Ingredientes Catalogados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques Internacionais -->
+    <section class="international-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>🌍 Experiência Global</h2>
+                <p>Tradução automática para 6 idiomas com interface adaptada culturalmente</p>
+            </div>
+
+            <div class="languages-grid">
+                <div class="language-card" data-lang="pt">
+                    <span class="flag">🇧🇷</span>
+                    <h4>Português</h4>
+                    <p>Caipirinha • Batida • Receitas locais</p>
+                </div>
+                <div class="language-card" data-lang="en">
+                    <span class="flag">🇺🇸</span>
+                    <h4>Inglês</h4>
+                    <p>Martini • Cocktail • Classic recipes</p>
+                </div>
+                <div class="language-card" data-lang="es">
+                    <span class="flag">🇪🇸</span>
+                    <h4>Espanhol</h4>
+                    <p>Mojito • Margarita • Sangría</p>
+                </div>
+                <div class="language-card" data-lang="fr">
+                    <span class="flag">🇫🇷</span>
+                    <h4>Francês</h4>
+                    <p>Kir • Pastis • French cocktails</p>
+                </div>
+                <div class="language-card" data-lang="it">
+                    <span class="flag">🇮🇹</span>
+                    <h4>Italiano</h4>
+                    <p>Negroni • Spritz • Aperitivo</p>
+                </div>
+                <div class="language-card" data-lang="de">
+                    <span class="flag">🇩🇪</span>
+                    <h4>Alemão</h4>
+                    <p>Berliner Luft • German specialties</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Busca Inteligente -->
+    <section id="features" class="search-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔍 Busca Inteligente</h2>
+                <p>Encontre drinks por múltiplos critérios de forma intuitiva</p>
+            </div>
+
+            <div class="search-features">
+                <div class="search-demo">
+                    <div class="search-interface">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Buscar drinks..." disabled>
+                            <button>🔍</button>
+                        </div>
+                        <div class="search-filters">
+                            <div class="filter-pill active">Por Nome</div>
+                            <div class="filter-pill">Por Ingrediente</div>
+                            <div class="filter-pill">Por Categoria</div>
+                            <div class="filter-pill">Letra Inicial</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <div class="benefit-content">
+                            <h4>Busca Multidimensional</h4>
+                            <p>Encontre drinks por nome, ingredientes, categoria ou letra inicial</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <div class="benefit-content">
+                            <h4>Performance Otimizada</h4>
+                            <p>Busca instantânea mesmo com centenas de receitas</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🌐</div>
+                        <div class="benefit-content">
+                            <h4>Funciona Offline</h4>
+                            <p>Todas as receitas disponíveis sem conexão com internet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Drinks -->
+    <section class="drinks-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>🍸 Biblioteca de Drinks</h2>
+                <p>Mais de 600 receitas organizadas e categorizadas</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="drink-card">
+                    <div class="drink-image">
+                        <img src="../assets/projects/netdrinks/drink-mojito.jpg" alt="Mojito">
+                    </div>
+                    <div class="drink-info">
+                        <h4>Mojito Cubano</h4>
+                        <div class="drink-meta">
+                            <span class="category">Clássico</span>
+                            <span class="difficulty">Fácil</span>
+                        </div>
+                        <p>Rum, limão, hortelã e água com gás</p>
+                    </div>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-image">
+                        <img src="../assets/projects/netdrinks/drink-caipirinha.jpg" alt="Caipirinha">
+                    </div>
+                    <div class="drink-info">
+                        <h4>Caipirinha</h4>
+                        <div class="drink-meta">
+                            <span class="category">Brasileiro</span>
+                            <span class="difficulty">Fácil</span>
+                        </div>
+                        <p>Cachaça, limão e açúcar</p>
+                    </div>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-image">
+                        <img src="../assets/projects/netdrinks/drink-margarita.jpg" alt="Margarita">
+                    </div>
+                    <div class="drink-info">
+                        <h4>Margarita</h4>
+                        <div class="drink-meta">
+                            <span class="category">Clássico</span>
+                            <span class="difficulty">Médio</span>
+                        </div>
+                        <p>Tequila, Cointreau e limão</p>
+                    </div>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-image">
+                        <img src="../assets/projects/netdrinks/drink-pina-colada.jpg" alt="Pina Colada">
+                    </div>
+                    <div class="drink-info">
+                        <h4>Pina Colada</h4>
+                        <div class="drink-meta">
+                            <span class="category">Tropical</span>
+                            <span class="difficulty">Fácil</span>
+                        </div>
+                        <p>Rum, leite de coco e abacaxi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Favoritos -->
+    <section class="favorites-system">
+        <div class="container">
+            <div class="section-header">
+                <h2>❤️ Sistema de Favoritos</h2>
+                <p>Salve seus drinks preferidos e crie coleções personalizadas</p>
+            </div>
+
+            <div class="favorites-demo">
+                <div class="favorites-visual">
+                    <div class="favorite-item animated">
+                        <div class="drink-thumb">
+                            <img src="../assets/projects/netdrinks/drink-mojito.jpg" alt="Mojito">
+                        </div>
+                        <div class="favorite-badge">❤️</div>
+                    </div>
+                    <div class="favorite-item animated" style="animation-delay: 0.2s">
+                        <div class="drink-thumb">
+                            <img src="../assets/projects/netdrinks/drink-caipirinha.jpg" alt="Caipirinha">
+                        </div>
+                        <div class="favorite-badge">❤️</div>
+                    </div>
+                    <div class="favorite-item animated" style="animation-delay: 0.4s">
+                        <div class="drink-thumb">
+                            <img src="../assets/projects/netdrinks/drink-margarita.jpg" alt="Margarita">
+                        </div>
+                        <div class="favorite-badge">❤️</div>
+                    </div>
+                </div>
+
+                <div class="favorites-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Sincronização em Nuvem</h4>
+                        <p>Seus favoritos sincronizados entre dispositivos via Firebase</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h4>Ranking de Popularidade</h4>
+                        <p>Veja os drinks mais amados pela comunidade</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍🍳</div>
+                        <h4>Modo Bartender</h4>
+                        <p>Crie e salve suas próprias variações de receitas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitetura Técnica -->
+    <section class="technical-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>⚙️ Arquitetura Técnica</h2>
+                <p>Decisões que garantem performance e experiência fluida</p>
+            </div>
+
+            <div class="architecture-content">
+                <div class="tech-stack">
+                    <h3>🛠️ Stack Tecnológico</h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h4>Frontend & UI</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/flutter.png" alt="Flutter">
+                                    <span>Flutter Framework</span>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/dart.png" alt="Dart">
+                                    <span>Dart Language</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span>🎨</span>
+                                    <span>Material Design 3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4>Backend & Dados</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/firebase.png" alt="Firebase">
+                                    <span>Firebase Auth</span>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="../assets/tech-icons/firebase.png" alt="Firestore">
+                                    <span>Cloud Firestore</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span>💾</span>
+                                    <span>Hive Database</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4>Utilitários</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <span>🌐</span>
+                                    <span>Intl Package</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span>📱</span>
+                                    <span>Shared Preferences</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span>🔄</span>
+                                    <span>GetX State Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-flow">
+                    <h3>📊 Fluxo de Dados Híbrido</h3>
+                    <div class="flow-diagram">
+                        <div class="flow-step">
+                            <div class="step-icon">📱</div>
+                            <div class="step-content">
+                                <h5>Dados Locais (Hive)</h5>
+                                <p>Receitas básicas funcionam 100% offline</p>
+                            </div>
+                        </div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-step">
+                            <div class="step-icon">☁️</div>
+                            <div class="step-content">
+                                <h5>Sincronização (Firebase)</h5>
+                                <p>Favoritos e dados de usuário na nuvem</p>
+                            </div>
+                        </div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-step">
+                            <div class="step-icon">🔄</div>
+                            <div class="step-content">
+                                <h5>Cache Inteligente</h5>
+                                <p>Otimização automática entre local e nuvem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desafios de Internacionalização -->
+    <section class="i18n-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>🌐 Desafios de Tradução</h2>
+                <p>Soluções criativas para uma experiência verdadeiramente global</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-solution">
+                    <div class="challenge">
+                        <h4>🚧 Desafio: Terminologia Específica</h4>
+                        <p>Nomes de drinks e ingredientes com variações regionais e técnicas</p>
+                    </div>
+                    <div class="solution">
+                        <h4>💡 Solução: Dicionário Especializado</h4>
+                        <p>Base de dados com traduções validadas por bartenders locais</p>
+                    </div>
+                </div>
+
+                <div class="challenge-solution">
+                    <div class="challenge">
+                        <h4>🚧 Desafio: Medidas e Unidades</h4>
+                        <p>Conversão automática entre oz, ml, cl, dash, splash</p>
+                    </div>
+                    <div class="solution">
+                        <h4>💡 Solução: Sistema de Conversão</h4>
+                        <p>Algoritmo inteligente de conversão com preferências do usuário</p>
+                    </div>
+                </div>
+
+                <div class="challenge-solution">
+                    <div class="challenge">
+                        <h4>🚧 Desafio: Interface Cultural</h4>
+                        <p>Design que funciona bem em diferentes contextos culturais</p>
+                    </div>
+                    <div class="solution">
+                        <h4>💡 Solução: Design Adaptativo</h4>
+                        <p>Componentes que se adaptam ao idioma e direção do texto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jornada de Aprendizado -->
+    <section class="learning-journey">
+        <div class="container">
+            <div class="section-header">
+                <h2>🎓 Primeiro App - Grandes Aprendizados</h2>
+                <p>O projeto que marcou o início da minha jornada no desenvolvimento mobile</p>
+            </div>
+
+            <div class="journey-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4>🚀 Primeiro Contato com Flutter</h4>
+                        <p>Descoberta do framework e primeiros protótipos de interface</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4>🔥 Integração com Firebase</h4>
+                        <p>Implementação de autenticação e banco de dados em nuvem</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4>🌐 Desafio da Internacionalização</h4>
+                        <p>Implementação do sistema multi-idioma com fallbacks</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4>📱 Publicação na Play Store</h4>
+                        <p>Processo completo de build, signing e publicação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Gostou do NetDrinks?</h2>
+                <p>Este foi meu primeiro app publicado - imagine o que posso fazer pelo seu projeto!</p>
+                <div class="cta-actions">
+                    <a href="../index.html#contato" class="btn btn-primary">💬 Falar sobre Meu Projeto</a>
+                    <a href="economize.html" class="btn btn-secondary">📊 Ver Economize+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo-unionf_512x512.jpeg" alt="Union Logo" class="footer-logo">
+                    <p>Transformando ideias em soluções digitais extraordinárias.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Union Desenvolvimento de Softwares. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../animations-portfolio.js"></script>
+    <script src="../script.js"></script>
+    <script src="project-details.js"></script>
+</body>
+</html>
