@@ -999,6 +999,13 @@
 }
 
 /* Delay para animação em cascata */
+.netdrinks-detail .stat-card:nth-child(1) { animation-delay: 0s; }
+.netdrinks-detail .stat-card:nth-child(2) { animation-delay: 0.1s; }
+.netdrinks-detail .stat-card:nth-child(3) { animation-delay: 0.2s; }
+.netdrinks-detail .stat-card:nth-child(4) { animation-delay: 0.3s; }
+.netdrinks-detail .stat-card:nth-child(5) { animation-delay: 0.4s; }
+.netdrinks-detail .stat-card:nth-child(6) { animation-delay: 0.5s; }
+
 .netdrinks-detail .language-card:nth-child(2) { animation-delay: 0.1s; }
 .netdrinks-detail .language-card:nth-child(3) { animation-delay: 0.2s; }
 .netdrinks-detail .language-card:nth-child(4) { animation-delay: 0.3s; }
