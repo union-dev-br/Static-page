@@ -276,6 +276,16 @@
   letter-spacing: 1px;
 }
 
+/* Logo fix - manter proporção quadrada */
+.coromandel-detail .logo,
+.coromandel-detail .portal-logo img,
+.coromandel-detail .footer-logo {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  width: auto;
+  max-width: 50px;
+}
+
 .portal-nav {
   display: flex;
   gap: 1.5rem;
@@ -526,12 +536,16 @@
   margin-bottom: 2rem;
   line-height: 1.6;
   font-size: 1.1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .pillar-features {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  overflow: hidden;
 }
 
 .feature {
@@ -541,6 +555,9 @@
   background: rgba(255, 255, 255, 0.7);
   border-radius: var(--coromandel-radius);
   transition: var(--coromandel-transition);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .feature:hover {
@@ -568,12 +585,13 @@
   border-radius: var(--coromandel-radius-xl);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  word-wrap: break-word;
   align-items: center;
   gap: 2rem;
   transition: var(--coromandel-bounce);
   border: 3px solid transparent;
   position: relative;
-  overflow: hidden;
 }
 
 .artisan-card::before {
@@ -618,6 +636,8 @@
 .artisan-info {
   text-align: center;
   flex: 1;
+  width: 100%;
+  overflow: hidden;
 }
 
 .artisan-info h4 {
@@ -625,6 +645,8 @@
   margin-bottom: 0.5rem;
   font-weight: 700;
   font-size: 1.4rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .artisan-craft {
@@ -632,12 +654,17 @@
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .artisan-bio {
   color: var(--coromandel-text-secondary);
   line-height: 1.6;
   font-size: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .artisan-works {
@@ -1851,6 +1878,351 @@
 .artisan-card:hover::after,
 .writer-card:hover::after,
 .nature-card:hover::after {
+  opacity: 1;
+}
+
+/* ============================================
+   RESPONSIVIDADE CLUBE COROMANDEL
+   ============================================ */
+
+/* Tablets e telas médias (≤ 1024px) */
+@media (max-width: 1024px) {
+  .ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .artisans-showcase {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .calendar-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablets pequenos (≤ 768px) */
+@media (max-width: 768px) {
+  .coromandel-detail .project-hero {
+    padding: 120px 0 60px;
+  }
+  
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .ecosystem-pillar {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .ecosystem-pillar h3 {
+    font-size: 1.4rem;
+  }
+  
+  .ecosystem-pillar p {
+    font-size: 1rem;
+  }
+  
+  .artisans-showcase {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .artisan-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .portal-window {
+    padding: 1.5rem;
+  }
+  
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .calendar-day {
+    padding: 0.8rem;
+    min-height: 100px;
+  }
+  
+  .writers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Celulares grandes (≤ 480px) - iPhone 14, Galaxy S23 */
+@media (max-width: 480px) {
+  .coromandel-detail .project-hero {
+    padding: 100px 0 50px;
+  }
+  
+  .coromandel-detail .project-title {
+    font-size: 2.1rem;
+  }
+  
+  .coromandel-detail .project-subtitle {
+    font-size: 1.05rem;
+  }
+  
+  .ecosystem-pillar {
+    padding: 2.2rem 1.2rem;
+  }
+  
+  .ecosystem-pillar h3 {
+    font-size: 1.3rem;
+    margin: 1.6rem 0 0.9rem;
+  }
+  
+  .ecosystem-pillar p {
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .pillar-icon {
+    font-size: 3.2rem;
+    width: 85px;
+    height: 85px;
+  }
+  
+  .feature {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+  }
+  
+  .artisan-card {
+    padding: 1.8rem 1.2rem;
+    gap: 1.6rem;
+  }
+  
+  .artisan-avatar {
+    font-size: 3.2rem;
+    width: 95px;
+    height: 95px;
+  }
+  
+  .artisan-info h4 {
+    font-size: 1.3rem;
+  }
+  
+  .artisan-craft {
+    font-size: 1.05rem;
+  }
+  
+  .artisan-bio {
+    font-size: 0.95rem;
+  }
+  
+  .work-sample {
+    font-size: 1.6rem;
+    width: 54px;
+    height: 54px;
+  }
+  
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .calendar-day {
+    padding: 0.7rem;
+    min-height: 85px;
+    font-size: 0.9rem;
+  }
+  
+  .portal-header {
+    padding: 1.1rem;
+  }
+  
+  .portal-logo {
+    font-size: 1.3rem;
+  }
+  
+  .portal-nav {
+    gap: 1.1rem;
+  }
+  
+  .portal-nav span {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.85rem;
+  }
+  
+  .featured-item {
+    padding: 1.1rem 0.9rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.9rem;
+  }
+  
+  .section-header p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Celulares médios (≤ 390px) - iPhone 12/13/14 Pro, Pixel 6 */
+@media (max-width: 390px) {
+  .coromandel-detail .project-title {
+    font-size: 1.85rem;
+  }
+  
+  .coromandel-detail .project-subtitle {
+    font-size: 0.98rem;
+  }
+  
+  .ecosystem-pillar {
+    padding: 2rem 1rem;
+  }
+  
+  .ecosystem-pillar h3 {
+    font-size: 1.2rem;
+  }
+  
+  .ecosystem-pillar p {
+    font-size: 0.95rem;
+  }
+  
+  .pillar-icon {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .artisan-avatar {
+    font-size: 3rem;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+  
+  .calendar-day {
+    min-height: 80px;
+  }
+}
+
+/* Celulares comuns (≤ 360px) - Galaxy A, Motorola */
+@media (max-width: 360px) {
+  .coromandel-detail .project-hero {
+    padding: 90px 0 45px;
+  }
+  
+  .coromandel-detail .project-title {
+    font-size: 1.7rem;
+  }
+  
+  .coromandel-detail .project-subtitle {
+    font-size: 0.92rem;
+  }
+  
+  .ecosystem-pillar {
+    padding: 1.8rem 0.9rem;
+  }
+  
+  .ecosystem-pillar h3 {
+    font-size: 1.1rem;
+    margin: 1.4rem 0 0.7rem;
+  }
+  
+  .ecosystem-pillar p {
+    font-size: 0.9rem;
+    margin-bottom: 1.4rem;
+  }
+  
+  .pillar-icon {
+    font-size: 2.8rem;
+    width: 75px;
+    height: 75px;
+  }
+  
+  .feature {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.88rem;
+  }
+  
+  .artisan-card {
+    padding: 1.5rem 1rem;
+    gap: 1.4rem;
+  }
+  
+  .artisan-avatar {
+    font-size: 2.8rem;
+    width: 85px;
+    height: 85px;
+  }
+  
+  .artisan-info h4 {
+    font-size: 1.15rem;
+  }
+  
+  .artisan-craft {
+    font-size: 0.98rem;
+  }
+  
+  .artisan-bio {
+    font-size: 0.88rem;
+  }
+  
+  .work-sample {
+    font-size: 1.4rem;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .calendar-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .calendar-day {
+    padding: 0.6rem;
+    min-height: 70px;
+    font-size: 0.85rem;
+  }
+  
+  .portal-header {
+    padding: 0.9rem;
+  }
+  
+  .portal-logo {
+    font-size: 1.1rem;
+  }
+  
+  .portal-nav {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+  
+  .portal-nav span {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.7rem;
+  }
+  
+  .featured-item {
+    padding: 0.9rem 0.7rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+}
   opacity: 1;
   animation: card-shine 2s ease-in-out;
 }
