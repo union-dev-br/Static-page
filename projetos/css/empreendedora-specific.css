@@ -286,6 +286,14 @@
     font-weight: 600;
 }
 
+/* Animações em cascata para stat-cards */
+.empreendedora-detail .stat-card:nth-child(1) { animation-delay: 0s; }
+.empreendedora-detail .stat-card:nth-child(2) { animation-delay: 0.1s; }
+.empreendedora-detail .stat-card:nth-child(3) { animation-delay: 0.2s; }
+.empreendedora-detail .stat-card:nth-child(4) { animation-delay: 0.3s; }
+.empreendedora-detail .stat-card:nth-child(5) { animation-delay: 0.4s; }
+.empreendedora-detail .stat-card:nth-child(6) { animation-delay: 0.5s; }
+
 /* ===== SYSTEM OVERVIEW ===== */
 .system-overview {
     padding: 80px 0;
