@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Institucional Flutter Web - Union Desenvolvimento</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="icon" href="../assets/images/logo-unionh_512x512.jpeg" type="image/x-icon">
+    
+    <!-- GSAP Premium -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+</head>
+<body class="project-detail flutterweb-detail">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-unionh_512x512.jpeg" alt="Union Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="menu-items">
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#projetos">Projetos</a>
+                        <a href="../index.html#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge">🌐 Site Publicado</div>
+                <h1 class="project-title">Site Institucional</h1>
+                <p class="project-subtitle">Site institucional responsivo com foco em acessibilidade e publicação via Firebase Hosting</p>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Plataforma</span>
+                        <span class="meta-value">Web (PWA)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Stack</span>
+                        <span class="meta-value">Flutter • Dart • Firebase</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Status</span>
+                        <span class="meta-value">🟢 Online</span>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <a href="#demos" class="btn btn-primary">
+                        🎬 Ver Demonstração
+                    </a>
+                    <a href="#arquitetura" class="btn btn-secondary">
+                        🔧 Ver Detalhes Técnicos
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-hero-visual">
+                <div class="device-mockup">
+                    <div class="laptop-frame">
+                        <img src="../assets/projects/flutterweb/site-preview-1.jpg" alt="Site Institucional Flutter Web" class="site-screen">
+                    </div>
+                    <!-- Floating elements com GSAP -->
+                    <div class="floating-widget" data-gsap='{"y": -20, "duration": 2, "repeat": -1, "yoyo": true}'>
+                        📱
+                    </div>
+                    <div class="floating-code" data-gsap='{"y": 15, "duration": 1.5, "repeat": -1, "yoyo": true}'>
+                        💻
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas Impactantes -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Telas Desenvolvidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Pacotes Utilizados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="4">0</div>
+                    <div class="stat-label">Funcionalidades de Acessibilidade</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">Dispositivos Responsivos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visão Geral -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visão Geral do Projeto</h2>
+                <p>Site institucional moderno e acessível desenvolvido com Flutter Web, otimizado para SEO e performance</p>
+            </div>
+
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>🎯 O Desafio</h3>
+                    <p>Criar um site institucional responsivo que oferecesse excelente experiência de usuário em todos os dispositivos, com foco especial em acessibilidade e otimização para mecanismos de busca.</p>
+
+                    <h3>💡 A Solução</h3>
+                    <p>Desenvolvi um site completo utilizando Flutter Web, implementando recursos avançados de acessibilidade, layout responsivo e integração com Firebase Hosting para deploy automatizado.</p>
+
+                    <div class="feature-highlights">
+                        <div class="feature-item">
+                            <span class="feature-icon">♿</span>
+                            <span>Acessibilidade Avançada</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📱</span>
+                            <span>Design Responsivo</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <span>Performance Otimizada</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔍</span>
+                            <span>SEO Otimizado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-visual">
+                    <div class="tech-stack">
+                        <h4>Tecnologias Utilizadas</h4>
+                        <div class="tech-list">
+                            <div class="tech-item" data-tech="flutter">
+                                <img src="../assets/tech-icons/flutter.png" alt="Flutter">
+                                <span>Flutter</span>
+                            </div>
+                            <div class="tech-item" data-tech="dart">
+                                <img src="../assets/tech-icons/dart.png" alt="Dart">
+                                <span>Dart</span>
+                            </div>
+                            <div class="tech-item" data-tech="firebase">
+                                <img src="../assets/tech-icons/firebase.png" alt="Firebase">
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tech-item" data-tech="pwa">
+                                <img src="../assets/tech-icons/pwa.png" alt="PWA">
+                                <span>PWA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demonstração Visual -->
+    <section id="demos" class="project-demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interface & Experiência do Usuário</h2>
+                <p>Design moderno e acessível com foco na experiência do usuário</p>
+            </div>
+
+            <div class="demo-showcase">
+                <!-- Screenshot Carousel -->
+                <div class="screenshot-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="../assets/projects/flutterweb/screen-home.jpg" alt="Página Inicial">
+                                <div class="slide-caption">Página inicial com design moderno e responsivo</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="../assets/projects/flutterweb/screen-blog.jpg" alt="Blog">
+                                <div class="slide-caption">Seção de blog com artigos e conteúdo dinâmico</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="../assets/projects/flutterweb/screen-services.jpg" alt="Serviços">
+                                <div class="slide-caption">Página de serviços com informações detalhadas</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="../assets/projects/flutterweb/screen-contact.jpg" alt="Contato">
+                                <div class="slide-caption">Formulário de contato integrado</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="../assets/projects/flutterweb/screen-accessibility.jpg" alt="Acessibilidade">
+                                <div class="slide-caption">Recursos de acessibilidade (V-Libras, alto contraste)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-prev">‹</button>
+                        <div class="carousel-dots"></div>
+                        <button class="carousel-next">›</button>
+                    </div>
+                </div>
+
+                <!-- Video Demo -->
+                <div class="video-demo">
+                    <div class="video-container">
+                        <video controls poster="../assets/projects/flutterweb/video-thumbnail.jpg">
+                            <source src="../assets/projects/flutterweb/site-demo.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        <div class="video-overlay">
+                            <button class="play-button">▶</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitetura Técnica -->
+    <section id="arquitetura" class="project-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Arquitetura & Inovações Técnicas</h2>
+                <p>Estrutura sólida e decisões técnicas que garantem performance e manutenibilidade</p>
+            </div>
+
+            <div class="architecture-content">
+                <div class="arch-diagram">
+                    <div class="arch-layer">
+                        <div class="layer-title">🎨 Presentation Layer</div>
+                        <div class="layer-techs">
+                            <span>Flutter Widgets</span>
+                            <span>Material Design</span>
+                            <span>Responsive Framework</span>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-arrow">↓</div>
+                    
+                    <div class="arch-layer">
+                        <div class="layer-title">⚙️ Business Logic</div>
+                        <div class="layer-techs">
+                            <span>Provider Pattern</span>
+                            <span>Section Controller</span>
+                            <span>Scroll Navigation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-arrow">↓</div>
+                    
+                    <div class="arch-layer">
+                        <div class="layer-title">💾 Data & Services</div>
+                        <div class="layer-techs">
+                            <span>Flutter HTML</span>
+                            <span>Cached Network Image</span>
+                            <span>URL Launcher</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technical-features">
+                    <h3>🚀 Funcionalidades Técnicas Avançadas</h3>
+                    
+                    <div class="tech-feature">
+                        <h4>♿ Sistema de Acessibilidade</h4>
+                        <p>Implementação completa de recursos de acessibilidade incluindo V-Libras para tradução em Libras, controle de tamanho de fonte e modo alto contraste para melhorar a experiência de usuários com necessidades especiais.</p>
+                    </div>
+                    
+                    <div class="tech-feature">
+                        <h4>📱 Layout Responsivo Avançado</h4>
+                        <p>Uso do pacote responsive_framework para criar layouts adaptativos que funcionam perfeitamente em desktop, tablet e mobile, com breakpoints otimizados para cada dispositivo.</p>
+                    </div>
+                    
+                    <div class="tech-feature">
+                        <h4>⚡ Otimização de Performance</h4>
+                        <p>Implementação de carregamento lazy de imagens com cached_network_image, otimização de bundles e estratégias de cache para garantir tempos de carregamento rápidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desafios & Soluções -->
+    <section class="project-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Desafios Técnicos Superados</h2>
+                <p>Problemas complexos exigem soluções criativas e eficientes</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon">♿</div>
+                    <h3>Acessibilidade em Flutter Web</h3>
+                    <p><strong>Desafio:</strong> Implementar recursos avançados de acessibilidade em uma aplicação Flutter Web</p>
+                    <p><strong>Solução:</strong> Integração do V-Libras e desenvolvimento de widgets customizados para controle de contraste e tamanho de fonte</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">📱</div>
+                    <h3>Responsividade Complexa</h3>
+                    <p><strong>Desafio:</strong> Garantir experiência consistente em todos os tamanhos de tela</p>
+                    <p><strong>Solução:</strong> Uso do responsive_framework com breakpoints customizados e testes em múltiplos dispositivos</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">🚀</div>
+                    <h3>Otimização para SEO</h3>
+                    <p><strong>Desafio:</strong> Melhorar indexação de conteúdo dinâmico em aplicação Flutter</p>
+                    <p><strong>Solução:</strong> Implementação de flutter_html para renderização semântica e estruturação adequada de metatags</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades Principais -->
+    <section class="project-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Funcionalidades Principais</h2>
+                <p>Recursos implementados para oferecer a melhor experiência ao usuário</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Seções Institucionais</h3>
+                    <p>Páginas completas para serviços, sobre, contato, profissional e agendamento com design consistente e navegação intuitiva.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Blog & Artigos</h3>
+                    <p>Sistema completo de blog com estrutura para exibição de artigos e páginas de conteúdo dinâmico usando flutter_html.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+                    <h3>Acessibilidade</h3>
+                    <p>Controle de tamanho de fonte, modo alto contraste, widget V-Libras e navegação por teclado para máxima acessibilidade.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3>Integração de Contatos</h3>
+                    <p>Widgets específicos para contato via WhatsApp, email e telefone usando url_launcher para ações rápidas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🧭</div>
+                    <h3>Navegação Aprimorada</h3>
+                    <p>Sistema de scroll para seções e controle de navegação via SectionController para experiência fluida.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📲</div>
+                    <h3>PWA & Web Manifest</h3>
+                    <p>Suporte completo a Progressive Web App com manifest.json e recursos de instalação em dispositivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estrutura do Projeto -->
+    <section class="project-structure">
+        <div class="container">
+            <div class="section-header">
+                <h2>Estrutura do Projeto</h2>
+                <p>Organização clara e modular para facilitar manutenção e escalabilidade</p>
+            </div>
+
+            <div class="structure-tree">
+                <div class="folder">
+                    <div class="folder-name">📁 lib/</div>
+                    <div class="folder-contents">
+                        <div class="file">📄 main.dart</div>
+                        <div class="folder">
+                            <div class="folder-name">📁 screens/</div>
+                            <div class="folder-contents">
+                                <div class="file">📄 home.dart</div>
+                                <div class="file">📄 contato.dart</div>
+                                <div class="file">📄 blog.dart</div>
+                                <div class="folder">
+                                    <div class="folder-name">📁 blog/artigos/</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folder">
+                            <div class="folder-name">📁 widgets/</div>
+                            <div class="folder-contents">
+                                <div class="file">📄 acessibilidade.dart</div>
+                                <div class="file">📄 home.dart</div>
+                                <div class="file">📄 whatsapp.dart</div>
+                            </div>
+                        </div>
+                        <div class="folder">
+                            <div class="folder-name">📁 controller/</div>
+                            <div class="folder-contents">
+                                <div class="file">📄 scroll_to_section.dart</div>
+                                <div class="file">📄 section_controller.dart</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="folder">
+                    <div class="folder-name">📁 assets/</div>
+                    <div class="folder-contents">
+                        <div class="folder">
+                            <div class="folder-name">📁 images/</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="folder">
+                    <div class="folder-name">📁 web/</div>
+                    <div class="folder-contents">
+                        <div class="file">📄 index.html</div>
+                        <div class="file">📄 manifest.json</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Passos -->
+    <section class="project-future">
+        <div class="container">
+            <div class="section-header">
+                <h2>Evolução & Próximas Funcionalidades</h2>
+                <p>O roadmap de melhorias contínuas para o site institucional</p>
+            </div>
+
+            <div class="roadmap">
+                <div class="roadmap-phase">
+                    <div class="phase-badge">✅ Concluído</div>
+                    <h4>Versão 1.0 - Base Sólida</h4>
+                    <ul>
+                        <li>Layout responsivo básico</li>
+                        <li>Seções institucionais</li>
+                        <li>Integração com Firebase Hosting</li>
+                    </ul>
+                </div>
+                
+                <div class="roadmap-phase current">
+                    <div class="phase-badge">🟡 Em Andamento</div>
+                    <h4>Versão 2.0 - Experiência Rica</h4>
+                    <ul>
+                        <li>Sistema completo de acessibilidade</li>
+                        <li>Blog com conteúdo dinâmico</li>
+                        <li>Otimizações de performance</li>
+                    </ul>
+                </div>
+                
+                <div class="roadmap-phase">
+                    <div class="phase-badge">🔮 Planejado</div>
+                    <h4>Versão 3.0 - Funcionalidades Avançadas</h4>
+                    <ul>
+                        <li>Painel administrativo</li>
+                        <li>Integração com CMS</li>
+                        <li>Análises de usuário</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Precisa de um Site Institucional Moderno?</h2>
+                <p>Vamos conversar sobre como posso transformar sua presença digital!</p>
+                <div class="cta-actions">
+                    <a href="../index.html#contato" class="btn btn-primary">📞 Falar com Especialista</a>
+                    <a href="../index.html#projetos" class="btn btn-secondary">👀 Ver Outros Projetos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo-unionf_512x512.jpeg" alt="Union Logo" class="footer-logo">
+                    <p>Transformando ideias em soluções digitais extraordinárias.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Projetos</h4>
+                        <a href="netdrinks.html">NetDrinks</a>
+                        <a href="empreendedora.html">A Empreendedora</a>
+                        <a href="clube-beneficios.html">Clube de Benefícios</a>
+                        <a href="economize.html">Economize+</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Union Desenvolvimento de Softwares. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../animations-portfolio.js"></script>
+    <script src="../script.js"></script>
+    <script src="project-details.js"></script>
+</body>
+</html>
