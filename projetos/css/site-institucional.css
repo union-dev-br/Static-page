@@ -246,7 +246,7 @@
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     max-width: 1400px;
     margin: 0 auto;
@@ -1117,6 +1117,10 @@
     .project-meta {
         flex-direction: column;
         gap: 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .feature-highlights,
