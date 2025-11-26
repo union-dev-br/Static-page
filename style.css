@@ -1132,24 +1132,41 @@ section {
     /* Hero */
     .hero {
         padding: 100px 0 50px;
+        min-height: auto;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
     
     .hero-title {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
     }
     
     .hero-subtitle {
-        font-size: 1.05rem;
-        line-height: 1.5;
+        font-size: 1rem;
+        line-height: 1.6;
     }
     
     .hero-visual {
-        height: 220px;
+        height: 200px;
     }
     
     .element img {
-        width: 38px;
-        height: 38px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
     }
     
     /* Botões */
@@ -1160,34 +1177,39 @@ section {
     
     /* Seções */
     section {
-        padding: 55px 0;
+        padding: 50px 0;
     }
     
     .section-title {
-        font-size: 1.9rem;
-        margin-bottom: 38px;
+        font-size: 1.8rem;
+        margin-bottom: 35px;
     }
     
     .section-title::after {
-        width: 65px;
+        width: 60px;
         height: 3px;
     }
     
     /* Sobre */
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
     .about-text h3 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     .about-text p {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
     
     .stat {
-        padding: 26px 16px;
+        padding: 24px 16px;
     }
     
     .stat-number {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
     
     .stat-label {
@@ -1196,24 +1218,36 @@ section {
     
     /* Expertise */
     .expertise-item {
-        padding: 22px;
+        padding: 20px;
     }
     
     .expertise-item h3 {
         font-size: 1.15rem;
     }
     
+    .expertise-item p {
+        font-size: 0.95rem;
+    }
+    
     /* Serviços */
     .service-card {
-        padding: 32px 22px;
+        padding: 30px 20px;
     }
     
     .service-icon {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
     
     .service-card h3 {
-        font-size: 1.35rem;
+        font-size: 1.3rem;
+    }
+    
+    .service-card p {
+        font-size: 0.95rem;
+    }
+    
+    .service-card ul li {
+        font-size: 0.9rem;
     }
     
     /* Projetos */
@@ -1310,25 +1344,30 @@ section {
         height: 38px;
     }
     
+    .hero {
+        padding: 90px 0 45px;
+    }
+    
     .hero-title {
-        font-size: 1.7rem;
+        font-size: 1.65rem;
+        line-height: 1.25;
     }
     
     .hero-subtitle {
-        font-size: 0.98rem;
+        font-size: 0.95rem;
     }
     
     .hero-visual {
-        height: 200px;
+        height: 180px;
     }
     
     .element img {
-        width: 35px;
-        height: 35px;
+        width: 32px;
+        height: 32px;
     }
     
     .section-title {
-        font-size: 1.7rem;
+        font-size: 1.65rem;
     }
     
     .btn {
@@ -1336,12 +1375,48 @@ section {
         font-size: 0.9rem;
     }
     
+    .about-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .about-text p {
+        font-size: 0.95rem;
+    }
+    
+    .expertise-item {
+        padding: 18px;
+    }
+    
+    .expertise-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .service-card {
+        padding: 26px 18px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+    
     .project-image {
         height: 170px;
     }
     
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-info p {
+        font-size: 0.9rem;
+    }
+    
+    .stat {
+        padding: 22px 14px;
+    }
+    
     .stat-number {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
     
     .footer-logo {
@@ -1365,67 +1440,107 @@ section {
     }
     
     .hero {
-        padding: 90px 0 45px;
+        padding: 85px 0 40px;
     }
     
     .hero-title {
-        font-size: 1.55rem;
+        font-size: 1.5rem;
         line-height: 1.25;
     }
     
     .hero-subtitle {
-        font-size: 0.92rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
     
     .hero-visual {
-        height: 180px;
+        height: 160px;
     }
     
     .element img {
-        width: 32px;
-        height: 32px;
+        width: 30px;
+        height: 30px;
     }
     
     section {
-        padding: 45px 0;
+        padding: 40px 0;
     }
     
     .section-title {
-        font-size: 1.6rem;
-        margin-bottom: 32px;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .section-title::after {
+        width: 50px;
+        height: 2px;
     }
     
     .btn {
-        padding: 9px 22px;
+        padding: 9px 20px;
         font-size: 0.85rem;
     }
     
     .about-text h3 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     .about-text p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
     }
     
     .stat {
-        padding: 22px 12px;
+        padding: 20px 12px;
     }
     
     .stat-number {
-        font-size: 2rem;
+        font-size: 1.9rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+    }
+    
+    .expertise-item {
+        padding: 16px;
+    }
+    
+    .expertise-item h3 {
+        font-size: 1.05rem;
+    }
+    
+    .expertise-item p {
+        font-size: 0.88rem;
     }
     
     .service-card {
-        padding: 26px 18px;
+        padding: 24px 16px;
     }
     
     .service-icon {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.15rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+    }
+    
+    .service-card ul li {
+        font-size: 0.85rem;
+        padding: 6px 0;
+    }
+    
+    .projects-grid {
+        gap: 1.5rem;
     }
     
     .project-image {
-        height: 155px;
+        height: 150px;
     }
     
     .project-info {
@@ -1438,6 +1553,32 @@ section {
     
     .project-info p {
         font-size: 0.88rem;
+        line-height: 1.5;
+    }
+    
+    .project-overlay h3 {
+        font-size: 1.1rem;
+    }
+    
+    .project-overlay p {
+        font-size: 0.82rem;
+    }
+    
+    .btn-link {
+        padding: 7px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .contact-content {
+        gap: 30px;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-info p {
+        font-size: 0.95rem;
     }
     
     .contact-form {
@@ -1447,11 +1588,15 @@ section {
     .form-group input,
     .form-group textarea {
         padding: 11px;
-        font-size: 0.92rem;
+        font-size: 0.9rem;
     }
     
     .footer-logo {
         height: 36px;
+    }
+    
+    .footer-brand p {
+        font-size: 0.9rem;
     }
     
     .footer-column h4 {
@@ -1459,12 +1604,17 @@ section {
     }
     
     .footer-column a {
-        font-size: 0.92rem;
+        font-size: 0.9rem;
     }
     
     .social-links a {
         width: 34px;
         height: 34px;
+    }
+    
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding: 18px 0;
     }
     
     .back-to-top {
@@ -1478,5 +1628,9 @@ section {
     .menu-items {
         max-width: 260px;
         padding: 25px 18px;
+    }
+    
+    .menu-items a {
+        font-size: 0.95rem;
     }
 }
