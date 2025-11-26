@@ -1199,6 +1199,328 @@
   }
 }
 
+/* Celulares grandes (≤ 480px) */
+@media (max-width: 480px) {
+  .jobs-platform-detail .project-hero {
+    padding: 100px 0 50px;
+  }
+  
+  .jobs-platform-detail .project-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .jobs-platform-detail .project-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .project-meta {
+    gap: 0.8rem;
+  }
+  
+  .meta-item {
+    font-size: 0.9rem;
+  }
+  
+  .community-highlight {
+    padding: 1.2rem;
+  }
+  
+  .community-highlight p {
+    font-size: 1rem;
+  }
+  
+  .highlight-icon {
+    font-size: 1.8rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .impact-card {
+    padding: 1.5rem 1.2rem;
+  }
+  
+  .impact-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .impact-card p {
+    font-size: 0.95rem;
+  }
+  
+  .impact-icon {
+    font-size: 2.5rem;
+  }
+  
+  .feature-item {
+    padding: 1.2rem;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .feature-content p {
+    font-size: 0.9rem;
+  }
+  
+  .browser-window {
+    padding: 1rem;
+  }
+  
+  .browser-header {
+    padding: 0.6rem;
+  }
+  
+  .browser-url {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .workflow-step {
+    padding: 1.5rem 1rem;
+  }
+  
+  .step-number {
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .step-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .step-content p {
+    font-size: 0.9rem;
+  }
+  
+  .community-benefit {
+    padding: 1.5rem 1.2rem;
+  }
+  
+  .community-benefit h3 {
+    font-size: 1.2rem;
+  }
+  
+  .community-benefit p {
+    font-size: 0.9rem;
+  }
+  
+  .arch-component {
+    padding: 1.5rem;
+  }
+  
+  .component-icon {
+    font-size: 2rem;
+  }
+  
+  .arch-component h4 {
+    font-size: 1.2rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+  
+  .cta-icon {
+    font-size: 2.5rem;
+  }
+  
+  .cta-actions {
+    width: 100%;
+  }
+  
+  .cta-actions .btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+  }
+}
+
+/* Celulares médios (≤ 390px) */
+@media (max-width: 390px) {
+  .jobs-platform-detail .project-title {
+    font-size: 1.8rem;
+  }
+  
+  .jobs-platform-detail .project-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .impact-card {
+    padding: 1.3rem 1rem;
+  }
+  
+  .workflow-step {
+    padding: 1.3rem 0.9rem;
+  }
+  
+  .step-number {
+    font-size: 1.6rem;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Celulares comuns (≤ 360px) */
+@media (max-width: 360px) {
+  .jobs-platform-detail .project-hero {
+    padding: 90px 0 45px;
+  }
+  
+  .jobs-platform-detail .project-title {
+    font-size: 1.6rem;
+  }
+  
+  .jobs-platform-detail .project-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .project-badge {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.9rem;
+  }
+  
+  .community-highlight {
+    padding: 1rem;
+  }
+  
+  .community-highlight p {
+    font-size: 0.95rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .impact-card {
+    padding: 1.2rem 0.9rem;
+  }
+  
+  .impact-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .impact-card p {
+    font-size: 0.88rem;
+  }
+  
+  .impact-icon {
+    font-size: 2.2rem;
+  }
+  
+  .feature-item {
+    padding: 1rem;
+  }
+  
+  .feature-icon {
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .feature-content h4 {
+    font-size: 1.05rem;
+  }
+  
+  .feature-content p {
+    font-size: 0.85rem;
+  }
+  
+  .workflow-step {
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .step-number {
+    font-size: 1.5rem;
+    width: 42px;
+    height: 42px;
+  }
+  
+  .step-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .step-content p {
+    font-size: 0.85rem;
+  }
+  
+  .community-benefit {
+    padding: 1.2rem 0.9rem;
+  }
+  
+  .community-benefit h3 {
+    font-size: 1.1rem;
+  }
+  
+  .community-benefit p {
+    font-size: 0.85rem;
+  }
+  
+  .arch-component {
+    padding: 1.3rem 1rem;
+  }
+  
+  .component-icon {
+    font-size: 1.8rem;
+  }
+  
+  .arch-component h4 {
+    font-size: 1.1rem;
+  }
+  
+  .arch-component p {
+    font-size: 0.85rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.95rem;
+  }
+  
+  .cta-icon {
+    font-size: 2.2rem;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
 /* ===== ANIMAÇÕES ESPECIAIS PLATAFORMA ===== */
 @keyframes platform-fadeInUp {
   from {
