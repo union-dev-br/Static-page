@@ -19,12 +19,15 @@ function initProjectDetailAnimations() {
         delay: 0.3
     });
 
-    // Stats counter
+    // Stats counter - Set initial state
+    gsap.set(".stat-card", { opacity: 1, y: 0 });
+    
     gsap.utils.toArray('.stat-number').forEach(stat => {
         ScrollTrigger.create({
             trigger: stat,
             start: "top 80%",
-            onEnter: () => animateCounter(stat)
+            onEnter: () => animateCounter(stat),
+            once: true
         });
     });
 
