@@ -257,11 +257,76 @@ function initVideoDemo() {
     });
 }
 
+// Inicializar animações específicas da página
+function initFlutterWebAnimations() {
+    // Animar cards de funcionalidades
+    gsap.utils.toArray('.feature-card').forEach((card, index) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: "top 85%",
+                toggleActions: "play none none none"
+            },
+            y: 30,
+            opacity: 0,
+            duration: 0.6,
+            delay: index * 0.1,
+            ease: "power2.out"
+        });
+    });
+    
+    // Animar estrutura do projeto
+    gsap.from('.structure-tree', {
+        scrollTrigger: {
+            trigger: '.project-structure',
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        x: -50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+}
+
+// Expandir/contrair pastas na estrutura do projeto
+function initFolderToggle() {
+    const folders = document.querySelectorAll('.folder-name');
+    
+    folders.forEach(folder => {
+        folder.addEventListener('click', () => {
+            const contents = folder.nextElementSibling;
+            if (contents) {
+                contents.classList.toggle('expanded');
+                
+                // Animação GSAP para expandir/contrair
+                if (contents.classList.contains('expanded')) {
+                    gsap.to(contents, {
+                        height: 'auto',
+                        opacity: 1,
+                        duration: 0.3,
+                        ease: "power2.out"
+                    });
+                } else {
+                    gsap.to(contents, {
+                        height: 0,
+                        opacity: 0,
+                        duration: 0.3,
+                        ease: "power2.in"
+                    });
+                }
+            }
+        });
+    });
+}
+
 // Initialize everything
 document.addEventListener('DOMContentLoaded', () => {
     initProjectDetailAnimations();
     initCarousel();
     initVideoDemo();
+    initFlutterWebAnimations();
+    initFolderToggle();
     
     // Animate floating elements with GSAP
     document.querySelectorAll('[data-gsap]').forEach(el => {
