@@ -82,6 +82,8 @@ body {
 .logo {
     height: 50px;
     width: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
     transition: all 0.3s ease;
 }
@@ -714,6 +716,8 @@ section {
 .footer-logo {
     height: 50px;
     width: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     margin-bottom: 20px;
 }
 
@@ -1105,19 +1109,24 @@ section {
     }
 }
 
-/* Smartphones pequenos (≤ 576px) */
-@media (max-width: 576px) {
+/* Celulares grandes e médios (≤ 480px) - iPhone 14, Galaxy S23 */
+@media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 16px;
     }
     
     /* Header */
     .logo {
-        height: 40px;
+        height: 42px;
     }
     
     .main-header {
         padding: 12px 0;
+    }
+    
+    .menu-items {
+        max-width: 300px;
+        padding: 35px 25px;
     }
     
     /* Hero */
@@ -1126,12 +1135,187 @@ section {
     }
     
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.05rem;
         line-height: 1.5;
+    }
+    
+    .hero-visual {
+        height: 220px;
+    }
+    
+    .element img {
+        width: 38px;
+        height: 38px;
+    }
+    
+    /* Botões */
+    .btn {
+        padding: 11px 26px;
+        font-size: 0.95rem;
+    }
+    
+    /* Seções */
+    section {
+        padding: 55px 0;
+    }
+    
+    .section-title {
+        font-size: 1.9rem;
+        margin-bottom: 38px;
+    }
+    
+    .section-title::after {
+        width: 65px;
+        height: 3px;
+    }
+    
+    /* Sobre */
+    .about-text h3 {
+        font-size: 1.6rem;
+    }
+    
+    .about-text p {
+        font-size: 1.05rem;
+    }
+    
+    .stat {
+        padding: 26px 16px;
+    }
+    
+    .stat-number {
+        font-size: 2.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.95rem;
+    }
+    
+    /* Expertise */
+    .expertise-item {
+        padding: 22px;
+    }
+    
+    .expertise-item h3 {
+        font-size: 1.15rem;
+    }
+    
+    /* Serviços */
+    .service-card {
+        padding: 32px 22px;
+    }
+    
+    .service-icon {
+        font-size: 2.6rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.35rem;
+    }
+    
+    /* Projetos */
+    .project-image {
+        height: 190px;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    .project-info h3 {
+        font-size: 1.15rem;
+    }
+    
+    .project-info p {
+        font-size: 0.95rem;
+    }
+    
+    .project-overlay {
+        padding: 1.6rem;
+    }
+    
+    .project-overlay h3 {
+        font-size: 1.25rem;
+    }
+    
+    .project-overlay p {
+        font-size: 0.9rem;
+    }
+    
+    /* Contato */
+    .contact-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .contact-info p {
+        font-size: 1.05rem;
+    }
+    
+    .contact-form {
+        padding: 28px 18px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 13px;
+        font-size: 1rem;
+    }
+    
+    .form-group textarea {
+        min-height: 130px;
+    }
+    
+    /* Footer */
+    .footer-logo {
+        height: 42px;
+    }
+    
+    .footer-column h4 {
+        font-size: 1.15rem;
+    }
+    
+    .footer-column a {
+        font-size: 1rem;
+    }
+    
+    .social-links a {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .footer-bottom {
+        font-size: 0.9rem;
+    }
+    
+    /* Back to top */
+    .back-to-top {
+        width: 42px;
+        height: 42px;
+        bottom: 16px;
+        right: 16px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Celulares médios (≤ 390px) - iPhone 12/13/14 Pro, Pixel 6 */
+@media (max-width: 390px) {
+    .container {
+        padding: 0 14px;
+    }
+    
+    .logo {
+        height: 38px;
+    }
+    
+    .hero-title {
+        font-size: 1.7rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.98rem;
     }
     
     .hero-visual {
@@ -1143,179 +1327,156 @@ section {
         height: 35px;
     }
     
-    /* Botões */
+    .section-title {
+        font-size: 1.7rem;
+    }
+    
     .btn {
-        padding: 10px 25px;
+        padding: 10px 24px;
         font-size: 0.9rem;
     }
     
-    /* Seções */
-    section {
-        padding: 50px 0;
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 35px;
-    }
-    
-    .section-title::after {
-        width: 60px;
-        height: 3px;
-    }
-    
-    /* Sobre */
-    .about-text h3 {
-        font-size: 1.5rem;
-    }
-    
-    .about-text p {
-        font-size: 1rem;
-    }
-    
-    .stat {
-        padding: 25px 15px;
+    .project-image {
+        height: 170px;
     }
     
     .stat-number {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
     
-    .stat-label {
-        font-size: 0.9rem;
-    }
-    
-    /* Expertise */
-    .expertise-item {
-        padding: 20px;
-    }
-    
-    .expertise-item h3 {
-        font-size: 1.1rem;
-    }
-    
-    /* Serviços */
-    .service-card {
-        padding: 30px 20px;
-    }
-    
-    .service-icon {
-        font-size: 2.5rem;
-    }
-    
-    .service-card h3 {
-        font-size: 1.3rem;
-    }
-    
-    /* Projetos */
-    .project-image {
-        height: 180px;
-    }
-    
-    .project-info {
-        padding: 18px;
-    }
-    
-    .project-info h3 {
-        font-size: 1.1rem;
-    }
-    
-    .project-info p {
-        font-size: 0.9rem;
-    }
-    
-    .project-overlay {
-        padding: 1.5rem;
-    }
-    
-    .project-overlay h3 {
-        font-size: 1.2rem;
-    }
-    
-    .project-overlay p {
-        font-size: 0.85rem;
-    }
-    
-    /* Contato */
-    .contact-info h3 {
-        font-size: 1.5rem;
-    }
-    
-    .contact-info p {
-        font-size: 1rem;
-    }
-    
-    .contact-form {
-        padding: 25px 15px;
-    }
-    
-    .form-group input,
-    .form-group textarea {
-        padding: 12px;
-        font-size: 0.95rem;
-    }
-    
-    .form-group textarea {
-        min-height: 120px;
-    }
-    
-    /* Footer */
     .footer-logo {
-        height: 40px;
-    }
-    
-    .footer-column h4 {
-        font-size: 1.1rem;
-    }
-    
-    .footer-column a {
-        font-size: 0.95rem;
-    }
-    
-    .social-links a {
-        width: 36px;
-        height: 36px;
-    }
-    
-    .footer-bottom {
-        font-size: 0.85rem;
-    }
-    
-    /* Back to top */
-    .back-to-top {
-        width: 40px;
-        height: 40px;
-        bottom: 15px;
-        right: 15px;
-        font-size: 1.2rem;
-    }
-}
-
-/* Smartphones muito pequenos (≤ 375px) */
-@media (max-width: 375px) {
-    .hero-title {
-        font-size: 1.6rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.95rem;
-    }
-    
-    .section-title {
-        font-size: 1.6rem;
-    }
-    
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.85rem;
-    }
-    
-    .project-image {
-        height: 160px;
+        height: 38px;
     }
     
     .menu-items {
         max-width: 280px;
         padding: 30px 20px;
+    }
+}
+
+/* Celulares comuns (≤ 360px) - Galaxy A, Motorola */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .logo {
+        height: 36px;
+    }
+    
+    .hero {
+        padding: 90px 0 45px;
+    }
+    
+    .hero-title {
+        font-size: 1.55rem;
+        line-height: 1.25;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.92rem;
+    }
+    
+    .hero-visual {
+        height: 180px;
+    }
+    
+    .element img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    section {
+        padding: 45px 0;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 32px;
+    }
+    
+    .btn {
+        padding: 9px 22px;
+        font-size: 0.85rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .about-text p {
+        font-size: 0.95rem;
+    }
+    
+    .stat {
+        padding: 22px 12px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .service-card {
+        padding: 26px 18px;
+    }
+    
+    .service-icon {
+        font-size: 2.3rem;
+    }
+    
+    .project-image {
+        height: 155px;
+    }
+    
+    .project-info {
+        padding: 16px;
+    }
+    
+    .project-info h3 {
+        font-size: 1.05rem;
+    }
+    
+    .project-info p {
+        font-size: 0.88rem;
+    }
+    
+    .contact-form {
+        padding: 24px 15px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 11px;
+        font-size: 0.92rem;
+    }
+    
+    .footer-logo {
+        height: 36px;
+    }
+    
+    .footer-column h4 {
+        font-size: 1.05rem;
+    }
+    
+    .footer-column a {
+        font-size: 0.92rem;
+    }
+    
+    .social-links a {
+        width: 34px;
+        height: 34px;
+    }
+    
+    .back-to-top {
+        width: 38px;
+        height: 38px;
+        bottom: 14px;
+        right: 14px;
+        font-size: 1.15rem;
+    }
+    
+    .menu-items {
+        max-width: 260px;
+        padding: 25px 18px;
     }
 }
