@@ -99,6 +99,7 @@
     margin-bottom: 32px;
     max-width: 600px;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .project-meta {
@@ -315,6 +316,7 @@
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .overview-content {
