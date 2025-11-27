@@ -58,6 +58,32 @@
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--jobs-border);
   box-shadow: var(--jobs-shadow-sm);
+  height: 80px;
+  padding: 0;
+}
+
+.jobs-platform-detail .main-header.scrolled {
+  height: 70px;
+}
+
+.jobs-platform-detail .header-content {
+  height: 100%;
+  padding: 0 20px;
+}
+
+.jobs-platform-detail .logo-container {
+  height: 100%;
+}
+
+.jobs-platform-detail .logo-container a {
+  height: 100%;
+}
+
+.jobs-platform-detail .logo {
+  height: 100%;
+  width: auto;
+  padding: 8px 0;
+  object-fit: contain;
 }
 
 .jobs-platform-detail .menu-items a:hover {

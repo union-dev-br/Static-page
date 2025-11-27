@@ -48,6 +48,32 @@
   background: var(--netdrinks-bg-white);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--netdrinks-border);
+  height: 80px;
+  padding: 0;
+}
+
+.netdrinks-detail .main-header.scrolled {
+  height: 70px;
+}
+
+.netdrinks-detail .header-content {
+  height: 100%;
+  padding: 0 20px;
+}
+
+.netdrinks-detail .logo-container {
+  height: 100%;
+}
+
+.netdrinks-detail .logo-container a {
+  height: 100%;
+}
+
+.netdrinks-detail .logo {
+  height: 100%;
+  width: auto;
+  padding: 8px 0;
+  object-fit: contain;
 }
 
 .netdrinks-detail .menu-items a:hover {
