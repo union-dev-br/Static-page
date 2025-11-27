@@ -37,6 +37,35 @@
     color: var(--gray-900);
 }
 
+.flutterweb-detail .main-header {
+    height: 80px;
+    padding: 0;
+}
+
+.flutterweb-detail .main-header.scrolled {
+    height: 70px;
+}
+
+.flutterweb-detail .header-content {
+    height: 100%;
+    padding: 0 20px;
+}
+
+.flutterweb-detail .logo-container {
+    height: 100%;
+}
+
+.flutterweb-detail .logo-container a {
+    height: 100%;
+}
+
+.flutterweb-detail .logo {
+    height: 100%;
+    width: auto;
+    padding: 8px 0;
+    object-fit: contain;
+}
+
 /* ===== HERO SECTION ===== */
 .project-hero.flutterweb-detail {
     background: var(--gradient-flutter);

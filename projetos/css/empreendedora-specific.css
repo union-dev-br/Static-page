@@ -31,6 +31,35 @@
 }
 
 /* ===== ESTILOS ESPECÍFICOS DO PROJETO EMPREENDEDORA ===== */
+.empreendedora-detail .main-header {
+    height: 80px;
+    padding: 0;
+}
+
+.empreendedora-detail .main-header.scrolled {
+    height: 70px;
+}
+
+.empreendedora-detail .header-content {
+    height: 100%;
+    padding: 0 20px;
+}
+
+.empreendedora-detail .logo-container {
+    height: 100%;
+}
+
+.empreendedora-detail .logo-container a {
+    height: 100%;
+}
+
+.empreendedora-detail .logo {
+    height: 100%;
+    width: auto;
+    padding: 8px 0;
+    object-fit: contain;
+}
+
 .empreendedora-detail {
     background: var(--gray-50);
     color: var(--gray-900);
