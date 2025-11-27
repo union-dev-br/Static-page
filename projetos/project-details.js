@@ -180,6 +180,66 @@ function initProjectDetailAnimations() {
         stagger: 0.3,
         ease: "power3.out"
     });
+
+    // Anti-Fraud cards animation
+    gsap.to(".fraud-card", {
+        scrollTrigger: {
+            trigger: ".fraud-cards",
+            start: "top 80%",
+            toggleActions: "play none none none",
+            once: true
+        },
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
+
+    // Layer items animation (sequential reveal)
+    gsap.to(".layer-item", {
+        scrollTrigger: {
+            trigger: ".layers-stack",
+            start: "top 80%",
+            toggleActions: "play none none none",
+            once: true
+        },
+        x: 0,
+        opacity: 1,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: "power2.out"
+    });
+
+    // Flow steps animation
+    gsap.to(".flow-step", {
+        scrollTrigger: {
+            trigger: ".flow-steps",
+            start: "top 80%",
+            toggleActions: "play none none none",
+            once: true
+        },
+        scale: 1,
+        opacity: 1,
+        duration: 0.6,
+        stagger: 0.2,
+        ease: "back.out(1.7)"
+    });
+
+    // Fraud metrics animation
+    gsap.to(".metric-card.highlight", {
+        scrollTrigger: {
+            trigger: ".metrics-grid",
+            start: "top 80%",
+            toggleActions: "play none none none",
+            once: true
+        },
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power3.out"
+    });
 }
 
 // Counter animation
