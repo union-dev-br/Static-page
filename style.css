@@ -149,25 +149,52 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding: 120px 0 80px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.15) 0%, transparent 50%);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(1deg); }
 }
 
 .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    position: relative;
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
-    max-width: 700px;
-    z-index: 2;
     position: relative;
+    z-index: 2;
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .hero-visual {
-    position: relative;
-    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .floating-elements {
@@ -178,67 +205,111 @@ body {
 
 .element {
     position: absolute;
-    opacity: 0.85;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    animation: floatElement 6s ease-in-out infinite;
+    pointer-events: auto;
+}
+
+.element:hover {
+    transform: scale(1.2) !important;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .element img {
-    width: 60px;
-    height: 60px;
+    width: 70%;
+    height: 70%;
     object-fit: contain;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
-    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
 }
 
 .element:hover img {
-    transform: scale(1.15);
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+    transform: scale(1.1) rotate(5deg);
 }
 
-/* Distribuição equilibrada em 3 colunas e 4 linhas */
-.element-1 { top: 8%; left: 10%; }
-.element-2 { top: 12%; left: 45%; }
-.element-3 { top: 8%; right: 8%; }
-.element-4 { top: 32%; left: 15%; }
-.element-5 { top: 35%; left: 50%; }
-.element-6 { top: 30%; right: 12%; }
-.element-7 { top: 58%; left: 8%; }
-.element-8 { top: 60%; left: 48%; }
-.element-9 { top: 56%; right: 10%; }
-.element-10 { bottom: 8%; left: 25%; }
-.element-11 { bottom: 10%; right: 22%; }
+@keyframes floatElement {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-20px) rotate(5deg); 
+    }
+}
+
+/* Posições específicas para cada logo */
+.element-1 { top: 8%; left: 6%; animation-delay: 0s; }
+.element-2 { top: 5%; right: 10%; animation-delay: 0.5s; }
+.element-3 { top: 18%; left: 12%; animation-delay: 1s; }
+.element-4 { top: 28%; right: 8%; animation-delay: 1.5s; }
+.element-5 { top: 38%; left: 8%; animation-delay: 2s; }
+.element-6 { top: 30%; right: 14%; animation-delay: 2.5s; }
+.element-7 { top: 52%; left: 10%; animation-delay: 3s; }
+.element-8 { top: 62%; right: 12%; animation-delay: 3.5s; }
+.element-9 { bottom: 22%; left: 15%; animation-delay: 4s; }
+.element-10 { bottom: 12%; right: 18%; animation-delay: 4.5s; }
+.element-11 { bottom: 35%; left: 18%; animation-delay: 5s; }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    position: relative;
 }
 
 .highlight {
-    background: linear-gradient(45deg, #ffd700, #ff6b6b);
+    background: linear-gradient(45deg, #ffd700, #ff6b6b, #ff8e53, #ffd700);
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradientShift 3s ease infinite;
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    margin-bottom: 2.5rem;
     opacity: 0.9;
-    max-width: 600px;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 /* Botões */
 .btn {
-    display: inline-block;
-    padding: 12px 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
@@ -247,27 +318,49 @@ body {
     cursor: pointer;
     font-size: 1rem;
     text-align: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
 }
 
 .btn-primary {
     background-color: white;
     color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
 .btn-secondary {
     background-color: transparent;
     color: white;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
     background-color: white;
     color: var(--primary-color);
+    border-color: white;
+    transform: translateY(-3px);
 }
 
 /* Seções gerais */
@@ -889,18 +982,18 @@ section {
 
 /* Tablets pequenos (≤ 992px) */
 @media (max-width: 992px) {
-    .hero .container {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .hero {
+        padding: 100px 0 60px;
     }
     
     .hero-content {
-        max-width: 100%;
+        max-width: 90%;
+        padding: 0 20px;
     }
     
-    .hero-visual {
-        height: 300px;
-        margin-top: 30px;
+    .element {
+        width: 50px;
+        height: 50px;
     }
     
     .hero-title {
@@ -987,16 +1080,21 @@ section {
     /* Hero Section */
     .hero {
         min-height: auto;
-        padding: 120px 0 60px;
+        padding: 100px 0 50px;
     }
     
-    .hero-visual {
-        height: 250px;
+    .hero-content {
+        max-width: 95%;
+    }
+    
+    .element {
+        width: 45px;
+        height: 45px;
     }
     
     .element img {
-        width: 40px;
-        height: 40px;
+        width: 65%;
+        height: 65%;
     }
     
     .hero-title {
@@ -1131,13 +1229,12 @@ section {
     
     /* Hero */
     .hero {
-        padding: 100px 0 50px;
-        min-height: auto;
+        padding: 90px 0 40px;
+        min-height: 100vh;
     }
     
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .hero-content {
+        padding: 0 10px;
     }
     
     .hero-title {
@@ -1150,13 +1247,14 @@ section {
         line-height: 1.6;
     }
     
-    .hero-visual {
-        height: 200px;
+    .element {
+        width: 40px;
+        height: 40px;
     }
     
     .element img {
-        width: 35px;
-        height: 35px;
+        width: 60%;
+        height: 60%;
     }
     
     .hero-buttons {
@@ -1357,13 +1455,14 @@ section {
         font-size: 0.95rem;
     }
     
-    .hero-visual {
-        height: 180px;
+    .element {
+        width: 35px;
+        height: 35px;
     }
     
     .element img {
-        width: 32px;
-        height: 32px;
+        width: 55%;
+        height: 55%;
     }
     
     .section-title {
@@ -1453,13 +1552,14 @@ section {
         line-height: 1.5;
     }
     
-    .hero-visual {
-        height: 160px;
+    .element {
+        width: 32px;
+        height: 32px;
     }
     
     .element img {
-        width: 30px;
-        height: 30px;
+        width: 50%;
+        height: 50%;
     }
     
     section {
