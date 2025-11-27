@@ -946,19 +946,6 @@ textarea.form-control {
         background: white;
         flex-direction: column;
         padding: 100px 32px 32px;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
-        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 1000;
-    }
-
-    .main-nav.active .menu-items {
-        right: 0;
-    }
-
-    .menu-items a {
-        font-size: 1.2rem;
-        padding: 12px 0;
-        border-bottom: 1px solid var(--border-color);
     }
 
     .menu-items a:hover::after {
