@@ -749,6 +749,430 @@
     color: #ffffff;
 }
 
+/* Anti-Fraud System */
+.anti-fraud-system {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    padding: 6rem 0;
+}
+
+.anti-fraud-system .section-header h2 {
+    color: #ffffff;
+}
+
+.anti-fraud-system .section-header p {
+    color: #e0e0e0;
+}
+
+.fraud-overview {
+    margin-top: 3rem;
+}
+
+.fraud-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.fraud-card {
+    background: rgba(255,255,255,0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border-top: 4px solid;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.fraud-card.critical {
+    border-top-color: #e53e3e;
+}
+
+.fraud-card.challenge {
+    border-top-color: #f59e0b;
+}
+
+.fraud-card.solution {
+    border-top-color: #10b981;
+}
+
+.fraud-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.fraud-card .card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.fraud-card h3 {
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.fraud-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fraud-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.fraud-list .bullet {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+
+.fraud-layers {
+    background: rgba(255,255,255,0.95);
+    padding: 3rem;
+    border-radius: 25px;
+    margin: 4rem 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.layers-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.kotlin-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.layers-header h3 {
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.layers-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.layer-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.layer-item:hover {
+    transform: translateX(10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.layer-number {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.layer-content h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.layer-content p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+.fraud-code {
+    margin: 4rem 0;
+}
+
+.fraud-code h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.code-showcase {
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.code-header {
+    background: #2d2d2d;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.code-lang {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.code-file {
+    color: #a0a0a0;
+    font-size: 0.85rem;
+    font-family: monospace;
+}
+
+.code-showcase pre {
+    margin: 0;
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.code-showcase code {
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.fraud-flow {
+    margin: 4rem 0;
+}
+
+.fraud-flow h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+.flow-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flow-step {
+    flex: 1;
+    min-width: 150px;
+    background: rgba(255,255,255,0.95);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.flow-step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.flow-step.decision {
+    flex: 1.5;
+}
+
+.flow-step .step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: 700;
+}
+
+.flow-step h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.flow-step p {
+    margin: 0;
+    color: #4a5568;
+    font-size: 0.9rem;
+}
+
+.flow-arrow {
+    color: #667eea;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.decision-options {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.option {
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.option.allow {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.option.block {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.fraud-metrics {
+    margin: 4rem 0;
+}
+
+.fraud-metrics h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.metric-card.highlight {
+    background: rgba(255,255,255,0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border-top: 4px solid #667eea;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.metric-card.highlight:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.metric-card.highlight .metric-value {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.metric-card.highlight .percent {
+    font-size: 2rem;
+}
+
+.metric-card.highlight .metric-label {
+    font-size: 1.2rem;
+    color: #1a202c;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.metric-card.highlight p {
+    color: #1a202c !important;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    -webkit-text-fill-color: #1a202c !important;
+}
+
+.fraud-impact {
+    background: rgba(255,255,255,0.95);
+    padding: 3rem;
+    border-radius: 25px;
+    margin-top: 4rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.fraud-impact h3 {
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.impact-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.impact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f7fafc;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.impact-item:hover {
+    background: #edf2f7;
+    transform: translateX(10px);
+}
+
+.impact-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.impact-item p {
+    margin: 0;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.impact-item strong {
+    color: #667eea;
+}
+
 .architecture-diagram {
     display: flex;
     flex-direction: column;
@@ -864,6 +1288,33 @@
     }
     
     .layer-components {
+        grid-template-columns: 1fr;
+    }
+
+    /* Anti-Fraud responsive */
+    .fraud-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .layers-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flow-steps {
+        flex-direction: column;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+        font-size: 1.5rem;
+    }
+
+    .fraud-code pre {
+        font-size: 0.75rem;
+    }
+
+    .impact-items {
         grid-template-columns: 1fr;
     }
 }
