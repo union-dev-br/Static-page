@@ -16,16 +16,16 @@
     --gray-200: #e5e7eb;
     --gray-800: #1f2937;
     --gray-900: #111827;
-    
+
     --gradient-flutter: linear-gradient(135deg, var(--flutter-blue) 0%, var(--dart-blue) 100%);
     --gradient-teal: linear-gradient(135deg, var(--primary-teal) 0%, var(--accent-blue) 100%);
     --gradient-warm: linear-gradient(135deg, var(--accent-amber) 0%, #ec4899 100%);
-    
+
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    
+
     --border-radius: 12px;
     --border-radius-lg: 16px;
     --border-radius-xl: 20px;
@@ -35,35 +35,6 @@
 .flutterweb-detail {
     background: var(--gray-50);
     color: var(--gray-900);
-}
-
-.flutterweb-detail .main-header {
-    height: 80px;
-    padding: 0;
-}
-
-.flutterweb-detail .main-header.scrolled {
-    height: 70px;
-}
-
-.flutterweb-detail .header-content {
-    height: 100%;
-    padding: 0 20px;
-}
-
-.flutterweb-detail .logo-container {
-    height: 100%;
-}
-
-.flutterweb-detail .logo-container a {
-    height: 100%;
-}
-
-.flutterweb-detail .logo {
-    height: 100%;
-    width: auto;
-    padding: 8px 0;
-    object-fit: contain;
 }
 
 /* ===== HERO SECTION ===== */
@@ -82,15 +53,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
+    background:
         radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
     animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(1deg); }
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
 }
 
 .project-hero-content {
@@ -128,7 +106,6 @@
     margin-bottom: 32px;
     max-width: 600px;
     line-height: 1.6;
-    font-weight: 400;
 }
 
 .project-meta {
@@ -215,7 +192,7 @@
     background: #2d3748;
     padding: 12px;
     border-radius: 16px;
-    box-shadow: 
+    box-shadow:
         0 25px 50px -12px rgba(0, 0, 0, 0.5),
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     position: relative;
@@ -244,7 +221,8 @@
     display: block;
 }
 
-.floating-widget, .floating-code {
+.floating-widget,
+.floating-code {
     position: absolute;
     font-size: 2rem;
     background: rgba(255, 255, 255, 0.15);
@@ -275,10 +253,8 @@
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
 }
 
 .stat-card {
@@ -347,7 +323,6 @@
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
-    font-weight: 400;
 }
 
 .overview-content {
@@ -466,53 +441,32 @@
 .screenshot-carousel {
     background: var(--gray-50);
     border-radius: var(--border-radius-lg);
-    border: 1px solid var(--gray-200);
-}
-
-.carousel-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     padding: 24px;
-    gap: 20px;
+    border: 1px solid var(--gray-200);
 }
 
 .carousel-container {
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio - MESMA DO VÍDEO */
     border-radius: var(--border-radius);
     overflow: hidden;
-    background: #000;
-    flex: 1;
+    margin-bottom: 16px;
 }
 
 .carousel-track {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.5s ease;
 }
 
 .carousel-slide {
-    position: relative;
     min-width: 100%;
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
+    position: relative;
 }
 
 .carousel-slide img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #000;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
 }
 
 .slide-caption {
@@ -520,12 +474,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 20px 16px 16px;
+    padding: 16px;
     font-size: 0.875rem;
-    font-weight: 500;
-    z-index: 2;
 }
 
 .carousel-nav {
@@ -533,60 +485,44 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding: 0;
 }
 
-.carousel-prev, .carousel-next {
+.carousel-prev,
+.carousel-next {
     background: var(--primary-teal);
     color: white;
     border: none;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    font-size: 1.25rem;
 }
 
-.carousel-prev:hover, .carousel-next:hover {
+.carousel-prev:hover,
+.carousel-next:hover {
     background: var(--teal-dark);
     transform: scale(1.1);
 }
 
-.carousel-prev:active, .carousel-next:active {
-    transform: scale(0.95);
-}
-
 .carousel-dots {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 8px;
 }
 
 .carousel-dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--gray-300);
-    border: 2px solid transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding: 0;
-}
-
-.carousel-dot:hover {
-    background: var(--gray-400);
 }
 
 .carousel-dot.active {
     background: var(--primary-teal);
-    border-color: var(--primary-teal);
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 /* Video Demo Styles */
@@ -594,16 +530,13 @@
     background: var(--gray-900);
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
     height: 0;
-    flex: 1;
 }
 
 .video-container video {
@@ -612,8 +545,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    background: #000;
+    object-fit: cover;
 }
 
 .video-overlay {
@@ -627,11 +559,6 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    pointer-events: none;
-}
-
-.video-overlay.hidden {
-    display: none;
 }
 
 .video-overlay:hover {
@@ -650,7 +577,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: all;
 }
 
 .play-button:hover {
@@ -1076,8 +1002,6 @@
 .footer-logo {
     width: 80px;
     height: 80px;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
     border-radius: 16px;
 }
 
@@ -1119,339 +1043,90 @@
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
+
     .overview-content,
     .demo-showcase,
     .architecture-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .project-title {
         font-size: 3rem;
-    }
-    
-    .carousel-container,
-    .video-container {
-        padding-bottom: 75%; /* Proporção ajustada para tablets */
     }
 }
 
 @media (max-width: 768px) {
-    /* Menu hamburger */
-    .menu-toggle {
-        display: block;
-    }
-    
-    .menu-items {
-        display: none;
-        position: fixed;
-        top: 70px;
-        right: 20px;
-        background: white;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        border-radius: 12px;
-        padding: 30px 25px;
-        z-index: 999;
-        min-width: 200px;
-    }
-    
-    .menu-items.active {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .menu-items a {
-        padding: 10px 15px;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        color: var(--gray-900);
-    }
-    
-    .menu-items a:hover {
-        background: var(--gray-100);
-    }
-    
     .project-title {
         font-size: 2.5rem;
     }
-    
+
     .section-header h2 {
         font-size: 2rem;
     }
-    
+
     .project-meta {
         flex-direction: column;
         gap: 20px;
     }
-    
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+
     .feature-highlights,
     .tech-list {
         grid-template-columns: 1fr;
     }
-    
+
     .challenges-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .features-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .footer-links {
         justify-content: flex-start;
     }
-    
-    .demo-showcase {
-        gap: 30px;
-    }
-    
-    .carousel-container,
-    .video-container {
-        padding-bottom: 56.25%; /* Volta para 16:9 em mobile */
-    }
 }
 
-/* Celulares grandes (≤ 480px) */
 @media (max-width: 480px) {
-    .project-hero.flutterweb-detail {
-        padding: 90px 0 50px;
-    }
-    
     .project-title {
-        font-size: 1.9rem;
-        line-height: 1.2;
+        font-size: 2rem;
     }
-    
-    .project-subtitle {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .project-badge {
-        font-size: 0.8rem;
-        padding: 6px 16px;
-    }
-    
+
     .project-actions {
         flex-direction: column;
-        width: 100%;
     }
-    
+
     .btn {
         width: 100%;
         justify-content: center;
-        padding: 12px 24px;
-        font-size: 0.95rem;
     }
-    
-    .section-header h2 {
-        font-size: 1.9rem;
-    }
-    
-    .section-header p {
-        font-size: 1rem;
-    }
-    
+
     .stats-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
     }
-    
-    .stat-card {
-        padding: 30px 20px;
-    }
-    
-    .stat-number {
-        font-size: 2.5rem;
-    }
-    
-    .stat-label {
-        font-size: 1rem;
-    }
-    
-    .overview-text h3 {
-        font-size: 1.4rem;
-    }
-    
-    .overview-text p {
-        font-size: 0.95rem;
-    }
-    
-    .tech-stack {
-        padding: 24px;
-    }
-    
-    .tech-stack h4 {
-        font-size: 1.1rem;
-    }
-    
-    .challenge-card,
-    .feature-card {
-        padding: 24px 18px;
-    }
-    
-    .challenge-icon,
-    .feature-icon {
-        font-size: 2rem;
-    }
-    
-    .challenge-card h3,
-    .feature-card h3 {
-        font-size: 1.2rem;
-    }
-    
-    .challenge-card p,
-    .feature-card p {
-        font-size: 0.9rem;
-    }
-    
-    .arch-layer {
-        padding: 20px 16px;
-    }
-    
-    .layer-title {
-        font-size: 1.1rem;
-    }
-    
-    .cta-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .cta-content p {
-        font-size: 1rem;
-    }
-    
-    .cta-actions {
-        width: 100%;
-    }
-    
+
     .roadmap {
         grid-template-columns: 1fr;
     }
 }
 
-/* Celulares médios (≤ 390px) */
-@media (max-width: 390px) {
-    .project-title {
-        font-size: 1.75rem;
-    }
-    
-    .project-subtitle {
-        font-size: 0.95rem;
-    }
-    
-    .section-header h2 {
-        font-size: 1.75rem;
-    }
-    
-    .stat-number {
-        font-size: 2.3rem;
-    }
-    
-    .challenge-card,
-    .feature-card {
-        padding: 20px 16px;
-    }
-}
-
-/* Celulares comuns (≤ 360px) */
-@media (max-width: 360px) {
-    .project-hero.flutterweb-detail {
-        padding: 85px 0 45px;
-    }
-    
-    .project-title {
-        font-size: 1.6rem;
-    }
-    
-    .project-subtitle {
-        font-size: 0.9rem;
-    }
-    
-    .project-badge {
-        font-size: 0.75rem;
-        padding: 5px 14px;
-    }
-    
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-    
-    .section-header h2 {
-        font-size: 1.6rem;
-    }
-    
-    .section-header p {
-        font-size: 0.95rem;
-    }
-    
-    .stat-card {
-        padding: 26px 18px;
-    }
-    
-    .stat-number {
-        font-size: 2.1rem;
-    }
-    
-    .stat-label {
-        font-size: 0.95rem;
-    }
-    
-    .overview-text h3 {
-        font-size: 1.3rem;
-    }
-    
-    .overview-text p {
-        font-size: 0.9rem;
-    }
-    
-    .tech-stack {
-        padding: 20px;
-    }
-    
-    .challenge-card,
-    .feature-card {
-        padding: 18px 14px;
-    }
-    
-    .challenge-card h3,
-    .feature-card h3 {
-        font-size: 1.1rem;
-    }
-    
-    .challenge-card p,
-    .feature-card p {
-        font-size: 0.85rem;
-    }
-    
-    .arch-layer {
-        padding: 18px 14px;
-    }
-    
-    .cta-content h2 {
-        font-size: 1.6rem;
-    }
-    
-    .cta-content p {
-        font-size: 0.95rem;
-    }
-}
-
 /* ===== ANIMAÇÕES ESPECIAIS ===== */
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .fade-in {
@@ -1475,7 +1150,7 @@
     .project-hero.flutterweb-detail {
         background: var(--flutter-blue);
     }
-    
+
     .project-cta {
         background: var(--primary-teal);
     }
