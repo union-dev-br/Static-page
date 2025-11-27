@@ -12,7 +12,7 @@
   --netdrinks-warning: #f1c40f;
   --netdrinks-glass: rgba(255, 255, 255, 0.1);
   --netdrinks-cocktail: linear-gradient(135deg, #e74c3c 0%, #f39c12 50%, #9b59b6 100%);
-
+  
   /* Cores neutras */
   --netdrinks-text-primary: #2c3e50;
   --netdrinks-text-secondary: #7f8c8d;
@@ -20,18 +20,18 @@
   --netdrinks-bg-light: #f8f9fa;
   --netdrinks-bg-white: #ffffff;
   --netdrinks-border: #ecf0f1;
-
+  
   /* Efeitos */
   --netdrinks-shadow-sm: 0 2px 4px rgba(44, 62, 80, 0.1);
   --netdrinks-shadow: 0 4px 6px rgba(44, 62, 80, 0.1), 0 1px 3px rgba(44, 62, 80, 0.08);
   --netdrinks-shadow-lg: 0 10px 15px rgba(44, 62, 80, 0.1), 0 4px 6px rgba(44, 62, 80, 0.05);
   --netdrinks-glow: 0 0 20px rgba(231, 76, 60, 0.3);
-
+  
   /* Bordas */
   --netdrinks-radius: 12px;
   --netdrinks-radius-lg: 20px;
   --netdrinks-radius-full: 50px;
-
+  
   /* Transições */
   --netdrinks-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --netdrinks-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -68,7 +68,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:
+  background: 
     radial-gradient(circle at 20% 80%, rgba(155, 89, 182, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(243, 156, 18, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(231, 76, 60, 0.2) 0%, transparent 50%);
@@ -76,19 +76,9 @@
 }
 
 @keyframes netdrinks-float {
-
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  33% {
-    transform: translateY(-20px) rotate(120deg);
-  }
-
-  66% {
-    transform: translateY(20px) rotate(240deg);
-  }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-20px) rotate(120deg); }
+  66% { transform: translateY(20px) rotate(240deg); }
 }
 
 .netdrinks-detail .project-badge {
@@ -139,15 +129,8 @@
 }
 
 @keyframes glass-tilt {
-
-  0%,
-  100% {
-    transform: rotate(-5deg) scale(1);
-  }
-
-  50% {
-    transform: rotate(5deg) scale(1.1);
-  }
+  0%, 100% { transform: rotate(-5deg) scale(1); }
+  50% { transform: rotate(5deg) scale(1.1); }
 }
 
 .netdrinks-detail .floating-lemon {
@@ -155,15 +138,8 @@
 }
 
 @keyframes lemon-bounce {
-
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-15px) rotate(180deg);
-  }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(180deg); }
 }
 
 /* ===== ESTATÍSTICAS NETDRINKS ===== */
@@ -546,19 +522,9 @@
 }
 
 @keyframes favorite-float {
-
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  33% {
-    transform: translateY(-15px) rotate(5deg);
-  }
-
-  66% {
-    transform: translateY(10px) rotate(-5deg);
-  }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-15px) rotate(5deg); }
+  66% { transform: translateY(10px) rotate(-5deg); }
 }
 
 .favorite-item:hover {
@@ -595,15 +561,8 @@
 }
 
 @keyframes heartbeat {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 
 .favorites-features {
@@ -775,15 +734,8 @@
 }
 
 @keyframes arrow-bounce {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(10px); }
 }
 
 /* ===== DESAFIOS DE INTERNACIONALIZAÇÃO ===== */
@@ -903,17 +855,8 @@
 }
 
 @keyframes marker-pulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-    box-shadow: var(--netdrinks-shadow);
-  }
-
-  50% {
-    transform: scale(1.05);
-    box-shadow: var(--netdrinks-glow);
-  }
+  0%, 100% { transform: scale(1); box-shadow: var(--netdrinks-shadow); }
+  50% { transform: scale(1.05); box-shadow: var(--netdrinks-glow); }
 }
 
 .timeline-content {
@@ -955,25 +898,24 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:
+  background: 
     radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
 }
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 1024px) {
-
   .search-features,
   .favorites-demo,
   .architecture-content {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-
+  
   .challenge-solution {
     grid-template-columns: 1fr;
   }
-
+  
   .challenge {
     border-right: none;
     border-bottom: 2px solid var(--netdrinks-border);
@@ -984,20 +926,20 @@
   .languages-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   .tech-items {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   .favorites-visual {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  
   .journey-timeline::before {
     left: 25px;
   }
-
+  
   .timeline-marker {
     width: 50px;
     height: 50px;
@@ -1006,33 +948,262 @@
 }
 
 @media (max-width: 640px) {
+  /* Menu hamburger */
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu-items {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 30px 25px;
+    z-index: 999;
+    min-width: 200px;
+  }
+  
+  .menu-items.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .menu-items a {
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #2c3e50;
+  }
+  
+  .menu-items a:hover {
+    background: #f8f9fa;
+  }
+  
   .languages-grid {
     grid-template-columns: 1fr;
   }
-
+  
   .tech-items {
     grid-template-columns: 1fr;
   }
-
+  
   .gallery-grid {
     grid-template-columns: 1fr;
   }
-
+  
   .search-filters {
     justify-content: flex-start;
   }
-
+  
   .benefit-item,
   .feature-card {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
-
+  
   .flow-step {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+  }
+}
+
+/* Celulares grandes (≤ 480px) */
+@media (max-width: 480px) {
+  .netdrinks-detail .project-hero {
+    padding: 90px 0 50px;
+  }
+  
+  .netdrinks-detail .project-title {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+  
+  .netdrinks-detail .project-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-badge {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+  
+  .project-actions {
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .stat-card {
+    padding: 30px 20px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .language-card {
+    padding: 1.5rem;
+  }
+  
+  .search-demo,
+  .search-interface {
+    padding: 1.5rem;
+  }
+  
+  .drink-card {
+    padding: 1rem;
+  }
+  
+  .favorite-item {
+    padding: 1rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  .tech-category {
+    padding: 1.5rem;
+  }
+  
+  .flow-step {
+    padding: 1.5rem;
+  }
+  
+  .challenge-solution {
+    padding: 1.5rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares médios (≤ 390px) */
+@media (max-width: 390px) {
+  .netdrinks-detail .project-title {
+    font-size: 1.75rem;
+  }
+  
+  .netdrinks-detail .project-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.65rem;
+  }
+  
+  .stat-number {
+    font-size: 2.3rem;
+  }
+}
+
+/* Celulares comuns (≤ 360px) */
+@media (max-width: 360px) {
+  .netdrinks-detail .project-hero {
+    padding: 85px 0 45px;
+  }
+  
+  .netdrinks-detail .project-title {
+    font-size: 1.6rem;
+  }
+  
+  .netdrinks-detail .project-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .project-badge {
+    font-size: 0.75rem;
+    padding: 5px 14px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .stat-card {
+    padding: 26px 18px;
+  }
+  
+  .stat-number {
+    font-size: 2.1rem;
+  }
+  
+  .stat-label {
+    font-size: 0.95rem;
+  }
+  
+  .language-card {
+    padding: 1.2rem;
+  }
+  
+  .language-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .search-demo,
+  .search-interface {
+    padding: 1.2rem;
+  }
+  
+  .drink-info h4 {
+    font-size: 1.1rem;
+  }
+  
+  .feature-card h4 {
+    font-size: 1rem;
+  }
+  
+  .tech-item {
+    font-size: 0.85rem;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.95rem;
   }
 }
 
@@ -1042,7 +1213,6 @@
     opacity: 0;
     transform: translateY(30px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1058,34 +1228,19 @@
 }
 
 /* Delay para animação em cascata */
-.netdrinks-detail .language-card:nth-child(2) {
-  animation-delay: 0.1s;
-}
+.netdrinks-detail .stat-card:nth-child(1) { animation-delay: 0s; }
+.netdrinks-detail .stat-card:nth-child(2) { animation-delay: 0.1s; }
+.netdrinks-detail .stat-card:nth-child(3) { animation-delay: 0.2s; }
+.netdrinks-detail .stat-card:nth-child(4) { animation-delay: 0.3s; }
+.netdrinks-detail .stat-card:nth-child(5) { animation-delay: 0.4s; }
+.netdrinks-detail .stat-card:nth-child(6) { animation-delay: 0.5s; }
 
-.netdrinks-detail .language-card:nth-child(3) {
-  animation-delay: 0.2s;
-}
+.netdrinks-detail .language-card:nth-child(2) { animation-delay: 0.1s; }
+.netdrinks-detail .language-card:nth-child(3) { animation-delay: 0.2s; }
+.netdrinks-detail .language-card:nth-child(4) { animation-delay: 0.3s; }
+.netdrinks-detail .language-card:nth-child(5) { animation-delay: 0.4s; }
+.netdrinks-detail .language-card:nth-child(6) { animation-delay: 0.5s; }
 
-.netdrinks-detail .language-card:nth-child(4) {
-  animation-delay: 0.3s;
-}
-
-.netdrinks-detail .language-card:nth-child(5) {
-  animation-delay: 0.4s;
-}
-
-.netdrinks-detail .language-card:nth-child(6) {
-  animation-delay: 0.5s;
-}
-
-.netdrinks-detail .timeline-item:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.netdrinks-detail .timeline-item:nth-child(3) {
-  animation-delay: 0.2s;
-}
-
-.netdrinks-detail .timeline-item:nth-child(4) {
-  animation-delay: 0.3s;
-}
+.netdrinks-detail .timeline-item:nth-child(2) { animation-delay: 0.1s; }
+.netdrinks-detail .timeline-item:nth-child(3) { animation-delay: 0.2s; }
+.netdrinks-detail .timeline-item:nth-child(4) { animation-delay: 0.3s; }
