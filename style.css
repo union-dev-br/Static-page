@@ -53,11 +53,11 @@ body {
     z-index: 1000;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .main-header.scrolled {
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .header-content {
@@ -80,7 +80,7 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 100px;
     width: auto;
     aspect-ratio: 1 / 1;
     object-fit: contain;

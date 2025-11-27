@@ -41,11 +41,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0.5rem 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .logo-container .logo {
-  height: 50px;
+  height: 100px;
   width: auto;
 }
 
