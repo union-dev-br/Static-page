@@ -246,7 +246,7 @@ Sou **Luciano Ribeiro**, desenvolvedor Full Stack apaixonado por tecnologia e in
 - 🛰️ Imagens de satélite em tempo real
 
 **🔗 Links:**
-- [🌐 Demo ao Vivo](https://www.ecoguardians.com.br/)
+- [🌐 Site ao Vivo](https://www.ecoguardians.com.br/)
 - [📄 Detalhes do Projeto](https://union.dev.br/projetos/ecoguardians.html)
 
 </details>
