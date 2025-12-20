@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGuardians - Sistema de Monitoramento Ambiental | Union Desenvolvimento</title>
+    <meta name="description"
+        content="Plataforma avançada de monitoramento ambiental da Amazônia com integração de APIs NASA, 50 anos de dados históricos e predições com IA.">
+    <link rel="stylesheet" href="../style.css?v=8">
+    <link rel="stylesheet" href="css/project-details.css?v=8">
+    <link rel="stylesheet" href="css/ecoguardians-specific.css?v=8">
+    <link rel="icon" href="../assets/images/logo-unionh_512x512.jpeg" type="image/x-icon">
+
+    <!-- GSAP Premium - Core -->
+    <script src="../gsap/gsap.min.js"></script>
+    <script src="../gsap/ScrollTrigger.min.js"></script>
+    <script src="../gsap/ScrollToPlugin.min.js"></script>
+
+    <!-- GSAP Premium Plugins -->
+    <script src="../gsap/SplitText.min.js"></script>
+    <script src="../gsap/DrawSVGPlugin.min.js"></script>
+    <script src="../gsap/MorphSVGPlugin.min.js"></script>
+    <script src="../gsap/CustomEase.min.js"></script>
+    <script src="../gsap/Flip.min.js"></script>
+    <script src="../gsap/ScrambleTextPlugin.min.js"></script>
+</head>
+
+<body class="project-detail ecoguardians-detail">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-unionh_512x512.jpeg" alt="Union Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="menu-items">
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#projetos">Projetos</a>
+                        <a href="../index.html#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero ecoguardians-hero">
+        <div class="hero-particles"></div>
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge">🌳 Monitoramento Ambiental</div>
+                <h1 class="project-title eco-title">EcoGuardians</h1>
+                <p class="project-subtitle">Sistema Avançado de Monitoramento Ambiental da Amazônia com 50 anos de dados
+                    históricos e inteligência artificial</p>
+
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Plataforma</span>
+                        <span class="meta-value">HTML • CSS • GSAP • Leaflet</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Integração</span>
+                        <span class="meta-value">🛰️ NASA APIs</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tipo</span>
+                        <span class="meta-value">🌍 Web App</span>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://www.ecoguardians.com.br/" target="_blank" class="btn btn-primary">
+                        🌐 Site ao Vivo
+                    </a>
+                    <a href="#funcionalidades" class="btn btn-secondary">
+                        🔍 Ver Funcionalidades
+                    </a>
+                </div>
+
+                <div class="eco-mission">
+                    <div class="mission-icon">🌿</div>
+                    <p><strong>Democratizando dados ambientais!</strong> Plataforma que conecta ciência e
+                        conscientização para proteger a Amazônia</p>
+                </div>
+            </div>
+
+            <div class="project-hero-visual">
+                <div class="amazon-mockup">
+                    <div class="floating-element tree"
+                        data-gsap='{"y": -15, "rotation": -5, "duration": 3, "repeat": -1, "yoyo": true}'>🌳</div>
+                    <div class="floating-element fire"
+                        data-gsap='{"y": 10, "x": 8, "duration": 2, "repeat": -1, "yoyo": true}'>🔥</div>
+                    <div class="floating-element satellite"
+                        data-gsap='{"y": -20, "rotation": 10, "duration": 4, "repeat": -1, "yoyo": true}'>🛰️</div>
+                    <div class="floating-element earth"
+                        data-gsap='{"y": 12, "rotation": -8, "duration": 3.5, "repeat": -1, "yoyo": true}'>🌍</div>
+
+                    <div class="dashboard-preview">
+                        <div class="preview-header">
+                            <div class="preview-logo">EcoGuardians</div>
+                            <div class="preview-nav">
+                                <span>Mapa</span>
+                                <span>FIRMS</span>
+                                <span>EONET</span>
+                                <span>EPIC</span>
+                            </div>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-map">
+                                <div class="amazon-shape"></div>
+                                <div class="fire-dot dot-1"></div>
+                                <div class="fire-dot dot-2"></div>
+                                <div class="fire-dot dot-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="project-stats eco-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Anos de Dados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🗺️</div>
+                    <div class="stat-number" data-count="758470">0</div>
+                    <div class="stat-label">km² Analisados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🛰️</div>
+                    <div class="stat-number" data-count="4">0</div>
+                    <div class="stat-label">APIs NASA</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number" data-count="45">0</div>
+                    <div class="stat-label">Plugins GSAP</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-number" data-count="2211979">0</div>
+                    <div class="stat-label">Focos Registrados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🦜</div>
+                    <div class="stat-number" data-count="66924">0</div>
+                    <div class="stat-label">Espécies Catalogadas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades Principais -->
+    <section id="funcionalidades" class="eco-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>🛰️ Funcionalidades Integradas com NASA</h2>
+                <p>Dados em tempo real de múltiplas fontes espaciais para monitoramento completo</p>
+            </div>
+
+            <div class="features-showcase">
+                <!-- FIRMS -->
+                <div class="feature-block firms-feature">
+                    <div class="feature-visual">
+                        <img src="../assets/projects/ecoguardians/screenshot-firms.jpeg"
+                            alt="FIRMS - Monitoramento de Queimadas" class="feature-screenshot">
+                        <div class="feature-overlay-badge">🔥 FIRMS</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>🔥 FIRMS - Monitoramento de Queimadas</h3>
+                        <p>Fire Information for Resource Management System - Detecção de focos de incêndio em tempo real
+                            via satélite</p>
+                        <div class="feature-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">🛰️</span>
+                                <span>Satélites VIIRS NOAA-20/21 e MODIS</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚡</span>
+                                <span>Fire Radiative Power (Intensidade)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📊</span>
+                                <span>Filtros: 24h, 48h, 7 dias</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EONET -->
+                <div class="feature-block eonet-feature">
+                    <div class="feature-content">
+                        <h3>🌍 EONET - Desastres Naturais</h3>
+                        <p>Earth Observatory Natural Event Tracker - Rastreamento global de eventos naturais em tempo
+                            real</p>
+                        <div class="feature-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">🌋</span>
+                                <span>13 categorias de eventos</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🗺️</span>
+                                <span>Mapa global interativo</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📈</span>
+                                <span>Estatísticas em tempo real</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-visual">
+                        <img src="../assets/projects/ecoguardians/screenshot-eonet.jpeg"
+                            alt="EONET - Desastres Naturais" class="feature-screenshot">
+                        <div class="feature-overlay-badge">🌍 EONET</div>
+                    </div>
+                </div>
+
+                <!-- EPIC -->
+                <div class="feature-block epic-feature">
+                    <div class="feature-visual">
+                        <img src="../assets/projects/ecoguardians/screenshot-epic.jpeg" alt="EPIC - Terra ao Vivo"
+                            class="feature-screenshot">
+                        <div class="feature-overlay-badge">🌎 EPIC</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>🌎 EPIC - Terra ao Vivo</h3>
+                        <p>Earth Polychromatic Imaging Camera - Imagens da Terra capturadas do espaço profundo</p>
+                        <div class="feature-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📷</span>
+                                <span>Câmera DSCOVR a 1.5 milhões km</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span>Navegação por data</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🌳</span>
+                                <span>Destaque da região amazônica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard -->
+                <div class="feature-block dashboard-feature">
+                    <div class="feature-content">
+                        <h3>📊 Dashboard Interativo</h3>
+                        <p>Visualização completa de dados ambientais com gráficos, timeline e predições de IA</p>
+                        <div class="feature-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">🔮</span>
+                                <span>7 modelos de Machine Learning</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📉</span>
+                                <span>Projeções para 2030</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🖼️</span>
+                                <span>Galeria de 128+ imagens</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-visual">
+                        <img src="../assets/projects/ecoguardians/screenshot-dashboard.jpeg" alt="Dashboard Interativo"
+                            class="feature-screenshot">
+                        <div class="feature-overlay-badge">📊 Dashboard</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Interativo -->
+    <section class="eco-map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🗺️ Mapa Interativo da Amazônia</h2>
+                <p>Visualização geográfica completa com múltiplas camadas de dados</p>
+            </div>
+
+            <div class="map-features-grid">
+                <div class="map-feature-card">
+                    <div class="card-icon">🌳</div>
+                    <h4>Amazônia Legal</h4>
+                    <p>Contorno oficial baseado em dados do IBGE</p>
+                </div>
+                <div class="map-feature-card">
+                    <div class="card-icon">🏠</div>
+                    <h4>Terras Indígenas</h4>
+                    <p>Demarcações via Overpass API</p>
+                </div>
+                <div class="map-feature-card">
+                    <div class="card-icon">🏞️</div>
+                    <h4>Unidades de Conservação</h4>
+                    <p>Áreas protegidas mapeadas</p>
+                </div>
+                <div class="map-feature-card">
+                    <div class="card-icon">🏔️</div>
+                    <h4>Zonas de Desmatamento</h4>
+                    <p>Histórico e alertas recentes</p>
+                </div>
+                <div class="map-feature-card">
+                    <div class="card-icon">🌊</div>
+                    <h4>Rios Principais</h4>
+                    <p>Amazonas, Negro, Tapajós, Xingu</p>
+                </div>
+                <div class="map-feature-card">
+                    <div class="card-icon">🏙️</div>
+                    <h4>Cidades Principais</h4>
+                    <p>772 municípios em 9 estados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack Tecnológico -->
+    <section class="eco-tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>🛠️ Stack Tecnológico</h2>
+                <p>Tecnologias de ponta para uma experiência visual impressionante</p>
+            </div>
+
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-badge">HTML5</div>
+                        <div class="tech-badge">CSS3</div>
+                        <div class="tech-badge">JavaScript ES6+</div>
+                        <div class="tech-badge highlight">GSAP Premium</div>
+                        <div class="tech-badge">Leaflet.js</div>
+                        <div class="tech-badge">Chart.js</div>
+                        <div class="tech-badge">Plotly.js</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>APIs NASA</h3>
+                    <div class="tech-items">
+                        <div class="tech-badge nasa">EPIC</div>
+                        <div class="tech-badge nasa">FIRMS</div>
+                        <div class="tech-badge nasa">EONET</div>
+                        <div class="tech-badge nasa">DONKI</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Outras APIs</h3>
+                    <div class="tech-items">
+                        <div class="tech-badge">Overpass API</div>
+                        <div class="tech-badge">IBGE</div>
+                        <div class="tech-badge">CartoDB</div>
+                    </div>
+                </div>
+
+                <div class="tech-category gsap-premium">
+                    <h3>🌟 GSAP Premium Plugins</h3>
+                    <div class="gsap-plugins-grid">
+                        <div class="plugin-group">
+                            <h4>Core & Scroll</h4>
+                            <span>gsap.min.js</span>
+                            <span>ScrollTrigger</span>
+                            <span>ScrollSmoother</span>
+                            <span>ScrollToPlugin</span>
+                        </div>
+                        <div class="plugin-group">
+                            <h4>Animation</h4>
+                            <span>MorphSVGPlugin</span>
+                            <span>DrawSVGPlugin</span>
+                            <span>SplitText</span>
+                            <span>MotionPathPlugin</span>
+                        </div>
+                        <div class="plugin-group">
+                            <h4>Physics</h4>
+                            <span>Physics2DPlugin</span>
+                            <span>PhysicsPropsPlugin</span>
+                            <span>InertiaPlugin</span>
+                            <span>Draggable</span>
+                        </div>
+                        <div class="plugin-group">
+                            <h4>Effects</h4>
+                            <span>CustomEase</span>
+                            <span>CustomBounce</span>
+                            <span>CustomWiggle</span>
+                            <span>Flip</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dados Históricos -->
+    <section class="eco-data-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📊 50 Anos de Dados Históricos</h2>
+                <p>Análise completa da evolução ambiental da Amazônia (1975-2025)</p>
+            </div>
+
+            <div class="data-highlights">
+                <div class="data-card negative">
+                    <div class="data-icon">🪓</div>
+                    <div class="data-value">758.470 km²</div>
+                    <div class="data-label">Área Total Desmatada</div>
+                    <div class="data-trend">↑ Tendência de aumento</div>
+                </div>
+                <div class="data-card warning">
+                    <div class="data-icon">🔥</div>
+                    <div class="data-value">2.211.979</div>
+                    <div class="data-label">Focos de Queimadas</div>
+                    <div class="data-trend">Registros desde 1998</div>
+                </div>
+                <div class="data-card positive">
+                    <div class="data-icon">🦜</div>
+                    <div class="data-value">66.924</div>
+                    <div class="data-label">Espécies Catalogadas</div>
+                    <div class="data-trend">Biodiversidade única</div>
+                </div>
+                <div class="data-card warning">
+                    <div class="data-icon">🌡️</div>
+                    <div class="data-value">+1.3°C</div>
+                    <div class="data-label">Aumento de Temperatura</div>
+                    <div class="data-trend">Desde 1975</div>
+                </div>
+            </div>
+
+            <div class="coverage-info">
+                <h3>📍 Cobertura Geográfica</h3>
+                <div class="coverage-grid">
+                    <div class="coverage-item">
+                        <strong>5.217.423 km²</strong>
+                        <span>Amazônia Legal (61% do Brasil)</span>
+                    </div>
+                    <div class="coverage-item">
+                        <strong>9 Estados</strong>
+                        <span>AC, AM, AP, MA, MT, PA, RO, RR, TO</span>
+                    </div>
+                    <div class="coverage-item">
+                        <strong>772 Municípios</strong>
+                        <span>Monitoramento completo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="eco-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon">🌳</div>
+                <h2>Protejamos a Amazônia Juntos!</h2>
+                <p>Tecnologia a serviço da conscientização e preservação ambiental</p>
+                <div class="cta-actions">
+                    <a href="https://www.ecoguardians.com.br/" target="_blank" class="btn btn-primary">
+                        🌐 Acessar EcoGuardians
+                    </a>
+                    <a href="https://wa.me/5534991230536?text=Olá!%20Vi%20o%20EcoGuardians%20e%20quero%20saber%20mais!"
+                        target="_blank" class="btn btn-secondary">
+                        💬 Falar sobre o Projeto
+                    </a>
+                </div>
+                <div class="final-message">
+                    <p><strong>🎯 Desenvolvido com 💚 pela Union</strong> - Unindo tecnologia e propósito para um futuro
+                        sustentável</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo-unionf_512x512.jpeg" alt="Union Logo" class="footer-logo">
+                    <p>Transformando ideias em soluções digitais extraordinárias.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Union Desenvolvimento de Softwares. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+    <script src="project-details.js"></script>
+    <script>
+        // Registro de plugins GSAP
+        gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin, MorphSVGPlugin, CustomEase, Flip, ScrambleTextPlugin);
+
+        // Animações específicas do EcoGuardians
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ano atual
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Hero title animation com SplitText
+            const title = document.querySelector('.eco-title');
+            if (title && typeof SplitText !== 'undefined') {
+                const split = new SplitText(title, { type: "chars" });
+                gsap.from(split.chars, {
+                    duration: 1,
+                    opacity: 0,
+                    y: 50,
+                    rotationX: -90,
+                    stagger: 0.05,
+                    ease: "back.out(1.7)"
+                });
+            }
+
+            // Floating elements
+            document.querySelectorAll('[data-gsap]').forEach(el => {
+                const config = JSON.parse(el.getAttribute('data-gsap'));
+                gsap.to(el, config);
+            });
+
+            // Feature blocks animation
+            gsap.utils.toArray('.feature-block').forEach((block, i) => {
+                gsap.from(block, {
+                    scrollTrigger: {
+                        trigger: block,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 60,
+                    opacity: 0,
+                    duration: 0.8,
+                    delay: i * 0.1,
+                    ease: "power3.out"
+                });
+            });
+
+            // Map feature cards
+            gsap.utils.toArray('.map-feature-card').forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 90%",
+                        toggleActions: "play none none none"
+                    },
+                    scale: 0.8,
+                    opacity: 0,
+                    duration: 0.5,
+                    delay: i * 0.08,
+                    ease: "back.out(1.7)"
+                });
+            });
+
+            // Tech badges animation
+            gsap.utils.toArray('.tech-badge').forEach((badge, i) => {
+                gsap.from(badge, {
+                    scrollTrigger: {
+                        trigger: badge.parentElement,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    x: -30,
+                    opacity: 0,
+                    duration: 0.4,
+                    delay: i * 0.03,
+                    ease: "power2.out"
+                });
+            });
+
+            // Data cards animation
+            gsap.utils.toArray('.data-card').forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 90%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 40,
+                    opacity: 0,
+                    duration: 0.6,
+                    delay: i * 0.1,
+                    ease: "power3.out"
+                });
+            });
+
+            // Fire dots animation (hero)
+            gsap.to('.fire-dot', {
+                scale: 1.5,
+                opacity: 0.5,
+                duration: 1,
+                repeat: -1,
+                yoyo: true,
+                stagger: 0.3,
+                ease: "power1.inOut"
+            });
+
+            // Particles effect in hero
+            const particles = document.querySelector('.hero-particles');
+            if (particles) {
+                for (let i = 0; i < 20; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animationDelay = Math.random() * 5 + 's';
+                    particle.style.animationDuration = (5 + Math.random() * 5) + 's';
+                    particles.appendChild(particle);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
