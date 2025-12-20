@@ -440,6 +440,7 @@
     background: var(--eco-gradient);
     border: none;
     font-weight: 600;
+    color: white;
 }
 
 .tech-badge.nasa {
