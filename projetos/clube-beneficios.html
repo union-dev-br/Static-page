@@ -116,10 +116,7 @@
                     <div class="stat-number" data-count="449">0</div>
                     <div class="stat-label">Arquivos Dart</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-count="171472">0</div>
-                    <div class="stat-label">Linhas de Código</div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -281,6 +278,157 @@
                         <div class="permission">
                             <span class="permission-check">✅</span>
                             <span>Participar de Rankings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitetura Flutter Avançada (NOVA SEÇÃO) -->
+    <section id="architecture" class="flutter-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏗️ Arquitetura Flutter Enterprise</h2>
+                <p>Design patterns sólidos e gerenciamento de estado robusto para aplicações de grande escala</p>
+            </div>
+
+            <div class="architecture-highlight">
+                <div class="highlight-badge">⭐ DIFERENCIAL PRINCIPAL</div>
+                <div class="highlight-content">
+                    <h3>🏢 Sistema Multi-tenant com RBAC</h3>
+                    <p>Arquitetura capaz de servir múltiplos clientes (tenants) com isolamento de dados e controle de
+                        acesso granular baseado em roles</p>
+                    <div class="tenant-flow">
+                        <div class="tenant-card">
+                            <div class="tenant-icon">🏭</div>
+                            <h4>Tenant A</h4>
+                            <span>Empresa Parceira 1</span>
+                        </div>
+                        <div class="tenant-separator">
+                            <div class="separator-line"></div>
+                            <div class="separator-label">RBAC Layer</div>
+                            <div class="separator-line"></div>
+                        </div>
+                        <div class="tenant-card">
+                            <div class="tenant-icon">🏭</div>
+                            <h4>Tenant B</h4>
+                            <span>Empresa Parceira 2</span>
+                        </div>
+                        <div class="tenant-separator">
+                            <div class="separator-line"></div>
+                            <div class="separator-label">RBAC Layer</div>
+                            <div class="separator-line"></div>
+                        </div>
+                        <div class="tenant-card">
+                            <div class="tenant-icon">🏭</div>
+                            <h4>Tenant N</h4>
+                            <span>Escalável</span>
+                        </div>
+                    </div>
+                    <div class="rbac-features">
+                        <div class="rbac-item">
+                            <span class="rbac-icon">🔐</span>
+                            <span>Isolamento completo de dados entre tenants</span>
+                        </div>
+                        <div class="rbac-item">
+                            <span class="rbac-icon">👥</span>
+                            <span>Permissões granulares por role (USER, ADMINPARTNER, ADMIN)</span>
+                        </div>
+                        <div class="rbac-item">
+                            <span class="rbac-icon">🎯</span>
+                            <span>Experiência personalizada por tipo de usuário</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="architecture-grid">
+                <div class="arch-card state-management">
+                    <div class="arch-header">
+                        <div class="arch-icon">⚡</div>
+                        <h3>Gerenciamento de Estado</h3>
+                    </div>
+                    <div class="arch-content">
+                        <div class="tech-stack">
+                            <div class="tech-primary">
+                                <span class="tech-badge main">Provider</span>
+                                <span class="tech-label">Principal</span>
+                            </div>
+                            <div class="tech-secondary">
+                                <span class="tech-badge">ChangeNotifier</span>
+                                <span class="tech-badge">MultiProvider</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <pre><code>MultiProvider(
+  providers: [
+    ChangeNotifierProvider(create: (_) => AuthProvider()),
+    ChangeNotifierProvider(create: (_) => BenefitsProvider()),
+    ChangeNotifierProvider(create: (_) => TenantProvider()),
+  ],
+  child: MaterialApp(...)
+)</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-card navigation">
+                    <div class="arch-header">
+                        <div class="arch-icon">🧭</div>
+                        <h3>Navegação com GoRouter</h3>
+                    </div>
+                    <div class="arch-content">
+                        <div class="nav-features">
+                            <div class="nav-feature">
+                                <span class="nav-icon">🛡️</span>
+                                <span>Route Guards por Role</span>
+                            </div>
+                            <div class="nav-feature">
+                                <span class="nav-icon">🔗</span>
+                                <span>Deep Linking</span>
+                            </div>
+                            <div class="nav-feature">
+                                <span class="nav-icon">↩️</span>
+                                <span>Redirect Condicional</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <pre><code>GoRoute(
+  path: '/admin',
+  redirect: (context, state) {
+    final user = context.read<AuthProvider>();
+    if (!user.isAdmin) return '/login';
+    return null;
+  },
+  builder: (ctx, state) => AdminScreen(),
+)</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="architecture-layers">
+                <h3>📐 Clean Architecture</h3>
+                <div class="layers-visual">
+                    <div class="layer presentation">
+                        <div class="layer-header">
+                            <span class="layer-name">Presentation</span>
+                            <span class="layer-tech">Screens • Widgets • Provider</span>
+                        </div>
+                    </div>
+                    <div class="layer-arrow">↓</div>
+                    <div class="layer domain">
+                        <div class="layer-header">
+                            <span class="layer-name">Domain</span>
+                            <span class="layer-tech">Use Cases • Entities • Repository Interfaces</span>
+                        </div>
+                    </div>
+                    <div class="layer-arrow">↓</div>
+                    <div class="layer data">
+                        <div class="layer-header">
+                            <span class="layer-name">Data</span>
+                            <span class="layer-tech">Repositories • DTOs • API Services</span>
                         </div>
                     </div>
                 </div>
@@ -498,15 +646,19 @@
                         <div class="plan-options">
                             <div class="plan-option">
                                 <span class="plan-name">Basic</span>
-                                <span class="plan-price">R$ 99/mês</span>
+                                <span class="plan-price">R$ 49,90/mês</span>
+                            </div>
+                            <div class="plan-option">
+                                <span class="plan-name">Silver</span>
+                                <span class="plan-price">R$ 99,90/mês</span>
                             </div>
                             <div class="plan-option featured">
-                                <span class="plan-name">Enterprise</span>
-                                <span class="plan-price">R$ 299/mês</span>
+                                <span class="plan-name">Gold</span>
+                                <span class="plan-price">R$ 149,90/mês</span>
                             </div>
                             <div class="plan-option">
                                 <span class="plan-name">Premium</span>
-                                <span class="plan-price">R$ 499/mês</span>
+                                <span class="plan-price">R$ 199,90/mês</span>
                             </div>
                         </div>
                     </div>
@@ -578,7 +730,8 @@
                         <div class="card-icon">⚠️</div>
                         <h3>Por que é Crítico?</h3>
                         <ul class="fraud-list">
-                            <li><span class="bullet">🚫</span> Usuários criam múltiplas contas para abusar de promoções</li>
+                            <li><span class="bullet">🚫</span> Usuários criam múltiplas contas para abusar de promoções
+                            </li>
                             <li><span class="bullet">💰</span> Prejuízo financeiro direto ao marketplace</li>
                             <li><span class="bullet">🎁</span> Esgotamento de ofertas exclusivas</li>
                             <li><span class="bullet">📊</span> Distorção de métricas e analytics</li>
@@ -614,7 +767,7 @@
                     <img src="/assets/tech-icons/kotlin.png" alt="Kotlin" class="kotlin-logo">
                     <h3>7 Camadas de Identificação do Dispositivo</h3>
                 </div>
-                
+
                 <div class="layers-stack">
                     <div class="layer-item" data-layer="1">
                         <div class="layer-number">1</div>
@@ -929,7 +1082,8 @@ private fun hashString(type: String, input: String): String {
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear">2024</span> Union Desenvolvimento de Softwares. Todos os direitos reservados.</p>
+                <p>&copy; <span id="currentYear">2024</span> Union Desenvolvimento de Softwares. Todos os direitos
+                    reservados.</p>
             </div>
         </div>
     </footer>
