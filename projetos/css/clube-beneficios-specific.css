@@ -5,7 +5,7 @@
 }
 
 .clube-beneficios-detail .project-hero {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
 }
 
@@ -21,7 +21,7 @@
     background: #1a202c;
     border-radius: 30px;
     padding: 20px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 2;
 }
@@ -64,17 +64,42 @@
 }
 
 @keyframes pulse {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.2); }
-    100% { opacity: 1; transform: scale(1); }
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Animações em cascata para stat-cards */
-.clube-beneficios-detail .stat-card:nth-child(1) { animation-delay: 0s; }
-.clube-beneficios-detail .stat-card:nth-child(2) { animation-delay: 0.1s; }
-.clube-beneficios-detail .stat-card:nth-child(3) { animation-delay: 0.2s; }
-.clube-beneficios-detail .stat-card:nth-child(4) { animation-delay: 0.3s; }
-.clube-beneficios-detail .stat-card:nth-child(5) { animation-delay: 0.4s; }
+.clube-beneficios-detail .stat-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.clube-beneficios-detail .stat-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.clube-beneficios-detail .stat-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.clube-beneficios-detail .stat-card:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.clube-beneficios-detail .stat-card:nth-child(5) {
+    animation-delay: 0.4s;
+}
 
 .floating-chart {
     position: absolute;
@@ -89,7 +114,7 @@
 
 /* Ecosystem Overview */
 .ecosystem-overview {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 4rem 0;
 }
@@ -112,10 +137,10 @@
 }
 
 .stakeholder-card {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 300px;
     opacity: 0;
@@ -170,13 +195,13 @@
 
 .core-label {
     font-weight: 700;
-    color: #667eea;
+    color: #ffffff;
     margin-bottom: 0.25rem;
 }
 
 .core-subtitle {
     font-size: 0.8rem;
-    color: #718096;
+    color: #e0e0e0;
 }
 
 .connector-lines {
@@ -203,17 +228,17 @@
 }
 
 .role-card {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     opacity: 0;
 }
 
 .role-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .role-card.admin-role {
@@ -288,10 +313,10 @@
 }
 
 .flow-item {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     opacity: 0;
 }
 
@@ -369,7 +394,7 @@
     font-size: 0.9rem;
     font-weight: 600;
     color: #667eea;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .server-stats {
@@ -409,18 +434,18 @@
 }
 
 .realtime-feature {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     opacity: 0;
 }
 
 .realtime-feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .feature-icon {
@@ -441,10 +466,10 @@
 }
 
 .dashboard-mockup {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .dashboard-header {
@@ -581,10 +606,10 @@
 }
 
 .dashboard-features {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .features-list {
@@ -632,10 +657,10 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     opacity: 0;
 }
 
@@ -775,10 +800,10 @@
 }
 
 .fraud-card {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     border-top: 4px solid;
     opacity: 0;
@@ -799,7 +824,7 @@
 
 .fraud-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .fraud-card .card-icon {
@@ -834,11 +859,11 @@
 }
 
 .fraud-layers {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 3rem;
     border-radius: 25px;
     margin: 4rem 0;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .layers-header {
@@ -853,7 +878,7 @@
     width: 60px;
     height: 60px;
     object-fit: contain;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .layers-header h3 {
@@ -889,7 +914,7 @@
 .layer-number {
     width: 50px;
     height: 50px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -925,7 +950,7 @@
     background: #1e1e1e;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .code-header {
@@ -984,11 +1009,11 @@
 .flow-step {
     flex: 1;
     min-width: 150px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 1.5rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     opacity: 0;
     transform: scale(0.8);
@@ -996,7 +1021,7 @@
 
 .flow-step:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .flow-step.decision {
@@ -1076,11 +1101,11 @@
 }
 
 .metric-card.highlight {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     border-top: 4px solid #667eea;
     opacity: 0;
@@ -1089,7 +1114,7 @@
 
 .metric-card.highlight:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .metric-card.highlight .metric-value {
@@ -1123,11 +1148,11 @@
 }
 
 .fraud-impact {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 3rem;
     border-radius: 25px;
     margin-top: 4rem;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .fraud-impact h3 {
@@ -1181,10 +1206,10 @@
 }
 
 .arch-layer {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .layer-title {
@@ -1235,13 +1260,335 @@
     margin: -0.5rem 0;
 }
 
+/* Flutter Architecture Section (NEW) */
+.flutter-architecture {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    padding: 6rem 0;
+}
+
+.flutter-architecture .section-header h2 {
+    color: #ffffff;
+}
+
+.flutter-architecture .section-header p {
+    color: #e0e0e0;
+}
+
+/* Multi-tenant RBAC Highlight */
+.architecture-highlight {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+    border: 2px solid rgba(102, 126, 234, 0.4);
+    border-radius: 25px;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.highlight-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 5px 20px rgba(245, 158, 11, 0.4);
+}
+
+.highlight-content h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-content>p {
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.tenant-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.tenant-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 140px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tenant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tenant-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tenant-card h4 {
+    color: #2d3748;
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+}
+
+.tenant-card span {
+    color: #718096;
+    font-size: 0.85rem;
+}
+
+.tenant-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.separator-line {
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.separator-label {
+    color: #667eea;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.rbac-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.rbac-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+}
+
+.rbac-icon {
+    font-size: 1.2rem;
+}
+
+/* Architecture Grid */
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.arch-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.arch-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.arch-icon {
+    font-size: 2rem;
+}
+
+.arch-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.arch-content {
+    padding: 1.5rem;
+}
+
+.tech-stack {
+    margin-bottom: 1rem;
+}
+
+.tech-primary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.tech-badge {
+    background: #edf2f7;
+    color: #4a5568;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.tech-badge.main {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.tech-label {
+    color: #10b981;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.tech-secondary {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.code-preview {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.code-preview pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.code-preview code {
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.nav-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.nav-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    background: #f7fafc;
+    border-radius: 8px;
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+}
+
+/* Clean Architecture Layers */
+.architecture-layers {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.architecture-layers h3 {
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.layers-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.layer {
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.layer:hover {
+    transform: scale(1.02);
+}
+
+.layer.presentation {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.layer.domain {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+}
+
+.layer.data {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+}
+
+.layer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.layer-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.layer-tech {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.layer-arrow {
+    font-size: 1.5rem;
+    color: #667eea;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+
     /* Menu hamburger */
     .menu-toggle {
         display: block;
     }
-    
+
     .menu-items {
         display: none;
         position: fixed;
@@ -1254,39 +1601,39 @@
         z-index: 999;
         min-width: 200px;
     }
-    
+
     .menu-items.active {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .menu-items a {
         padding: 10px 15px;
         border-radius: 8px;
         transition: all 0.3s ease;
         color: #1f2937;
     }
-    
+
     .menu-items a:hover {
         background: #f3f4f6;
     }
-    
+
     .ecosystem-flow,
     .websocket-flow,
     .dashboard-preview {
         grid-template-columns: 1fr;
     }
-    
+
     .payment-step {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .dashboard-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .layer-components {
         grid-template-columns: 1fr;
     }
@@ -1324,121 +1671,121 @@
     .clube-beneficios-detail .project-hero {
         padding: 90px 0 50px;
     }
-    
+
     .clube-beneficios-detail .project-title {
         font-size: 1.9rem;
         line-height: 1.2;
     }
-    
+
     .clube-beneficios-detail .project-subtitle {
         font-size: 1rem;
         line-height: 1.5;
     }
-    
+
     .project-badge {
         font-size: 0.8rem;
         padding: 6px 16px;
     }
-    
+
     .project-meta {
         gap: 20px;
     }
-    
+
     .meta-item {
         font-size: 0.9rem;
     }
-    
+
     .project-actions {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .btn {
         width: 100%;
         padding: 12px 24px;
         font-size: 0.95rem;
     }
-    
+
     .section-header h2 {
         font-size: 1.8rem;
     }
-    
+
     .section-header p {
         font-size: 1rem;
     }
-    
+
     .stat-card {
         padding: 30px 20px;
     }
-    
+
     .stat-number {
         font-size: 2.5rem;
     }
-    
+
     .stat-label {
         font-size: 1rem;
     }
-    
+
     .stakeholder-card {
         padding: 24px 18px;
     }
-    
+
     .stakeholder-card h3 {
         font-size: 1.3rem;
     }
-    
+
     .role-card {
         padding: 24px 18px;
     }
-    
+
     .role-header h3 {
         font-size: 1.2rem;
     }
-    
+
     .permission-item {
         font-size: 0.9rem;
     }
-    
+
     .flow-item {
         padding: 20px 16px;
     }
-    
+
     .flow-item h4 {
         font-size: 1.2rem;
     }
-    
+
     .dashboard-mockup {
         padding: 20px 16px;
     }
-    
+
     .metric-card {
         padding: 16px;
     }
-    
+
     .metric-value {
         font-size: 1.8rem;
     }
-    
+
     .step-content h4 {
         font-size: 1.2rem;
     }
-    
+
     .step-content p {
         font-size: 0.9rem;
     }
-    
+
     .arch-layer {
         padding: 20px 16px;
     }
-    
+
     .layer-title {
         font-size: 1.2rem;
     }
-    
+
     .cta-content h2 {
         font-size: 1.8rem;
     }
-    
+
     .cta-content p {
         font-size: 1rem;
     }
@@ -1449,19 +1796,19 @@
     .clube-beneficios-detail .project-title {
         font-size: 1.75rem;
     }
-    
+
     .clube-beneficios-detail .project-subtitle {
         font-size: 0.95rem;
     }
-    
+
     .section-header h2 {
         font-size: 1.65rem;
     }
-    
+
     .stat-number {
         font-size: 2.3rem;
     }
-    
+
     .stakeholder-card,
     .role-card {
         padding: 20px 16px;
@@ -1473,121 +1820,121 @@
     .clube-beneficios-detail .project-hero {
         padding: 85px 0 45px;
     }
-    
+
     .clube-beneficios-detail .project-title {
         font-size: 1.6rem;
     }
-    
+
     .clube-beneficios-detail .project-subtitle {
         font-size: 0.9rem;
     }
-    
+
     .project-badge {
         font-size: 0.75rem;
         padding: 5px 14px;
     }
-    
+
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
-    
+
     .section-header h2 {
         font-size: 1.5rem;
     }
-    
+
     .section-header p {
         font-size: 0.95rem;
     }
-    
+
     .stat-card {
         padding: 26px 18px;
     }
-    
+
     .stat-number {
         font-size: 2.1rem;
     }
-    
+
     .stat-label {
         font-size: 0.95rem;
     }
-    
+
     .stakeholder-card {
         padding: 18px 14px;
     }
-    
+
     .stakeholder-card h3 {
         font-size: 1.2rem;
     }
-    
+
     .stakeholder-card p {
         font-size: 0.85rem;
     }
-    
+
     .role-card {
         padding: 18px 14px;
     }
-    
+
     .role-header h3 {
         font-size: 1.1rem;
     }
-    
+
     .permission-item {
         font-size: 0.85rem;
     }
-    
+
     .flow-item {
         padding: 18px 14px;
     }
-    
+
     .flow-item h4 {
         font-size: 1.1rem;
     }
-    
+
     .dashboard-mockup {
         padding: 18px 14px;
     }
-    
+
     .metric-card {
         padding: 14px;
     }
-    
+
     .metric-value {
         font-size: 1.6rem;
     }
-    
+
     .metric-label {
         font-size: 0.85rem;
     }
-    
+
     .step-content h4 {
         font-size: 1.1rem;
     }
-    
+
     .step-content p {
         font-size: 0.85rem;
     }
-    
+
     .arch-layer {
         padding: 18px 14px;
     }
-    
+
     .layer-title {
         font-size: 1.1rem;
     }
-    
+
     .layer-components span {
         font-size: 0.8rem;
     }
-    
+
     .cta-content h2 {
         font-size: 1.6rem;
     }
-    
+
     .cta-content p {
         font-size: 0.95rem;
     }
-    
+
     .cta-actions {
         flex-direction: column;
         width: 100%;
