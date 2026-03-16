@@ -16,13 +16,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PN01H9935J"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WM3SZ2D6QM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'G-PN01H9935J');
+        gtag('config', 'G-WM3SZ2D6QM', {
+            page_title: 'Plataforma de Empregos | Union Desenvolvimento',
+            page_path: window.location.pathname
+        });
+
+        document.addEventListener('click', function (event) {
+            var link = event.target.closest('a[href]');
+            var href;
+            var linkText;
+
+            if (!link) {
+                return;
+            }
+
+            href = link.getAttribute('href') || '';
+            linkText = (link.textContent || '').trim();
+
+            if (link.closest('.project-actions')) {
+                gtag('event', 'project_cta_click', {
+                    project_name: 'Plataforma de Empregos',
+                    link_text: linkText,
+                    link_url: href
+                });
+            }
+
+            if (href.indexOf('http') === 0) {
+                gtag('event', 'outbound_click', {
+                    project_name: 'Plataforma de Empregos',
+                    link_text: linkText,
+                    link_url: href
+                });
+            }
+        });
     </script>
 
 </head>
